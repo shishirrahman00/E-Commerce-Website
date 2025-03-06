@@ -1,0 +1,18 @@
+/* @font-face {
+  font-family: "Satoshi-black";
+  font-weight: 900;
+  src: url("assets\font\Satoshi-Black.otf") format("otf");
+}
+@font-face {
+  font-family: "integral-bold";
+  font-weight: 700;
+  src: url("assets\font\Fontspring-DEMO-integralcf-bold.otf") format("otf");
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

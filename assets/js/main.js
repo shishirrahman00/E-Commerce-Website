@@ -56,10 +56,9 @@ if (testimonialSlider) {
     container: testimonialSlider,
     slideBy: "page",
     controls: true,
-    // controlsContainer: "#controls",
-    // prevButton: ".previous",
-    // nextButton: ".next",
-    mouseDrag: true,
+    controlsContainer: "#controls",
+    prevButton: ".previous",
+    nextButton: ".next",
     gutter: 25,
     responsive: {
       425: {

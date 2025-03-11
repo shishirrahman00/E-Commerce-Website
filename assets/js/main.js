@@ -77,3 +77,38 @@ if (testimonialSlider) {
     },
   });
 }
+
+
+// -----------------------NAV MENU START
+
+const navMenuBtn= document.querySelector(".nav-menu-btn")
+const navMenu= document.querySelector("#nav-menu")
+const navMenuSlider= document.querySelector("#nav-menu-slider")
+const navMenuSliderCloseBtn= document.querySelector("#nav-menu-slider-close-btn")
+
+
+navMenuBtn.addEventListener("click",(event)=>{
+  const value = event.currentTarget.getAttribute("data-state")
+ if(value==="close"){
+  navMenuSlider.setAttribute("data-state","open")
+ }
+})
+navMenuSliderCloseBtn.addEventListener("click",()=>{
+  navMenuSlider.setAttribute("data-state","close")
+})
+
+// NAV MENU SEARCHBOX START
+
+const navSearchBtn=document.querySelector(".nav-search-btn")
+const navSearchBtnHover=document.querySelector(".nav-search-btn-hover")
+
+// navSearchBtn.addEventListener("click",(event)=>{
+//   const value = event.currentTarget.getAttribute("data-click")
+// console.log(value)
+// navSearchBtn.classList.add("hidden")
+// navSearchBtnHover.classList.remove("hidden")
+// })
+
+// NAV MENU SEARCHBOX END
+
+//------------------------- NAV MENU END

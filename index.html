@@ -42,40 +42,104 @@
     <!-- SIGN-UP-NOW-POP-UP-END-->
 
     <!-- NAV-BAR-START -->
-    <nav class="py-6">
+    <div data-state="close" id="nav-menu-slider" class="fixed  inset-0 w-full h-full bg-[#0c3f50] bg-opacity-85 z-50 data-[state=close]:opacity-0 data-[state=close]:invisible transition-transform -translate-x-full data-[state=open]:translate-x-0 duration-500">
+      <div  class="w-[315px] bg-[#ffffff] h-full z-50 p-10 flex flex-col gap-y-[80px]">
+        <div class="flex items-center justify-between">
+          <div>
+            <a href="#"> <h1 class="xl:text-[32px] text-[26px] font-[Integral] font-bold" >SHOP.CO</h1></a>
+          </div> 
+         <div>
+          <button
+          class="inline-flex items-center justify-between gap-x-2.5" id="nav-menu-slider-close-btn"
+          
+        >
+          <span><i class="fa-solid fa-x text-[#373737] text-base"></i></span
+          >
+          
+         
+        </button>
+         </div>
+        </div>
+        <ul class="flex flex-col gap-y-8">
+          <li>
+            <a
+              href="#"
+              class="text-[20px] text-[#000] font-normal hover:text-opacity-[40%]"
+              >Shop <span><i class="fa-solid fa-angle-down"></i></span
+                ></a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="text-[20px] text-[#000] font-normal hover:text-opacity-[40%]"
+              >On Sale</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="text-[20px] text-[#000] font-normal hover:text-opacity-[40%]"
+              >Case Study</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="text-[20px] text-[#000] font-normal hover:text-opacity-[40%]"
+              >Blog</a
+            >
+          </li>
+        
+        </ul>
+      </div>
+     
+    </div>
+    <nav class="py-6 px-5 xl:px-0">
       <div class="container mx-auto">
-        <div class="grid grid-cols-12 items-center gap-x-[40px]">
-          <div class="md:col-start-1 md:col-end-2 col-start-1 col-end-2">
-            <a href="#"> <h1 class="text-[32px] font-bold">SHOP.CO</h1></a>
-          </div>
-
-          <div class="col-start-2 col-end-6 justify-items-end">
-            <div>
+        <div class="grid grid-cols-12 items-center xl:gap-x-[40px] ">
+          <div class="xl:col-start-1 xl:col-end-6 lg:col-start-1 lg:col-end-6 md:col-start-1 md:col-end-6 col-start-1 col-end-6  ">
+           
+           <div class="flex items-center xl:justify-between gap-x-4 xl:gap-x-0">
+             <div class="nav-menu-btn xl:hidden " data-state="close">
               <button class="text-[20px]"><i class="fa-solid fa-bars"></i></button>
             </div>
-            <div class="flex">
+            
+            <div>
+              <a href="#"> <h1 class="xl:text-[32px] text-[26px] font-[Integral] font-bold" >SHOP.CO</h1></a>
+            </div>
+         
+            <div class="xl:flex hidden " id="nav-menu">
               <ul class="flex gap-x-6">
                 <li>
-                  <a href="#"
+                  <a href="#" class="font-[Satoshi]"
                     >Shop <span><i class="fa-solid fa-angle-down"></i></span
                   ></a>
                 </li>
                 <li>
-                  <a href="#">On Sale</a>
+                  <a href="#" class="font-[Satoshi]">On Sale</a>
                 </li>
                 <li>
-                  <a href="#"> New Arrivals</a>
+                  <a href="#" class="font-[Satoshi]"> New Arrivals</a>
                 </li>
                 <li>
-                  <a href="#"> Brands</a>
+                  <a href="#" class="font-[Satoshi]"> Brands</a>
                 </li>
               </ul>
             </div>
+           </div>
           </div>
-          <div class="col-start-6 col-end-12">
-            <div class="w-full relative">
+
+        
+          <div class="xl:col-start-6 xl:col-end-12 md:col-start-11 md:col-end-12 col-start-10 col-end-11 justify-items-center lg:justify-items-end ">
+            <div class="xl:hidden block ">
+              <button class="nav-search-btn" data-click="false"> <i class="fa-solid fa-magnifying-glass"></i></button>
+            
+            </div>
+            <div class="w-full relative hidden xl:block nav-search-btn-hover">
+              
               <form action="#">
-                <button
+                <button 
                   class="absolute inline-block top-1/2 left-4 transform -translate-y-1/2 text-[18px] text-[#000000] opacity-[40%]"
                 >
                   <i class="fa-solid fa-magnifying-glass"></i>
@@ -88,7 +152,7 @@
               </form>
             </div>
           </div>
-          <div class="col-start-12 col-end-13 justify-items-end">
+          <div class="md:col-start-12 md:col-end-13 col-start-12 col-end-13 justify-items-end">
             <div class="flex gap-x-2">
               <button class="w-6 h-6">
                 <i class="fa-solid fa-cart-shopping"></i>

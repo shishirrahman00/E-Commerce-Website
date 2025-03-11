@@ -3,8 +3,8 @@
   src: url("assets\font\Satoshi-Variable.ttf") format("ttf");
 }
 @font-face {
-  font-family: "integral-bold";
-  font-weight: 700;
+  font-family: "Integral";
+  font-weight: "700";
   src: url("assets\font\Fontspring-DEMO-integralcf-bold.otf") format("otf");
 }
 

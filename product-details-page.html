@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Home Page</title>
+        <link rel="stylesheet" href="assets/css/output.css" />
+        <!-- FONT-AWESOME-CDN -->
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        />
+        <!-- TINY SLIDER -->
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css"
+        />
+      </head>
+<body>
+
+      <!-- SIGN-UP-NOW-POP-UP-START-->
+      <div class="bg-black py-2 px-4">
+        <div class="container mx-auto">
+          <div class="grid grid-cols-12 items-center">
+            <div
+              class="md:col-start-1 md:col-end-11 col-start-1 col-end-12 lg:justify-items-center"
+            >
+              <p class="text-white text-sm font-[Satoshi]">
+                Sign up and get 20% off to your first order.
+                <a href="#" class="border-b font-medium">Sign Up Now</a>
+              </p>
+            </div>
+            <div class="col-start-12 col-end-13 justify-items-end">
+              <div>
+                <button class="text-white text-[20px]">
+                  <i class="fa-solid fa-xmark"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- SIGN-UP-NOW-POP-UP-END-->
+  
+      <!-- NAV-BAR-START -->
+      <div data-state="close" id="nav-menu-slider" class="fixed  inset-0 w-full h-full bg-[#0c3f50] bg-opacity-85 z-50 data-[state=close]:opacity-0 data-[state=close]:invisible transition-transform -translate-x-full data-[state=open]:translate-x-0 duration-500">
+        <div  class="w-[315px] bg-[#ffffff] h-full z-50 p-10 flex flex-col gap-y-[80px]">
+          <div class="flex items-center justify-between">
+            <div>
+              <a href="#"> <h1 class="xl:text-[32px] text-[26px] font-[Integral] font-bold" >SHOP.CO</h1></a>
+            </div> 
+           <div>
+            <button
+            class="inline-flex items-center justify-between gap-x-2.5" id="nav-menu-slider-close-btn"
+            
+          >
+            <span><i class="fa-solid fa-x text-[#373737] text-base"></i></span
+            >
+            
+           
+          </button>
+           </div>
+          </div>
+          <ul class="flex flex-col gap-y-8">
+            <li>
+              <a
+                href="#"
+                class="text-[20px] text-[#000] font-normal hover:text-opacity-[40%]"
+                >Shop <span><i class="fa-solid fa-angle-down"></i></span
+                  ></a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="text-[20px] text-[#000] font-normal hover:text-opacity-[40%]"
+                >On Sale</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="text-[20px] text-[#000] font-normal hover:text-opacity-[40%]"
+                >Case Study</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="text-[20px] text-[#000] font-normal hover:text-opacity-[40%]"
+                >Blog</a
+              >
+            </li>
+          
+          </ul>
+        </div>
+       
+      </div>
+      <nav class="py-6 px-5 xl:px-0">
+        <div class="container mx-auto">
+          <div class="grid grid-cols-12 items-center xl:gap-x-[40px] ">
+            <div class="xl:col-start-1 xl:col-end-6 lg:col-start-1 lg:col-end-6 md:col-start-1 md:col-end-6 col-start-1 col-end-6  ">
+             
+             <div class="flex items-center xl:justify-between gap-x-4 xl:gap-x-0">
+               <div class="nav-menu-btn xl:hidden " data-state="close">
+                <button class="text-[20px]"><i class="fa-solid fa-bars"></i></button>
+              </div>
+              
+              <div>
+                <a href="#"> <h1 class="xl:text-[32px] text-[26px] font-[Integral] font-bold" >SHOP.CO</h1></a>
+              </div>
+           
+              <div class="xl:flex hidden " id="nav-menu">
+                <ul class="flex gap-x-6">
+                  <li>
+                    <a href="#" class="font-[Satoshi]"
+                      >Shop <span><i class="fa-solid fa-angle-down"></i></span
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#" class="font-[Satoshi]">On Sale</a>
+                  </li>
+                  <li>
+                    <a href="#" class="font-[Satoshi]"> New Arrivals</a>
+                  </li>
+                  <li>
+                    <a href="#" class="font-[Satoshi]"> Brands</a>
+                  </li>
+                </ul>
+              </div>
+             </div>
+            </div>
+  
+          
+            <div class="xl:col-start-6 xl:col-end-12 md:col-start-11 md:col-end-12 col-start-10 col-end-11 justify-items-center lg:justify-items-end ">
+              <div class="xl:hidden block ">
+                <button class="nav-search-btn" data-click="false"> <i class="fa-solid fa-magnifying-glass"></i></button>
+              
+              </div>
+              <div class="w-full relative hidden xl:block nav-search-btn-hover">
+                
+                <form action="#">
+                  <button 
+                    class="absolute inline-block top-1/2 left-4 transform -translate-y-1/2 text-[18px] text-[#000000] opacity-[40%]"
+                  >
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </button>
+                  <input
+                    type="text"
+                    placeholder="Search for products..."
+                    class="w-full font-[Intregal] placeholder:text-base placeholder:text-[#000000] placeholder:opacity-[40%] outline-none bg-[#F0F0F0] py-3 rounded-full pl-11 pr-10"
+                  />
+                </form>
+              </div>
+            </div>
+            <div class="md:col-start-12 md:col-end-13 col-start-12 col-end-13 justify-items-end">
+              <div class="flex gap-x-2">
+                <button class="w-6 h-6">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+                <button class="w-6 h-6">
+                  <i class="fa-solid fa-user"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- NAV-BAR-END -->
+
+      <div>
+        <div class="container mx-auto">
+          <div class="border border-[#000] border-opacity-[10%]"></div>
+        </div>
+      </div>
+
+<!-- BREDCRUMB SECTION START -->
+ <div class="py-6 px-4 xl:px-0">
+    <div class="container mx-auto">
+        <div class="grid grid-cols-12">
+            <div class="col-start-1 col-end-13">
+                <div>
+                    <ol class="flex items-center group  gap-x-3">
+                        <li class="inline-flex items-center gap-x-2  text-[#000] text-opacity-[60%]">
+                          <a  href="#" class="flex items-center  font-normal text-sm  font-[Satoshi] md:text-base text-[#000] text-opacity-[60%] hover:text-opacity-100 ">
+                            Home
+                          </a>
+                         <button class="text-sm"><i class="fa-solid fa-chevron-right"></i></button>
+                        </li>
+                        <li class="inline-flex items-center gap-x-2  text-[#000] text-opacity-[60%]">
+                          <a  href="#" class="flex items-center font-normal text-sm font-[Satoshi] md:text-base text-[#000] text-opacity-[60%] hover:text-opacity-100 ">
+                            Shop
+                          </a>
+                         <button class="text-sm"><i class="fa-solid fa-chevron-right"></i></button>
+                        </li>
+                        <li class="inline-flex items-center gap-x-2  text-[#000] text-opacity-[60%]">
+                          <a  href="#" class="flex items-center font-normal text-sm font-[Satoshi] md:text-base text-[#000] text-opacity-[60%] hover:text-opacity-100 ">
+                            Men
+                          </a>
+                         <button class="text-sm"><i class="fa-solid fa-chevron-right"></i></button>
+                        </li>
+                        <li class="inline-flex items-center gap-x-2  text-[#000] text-opacity-[60%]">
+                          <a  href="#" class="flex items-center font-normal text-sm font-[Satoshi] md:text-base text-[#000] text-opacity-[60%] hover:text-opacity-100 ">
+                            T-Shirts
+                          </a>
+                         
+                        </li>
+                      </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+ </div>
+<!-- BREDCRUMB SECTION END -->
+    
+<!-- SCRIPT -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+<script src="./assets/js/main.js"></script>
+</body>
+</html>

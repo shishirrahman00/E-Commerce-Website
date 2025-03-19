@@ -214,7 +214,7 @@
 <!-- BREDCRUMB SECTION END -->
 
 <!-- PRODUCT DETAILS SECTION START -->
- <div class="px-4 xl:px-0">
+ <div class="px-4 xl:px-0 py-10">
   <div class="container mx-auto">
     <div class="grid grid-cols-12 gap-x-[30px]">
       <div class="xl:col-start-1 xl:col-end-7 col-start-1 col-end-13"></div>
@@ -277,10 +277,10 @@
               <div>
                 <p class="text-sm md:text-base font-[Satoshi] text-[#000] text-opacity-[60%] mb-3" >Select Colors</p>
                 <div class="flex gap-x-3">
-                  <a href="" class="text-sm md:text-base font-light py-3 px-6  font-[Satoshi] bg-[#F0F0F0]  rounded-[62px] text-[#000] text-opacity-[60%] hover:bg-[#000] hover:text-[#fff]  duration-500">Small</a>
-                  <a href="" class="text-sm md:text-base font-light py-3 px-6  font-[Satoshi] bg-[#F0F0F0]  rounded-[62px] text-[#000] text-opacity-[60%] hover:bg-[#000] hover:text-[#fff]  duration-500">Medium</a>
-                  <a href="" class="text-sm md:text-base font-light py-3 px-6  font-[Satoshi] bg-[#F0F0F0]  rounded-[62px] text-[#000] text-opacity-[60%] hover:bg-[#000] hover:text-[#fff]  duration-500">Large</a>
-                  <a href="" class="text-sm md:text-base font-light py-3 px-6  font-[Satoshi] bg-[#F0F0F0]  rounded-[62px] text-[#000] text-opacity-[60%] hover:bg-[#000] hover:text-[#fff]  duration-500">X-Large</a>
+                  <a href="#" class="text-sm md:text-base font-light py-3 px-6  font-[Satoshi] bg-[#F0F0F0]  rounded-[62px] text-[#000] text-opacity-[60%] hover:bg-[#000] hover:text-[#fff]  duration-500">Small</a>
+                  <a href="#" class="text-sm md:text-base font-light py-3 px-6  font-[Satoshi] bg-[#F0F0F0]  rounded-[62px] text-[#000] text-opacity-[60%] hover:bg-[#000] hover:text-[#fff]  duration-500">Medium</a>
+                  <a href="#" class="text-sm md:text-base font-light py-3 px-6  font-[Satoshi] bg-[#F0F0F0]  rounded-[62px] text-[#000] text-opacity-[60%] hover:bg-[#000] hover:text-[#fff]  duration-500">Large</a>
+                  <a href="#" class="text-sm md:text-base font-light py-3 px-6  font-[Satoshi] bg-[#F0F0F0]  rounded-[62px] text-[#000] text-opacity-[60%] hover:bg-[#000] hover:text-[#fff]  duration-500">X-Large</a>
                   
                  
                 </div>
@@ -298,17 +298,28 @@
              <!-- COUNTER INPUT SECTION -->
               
               
+           <div class="flex gap-x-3 md:gap-x-5 ">
             <!-- <div class="flex">
-              <div class="flex items-center bg-gray-100 rounded-full px-4 py-2 w-fit">
+              <div class="flex items-center bg-gray-100 rounded-full px-4 py-2 ">
                 <button class="text-xl px-3 text-gray-700 hover:text-black">−</button>
-                <input type="text" value="1" class="w-8 text-center bg-transparent border-none focus:outline-none text-lg">
+                <input type="text" value="100" class="w-8 text-center bg-transparent border-none focus:outline-none text-lg">
                 <button class="text-xl px-3 text-gray-700 hover:text-black">+</button>
               </div>
-              <div>
-                <button class="text-sm md:text-base font-light w-full h-full inline-block font-[Satoshi] bg-[#F0F0F0]  rounded-[62px] text-[#000] text-opacity-[60%] hover:bg-[#000] hover:text-[#fff]  duration-500">Add To Cart</button>
-              </div>
-
             </div> -->
+            <div>
+              <form action="#" class="flex items-center bg-gray-100  rounded-[62px] px-4 md:px-8 h-[52px]">
+                <button class="text-base px-3 text-[#000] text-opacity-[80%] hover:text-black"><i class="fa-solid fa-minus"></i></button>
+                <input type="text" value="0"  class=" w-8 text-center bg-transparent border-none focus:outline-none text-lg">
+                <button class="text-base px-3 text-[#000] text-opacity-[80%] hover:text-black"><i class="fa-solid fa-plus"></i></button>
+              </form>
+            </div>
+
+      
+            <div>
+              <button class= " h-[52px] px-20 md:px-40 rounded-[62px] text-sm  md:text-base font-light  font-[Satoshi] bg-[#F0F0F0]   text-[#000] text-opacity-[60%] hover:bg-[#000] hover:text-[#fff]  duration-500">Add To Cart</button>
+            </div>
+           </div>
+     
              
           </div>
         </div>
@@ -317,6 +328,618 @@
   </div>
  </div>
 <!-- PRODUCT DETAILS SECTION END -->
+
+
+<!-- TAB SECTION START -->
+
+<div class="px-4 xl:px-0">
+  <div class="container mx-auto">
+    <div class="grid grid-cols-12">
+      <div class="col-start-1 col-end-13">      
+     
+                <div class="tab-btn-list border-b border-[#000] border-opacity-[10%] flex  mb-10">
+                  <button
+                    class="md:text-[20px] text-base font-[Satoshi] font-normal leading-[22px] py-6 w-[131px]  md:w-[256px] lg:w-[414px] text-[#000] text-opacity-[60%] border-b-2 border-b-transparent hover:text-opacity-80 "
+                    data-value="tab-1"
+                  >
+                  Product Details
+                  </button>
+
+                  <button     class="md:text-[20px] text-base font-[Satoshi] font-normal leading-[22px] py-6 w-[130px]  md:w-[256px] lg:w-[414px]  text-[#000] text-opacity-[60%] border-b-2 border-b-transparent hover:text-opacity-80  "data-value="tab-2">Rating & Reviews</button>
+
+                  <button     class="md:text-[20px] text-base font-[Satoshi] font-normal leading-[22px] py-6 w-[130px]  md:w-[256px] lg:w-[414px]  text-[#000] text-opacity-[60%] border-b-2 border-b-transparent hover:text-opacity-80  "data-value="tab-3">FAQs</button>
+
+                </div>
+ 
+
+        <div class="tab-contents">
+           <div class="tab-content hidden " id="tab-1">
+                  <p class="text-[15px] text-[#999999] font-light">
+                    This is Product details Content                   
+                  </p>
+          </div>
+            <div class="tab-content " id="tab-2">
+              <div class="flex items-center justify-between mb-8">
+                <div>
+                <div class="flex items-center gap-x-2 ">
+                  <h2 class="font-[Satoshi] text-[20px] md:text-2xl font-bold">All Reviwes</h2>
+                  <p class="text-base text-[#000] font-normal text-opacity-[40%] leading-[22px]">(451)</p>
+                </div>
+                </div>
+                <div class="flex md:gap-x-[10px] gap-x-[6px]">
+               
+                  <button><a href="#" class="text-base font-medium py-2.5 px-5 font-[Satoshi] bg-[#F0F0F0]  rounded-[62px] text-[#000] text-opacity-[60%] hover:bg-[#000] hover:text-[#fff]  duration-500"><span><i class="fa-solid fa-sliders"></i></span></a></button>
+                  <button class="hidden md:inline-block"><a href="#" class="text-base inline-flex items-center gap-x-2  font-medium py-2.5 px-6 font-[Satoshi] bg-[#F0F0F0]  rounded-[62px] text-[#000] text-opacity-[60%] hover:bg-[#000] hover:text-[#fff]  duration-500 max-h-[37px]">Latest<span class="text-[12px]"><i class="fa-solid fa-chevron-down"></i></span></a></button>
+                  <button><a href="#" class="text-base font-medium py-2.5 px-7 font-[Satoshi] bg-[#F0F0F0]  rounded-[62px] text-[#000] text-opacity-[60%] hover:bg-[#000] hover:text-[#fff]  duration-500">Write a Review</a></button>
+                  
+
+                </div>
+
+              </div>
+                 <div class="grid md:grid-cols-2 grid-cols-1 gap-5">
+                  <div>
+                    <div class="border pt-5 pb-7  pl-6 pr-6 md:pl-8  rounded-[20px]">
+                   <div class="flex items-center justify-between mb-3">
+                    <div class="flex items-center gap-x-2 ">
+                      <p class="text-[#FFC633] text-[18px] md:text-[20px] ">
+                        <i class="fa-solid fa-star"></i>
+                      </p>
+                      <p class="text-[#FFC633] text-[18px] md:text-[20px] ">
+                        <i class="fa-solid fa-star"></i>
+                      </p>
+                      <p class="text-[#FFC633] text-[18px] md:text-[20px] ">
+                        <i class="fa-solid fa-star"></i>
+                      </p>
+                      <p class="text-[#FFC633] text-[18px] md:text-[20px] ">
+                        <i class="fa-solid fa-star"></i>
+                      </p>
+                      <p class="text-[#FFC633] text-[18px] md:text-[20px] ">
+                        <i class="fa-solid fa-star"></i>
+                      </p>
+                    </div>
+                    <div>
+                      <button><a href="#" class="text-[18px] md:text-[20px] text-[#000] text-opacity-[60%]" ><i class="fa-solid fa-grip-lines"></i></a></button>
+                    </div>
+                   </div>
+        
+                      <div>
+                        <h4 class="md:text-[20px] text-base font-bold mb-3 font-[Intregal]">
+                          Sarah M.<span class="text-[#01AB31] text-[19px] ml-2"
+                            ><i class="fa-solid fa-circle-check"></i
+                          ></span>
+                        </h4>
+                      </div>
+                      <div class="mb-5">
+                        <p class="md:text-base text-sm font-normal opacity-[60%] font-[Satoshi] line-clamp-4 ">
+                          "I'm blown away by the quality and style of the clothes I
+                          received from Shop.co. From casual wear to elegant dresses,
+                          every piece I've bought has exceeded my expectations.I'm blown away by the quality and style of the clothes I
+                          received from Shop.co. From casual wear to elegant dresses,
+                          every piece I've bought has exceeded my expectations.”
+                        </p>
+                      </div>
+                      <div>
+                        <p class="text-sm md:text-base leading-[22px] font-[Satoshi] font-medium text-[#000] text-opacity-[60%]">Posted on August 17, 2023</p>
+                      </div>
+                    </div>
+
+                  </div>
+                  <!-- 2 -->
+                  <div>
+                    <div class="border pt-5 pb-7  pl-6 pr-6 md:pl-8  rounded-[20px]">
+                   <div class="flex items-center justify-between mb-3">
+                    <div class="flex items-center gap-x-2 ">
+                      <p class="text-[#FFC633] text-[18px] md:text-[20px] ">
+                        <i class="fa-solid fa-star"></i>
+                      </p>
+                      <p class="text-[#FFC633] text-[18px] md:text-[20px] ">
+                        <i class="fa-solid fa-star"></i>
+                      </p>
+                      <p class="text-[#FFC633] text-[18px] md:text-[20px] ">
+                        <i class="fa-solid fa-star"></i>
+                      </p>
+                      <p class="text-[#FFC633] text-[18px] md:text-[20px] ">
+                        <i class="fa-solid fa-star"></i>
+                      </p>
+                      <p class="text-[#FFC633] text-[18px] md:text-[20px] ">
+                        <i class="fa-solid fa-star"></i>
+                      </p>
+                    </div>
+                    <div>
+                      <button><a href="#" class="text-[18px] md:text-[20px] text-[#000] text-opacity-[60%]" ><i class="fa-solid fa-grip-lines"></i></a></button>
+                    </div>
+                   </div>
+        
+                      <div>
+                        <h4 class="md:text-[20px] text-base font-bold mb-3 font-[Intregal]">
+                          Sarah M.<span class="text-[#01AB31] text-[19px] ml-2"
+                            ><i class="fa-solid fa-circle-check"></i
+                          ></span>
+                        </h4>
+                      </div>
+                      <div class="mb-5">
+                        <p class="md:text-base text-sm font-normal opacity-[60%] font-[Satoshi] line-clamp-4 ">
+                          "I'm blown away by the quality and style of the clothes I
+                          received from Shop.co. From casual wear to elegant dresses,
+                          every piece I've bought has exceeded my expectations.I'm blown away by the quality and style of the clothes I
+                          received from Shop.co. From casual wear to elegant dresses,
+                          every piece I've bought has exceeded my expectations.”
+                        </p>
+                      </div>
+                      <div>
+                        <p class="text-sm md:text-base leading-[22px] font-[Satoshi] font-medium text-[#000] text-opacity-[60%]">Posted on August 17, 2023</p>
+                      </div>
+                    </div>
+
+                  </div>
+
+                  <!-- 3 -->
+                  <div>
+                    <div class="border pt-5 pb-7  pl-6 pr-6 md:pl-8  rounded-[20px]">
+                   <div class="flex items-center justify-between mb-3">
+                    <div class="flex items-center gap-x-2 ">
+                      <p class="text-[#FFC633] text-[18px] md:text-[20px] ">
+                        <i class="fa-solid fa-star"></i>
+                      </p>
+                      <p class="text-[#FFC633] text-[18px] md:text-[20px] ">
+                        <i class="fa-solid fa-star"></i>
+                      </p>
+                      <p class="text-[#FFC633] text-[18px] md:text-[20px] ">
+                        <i class="fa-solid fa-star"></i>
+                      </p>
+                      <p class="text-[#FFC633] text-[18px] md:text-[20px] ">
+                        <i class="fa-solid fa-star"></i>
+                      </p>
+                      <p class="text-[#FFC633] text-[18px] md:text-[20px] ">
+                        <i class="fa-solid fa-star"></i>
+                      </p>
+                    </div>
+                    <div>
+                      <button><a href="#" class="text-[18px] md:text-[20px] text-[#000] text-opacity-[60%]" ><i class="fa-solid fa-grip-lines"></i></a></button>
+                    </div>
+                   </div>
+        
+                      <div>
+                        <h4 class="md:text-[20px] text-base font-bold mb-3 font-[Intregal]">
+                          Sarah M.<span class="text-[#01AB31] text-[19px] ml-2"
+                            ><i class="fa-solid fa-circle-check"></i
+                          ></span>
+                        </h4>
+                      </div>
+                      <div class="mb-5">
+                        <p class="md:text-base text-sm font-normal opacity-[60%] font-[Satoshi] line-clamp-4 ">
+                          "I'm blown away by the quality and style of the clothes I
+                          received from Shop.co. From casual wear to elegant dresses,
+                          every piece I've bought has exceeded my expectations.I'm blown away by the quality and style of the clothes I
+                          received from Shop.co. From casual wear to elegant dresses,
+                          every piece I've bought has exceeded my expectations.”
+                        </p>
+                      </div>
+                      <div>
+                        <p class="text-sm md:text-base leading-[22px] font-[Satoshi] font-medium text-[#000] text-opacity-[60%]">Posted on August 17, 2023</p>
+                      </div>
+                    </div>
+
+                  </div>
+
+                  <!-- 4 -->
+                  <div>
+                    <div class="border pt-5 pb-7  pl-6 pr-6 md:pl-8  rounded-[20px]">
+                   <div class="flex items-center justify-between mb-3">
+                    <div class="flex items-center gap-x-2 ">
+                      <p class="text-[#FFC633] text-[18px] md:text-[20px] ">
+                        <i class="fa-solid fa-star"></i>
+                      </p>
+                      <p class="text-[#FFC633] text-[18px] md:text-[20px] ">
+                        <i class="fa-solid fa-star"></i>
+                      </p>
+                      <p class="text-[#FFC633] text-[18px] md:text-[20px] ">
+                        <i class="fa-solid fa-star"></i>
+                      </p>
+                      <p class="text-[#FFC633] text-[18px] md:text-[20px] ">
+                        <i class="fa-solid fa-star"></i>
+                      </p>
+                      <p class="text-[#FFC633] text-[18px] md:text-[20px] ">
+                        <i class="fa-solid fa-star"></i>
+                      </p>
+                    </div>
+                    <div>
+                      <button><a href="#" class="text-[18px] md:text-[20px] text-[#000] text-opacity-[60%]" ><i class="fa-solid fa-grip-lines"></i></a></button>
+                    </div>
+                   </div>
+        
+                      <div>
+                        <h4 class="md:text-[20px] text-base font-bold mb-3 font-[Intregal]">
+                          Sarah M.<span class="text-[#01AB31] text-[19px] ml-2"
+                            ><i class="fa-solid fa-circle-check"></i
+                          ></span>
+                        </h4>
+                      </div>
+                      <div class="mb-5">
+                        <p class="md:text-base text-sm font-normal opacity-[60%] font-[Satoshi] line-clamp-4 ">
+                          "I'm blown away by the quality and style of the clothes I
+                          received from Shop.co. From casual wear to elegant dresses,
+                          every piece I've bought has exceeded my expectations.I'm blown away by the quality and style of the clothes I
+                          received from Shop.co. From casual wear to elegant dresses,
+                          every piece I've bought has exceeded my expectations.”
+                        </p>
+                      </div>
+                      <div>
+                        <p class="text-sm md:text-base leading-[22px] font-[Satoshi] font-medium text-[#000] text-opacity-[60%]">Posted on August 17, 2023</p>
+                      </div>
+                    </div>
+
+                  </div>
+
+                  <!-- 5 -->
+                  <div>
+                    <div class="border pt-5 pb-7  pl-6 pr-6 md:pl-8  rounded-[20px]">
+                   <div class="flex items-center justify-between mb-3">
+                    <div class="flex items-center gap-x-2 ">
+                      <p class="text-[#FFC633] text-[18px] md:text-[20px] ">
+                        <i class="fa-solid fa-star"></i>
+                      </p>
+                      <p class="text-[#FFC633] text-[18px] md:text-[20px] ">
+                        <i class="fa-solid fa-star"></i>
+                      </p>
+                      <p class="text-[#FFC633] text-[18px] md:text-[20px] ">
+                        <i class="fa-solid fa-star"></i>
+                      </p>
+                      <p class="text-[#FFC633] text-[18px] md:text-[20px] ">
+                        <i class="fa-solid fa-star"></i>
+                      </p>
+                      <p class="text-[#FFC633] text-[18px] md:text-[20px] ">
+                        <i class="fa-solid fa-star"></i>
+                      </p>
+                    </div>
+                    <div>
+                      <button><a href="#" class="text-[18px] md:text-[20px] text-[#000] text-opacity-[60%]" ><i class="fa-solid fa-grip-lines"></i></a></button>
+                    </div>
+                   </div>
+        
+                      <div>
+                        <h4 class="md:text-[20px] text-base font-bold mb-3 font-[Intregal]">
+                          Sarah M.<span class="text-[#01AB31] text-[19px] ml-2"
+                            ><i class="fa-solid fa-circle-check"></i
+                          ></span>
+                        </h4>
+                      </div>
+                      <div class="mb-5">
+                        <p class="md:text-base text-sm font-normal opacity-[60%] font-[Satoshi] line-clamp-4 ">
+                          "I'm blown away by the quality and style of the clothes I
+                          received from Shop.co. From casual wear to elegant dresses,
+                          every piece I've bought has exceeded my expectations.I'm blown away by the quality and style of the clothes I
+                          received from Shop.co. From casual wear to elegant dresses,
+                          every piece I've bought has exceeded my expectations.”
+                        </p>
+                      </div>
+                      <div>
+                        <p class="text-sm md:text-base leading-[22px] font-[Satoshi] font-medium text-[#000] text-opacity-[60%]">Posted on August 17, 2023</p>
+                      </div>
+                    </div>
+
+                  </div>
+
+                  <!-- 6 -->
+                  <div>
+                    <div class="border pt-5 pb-7  pl-6 pr-6 md:pl-8  rounded-[20px]">
+                   <div class="flex items-center justify-between mb-3">
+                    <div class="flex items-center gap-x-2 ">
+                      <p class="text-[#FFC633] text-[18px] md:text-[20px] ">
+                        <i class="fa-solid fa-star"></i>
+                      </p>
+                      <p class="text-[#FFC633] text-[18px] md:text-[20px] ">
+                        <i class="fa-solid fa-star"></i>
+                      </p>
+                      <p class="text-[#FFC633] text-[18px] md:text-[20px] ">
+                        <i class="fa-solid fa-star"></i>
+                      </p>
+                      <p class="text-[#FFC633] text-[18px] md:text-[20px] ">
+                        <i class="fa-solid fa-star"></i>
+                      </p>
+                      <p class="text-[#FFC633] text-[18px] md:text-[20px] ">
+                        <i class="fa-solid fa-star"></i>
+                      </p>
+                    </div>
+                    <div>
+                      <button><a href="#" class="text-[18px] md:text-[20px] text-[#000] text-opacity-[60%]" ><i class="fa-solid fa-grip-lines"></i></a></button>
+                    </div>
+                   </div>
+        
+                      <div>
+                        <h4 class="md:text-[20px] text-base font-bold mb-3 font-[Intregal]">
+                          Sarah M.<span class="text-[#01AB31] text-[19px] ml-2"
+                            ><i class="fa-solid fa-circle-check"></i
+                          ></span>
+                        </h4>
+                      </div>
+                      <div class="mb-5">
+                        <p class="md:text-base text-sm font-normal opacity-[60%] font-[Satoshi] line-clamp-4 ">
+                          "I'm blown away by the quality and style of the clothes I
+                          received from Shop.co. From casual wear to elegant dresses,
+                          every piece I've bought has exceeded my expectations.I'm blown away by the quality and style of the clothes I
+                          received from Shop.co. From casual wear to elegant dresses,
+                          every piece I've bought has exceeded my expectations.”
+                        </p>
+                      </div>
+                      <div>
+                        <p class="text-sm md:text-base leading-[22px] font-[Satoshi] font-medium text-[#000] text-opacity-[60%]">Posted on August 17, 2023</p>
+                      </div>
+                    </div>
+
+                  </div>
+                  <!-- end -->
+
+                 
+                 </div>
+                 <div class="text-center mt-[60px]">
+                  <button
+                    class="px-[76px] py-3.5 text-base font-[Satoshi] font-medium border rounded-full border-[#000] border-opacity-[10%]"
+                  >
+                  Load More Reviews
+                  </button>
+                </div>
+            </div>
+            <div class="tab-content hidden" id="tab-3">
+                  <p class="text-[15px] text-[#999999] font-light">
+                    CONTENT NUMBER 3
+                  </p>
+            </div>
+        </div>
+        
+        
+        
+
+      </div>
+    </div>
+  </div>
+</div>
+<!-- TAB SECTION END -->
+
+
+
+<!-- PRODUCT SELLING SLIDER SECTION START -->
+<div class="pt-20 pb-[60px] px-4 xl:px-0">
+  <div class="container mx-auto">
+    <div class="text-center mb-14">
+      <h1 class="md:text-5xl text-[32px] font-bold font-[Intregal]">TOP SELLING</h1>
+    </div>
+
+    <div class="my-slider mb-10">
+      <div>
+        <a href="#">
+          <div class="mb-3">
+            <img src="./assets/img/VERTICAL STRIPED SHIRT.png" alt="" />
+          </div>
+
+          <div>
+            <div>
+              <h4 class="md:text-xl text-base font-bold mb-2 font-[Satoshi]">
+                Vertical Striped Shirt
+              </h4>
+            </div>
+            <div class="flex gap-x-2 mb-3">
+              <p class="text-[#FFC633]"><i class="fa-solid fa-star"></i></p>
+              <p class="text-[#FFC633]"><i class="fa-solid fa-star"></i></p>
+              <p class="text-[#FFC633]"><i class="fa-solid fa-star"></i></p>
+              <p class="text-[#FFC633]"><i class="fa-solid fa-star"></i></p>
+              <p class="text-[#FFC633]"><i class="fa-solid fa-star"></i></p>
+
+              <p>5.0/<span class="opacity-[60%]">5</span></p>
+            </div>
+            <div class="flex gap-x-[10px]">
+              <h2 class="text-2xl font-bold font-[Intregal]">$212</h2>
+              <h2 class="text-2xl font-bold line-through opacity-[40%] font-[Intregal]">
+                $232
+              </h2>
+              <button
+                class="text-[#FF3333] bg-[#FF3333] bg-opacity-[10%] px-3 py-1 rounded-full font-[Intregal]"
+              >
+                -20%
+              </button>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div>
+        <a href="#">
+          <div class="mb-3">
+            <img src="./assets/img/COURAGE GRAPHIC T-SHIRT.png" alt="" />
+          </div>
+
+          <div>
+            <div>
+              <h4 class="md:text-xl text-base font-bold mb-2 font-[Satoshi]">
+                Courage Graphic T-shirt
+              </h4>
+            </div>
+            <div class="flex gap-x-2 mb-3">
+              <p class="text-[#FFC633]"><i class="fa-solid fa-star"></i></p>
+              <p class="text-[#FFC633]"><i class="fa-solid fa-star"></i></p>
+              <p class="text-[#FFC633]"><i class="fa-solid fa-star"></i></p>
+              <p class="text-[#FFC633]"><i class="fa-solid fa-star"></i></p>
+
+              <p>4.0/<span class="opacity-[60%]">5</span></p>
+            </div>
+            <div>
+              <h2 class="text-2xl font-bold font-[Intregal]">$145</h2>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div>
+        <a href="#">
+          <div class="mb-3">
+            <img src="./assets/img/LOOSE FIT BERMUDA SHORTS.png" alt="" />
+          </div>
+
+          <div>
+            <div>
+              <h4 class="md:text-xl text-base font-bold mb-2 font-[Satoshi]">
+                Loose Fit Bermuda Shorts
+              </h4>
+            </div>
+            <div class="flex gap-x-2 mb-3">
+              <p class="text-[#FFC633]"><i class="fa-solid fa-star"></i></p>
+              <p class="text-[#FFC633]"><i class="fa-solid fa-star"></i></p>
+              <p class="text-[#FFC633]"><i class="fa-solid fa-star"></i></p>
+              <p>3.0/<span class="opacity-[60%]">5</span></p>
+            </div>
+            <div>
+              <h2 class="text-2xl font-bold font-[Intregal]">$80</h2>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div>
+        <a href="#">
+          <div class="mb-3">
+            <img src="./assets/img/FADED SKINNY JEANS.png" alt="" />
+          </div>
+
+          <div>
+            <div>
+              <h4 class="md:text-xl text-base font-bold mb-2 font-[Satoshi]">
+                Faded Skinny Jeans
+              </h4>
+            </div>
+            <div class="flex gap-x-2 mb-3">
+              <p class="text-[#FFC633]"><i class="fa-solid fa-star"></i></p>
+              <p class="text-[#FFC633]"><i class="fa-solid fa-star"></i></p>
+              <p class="text-[#FFC633]"><i class="fa-solid fa-star"></i></p>
+              <p class="text-[#FFC633]"><i class="fa-solid fa-star"></i></p>
+              <p class="text-[#FFC633]">
+                <i class="fa-solid fa-star-half"></i>
+              </p>
+              <p>4.5/<span class="opacity-[60%]">5</span></p>
+            </div>
+            <div>
+              <h2 class="text-2xl font-bold font-[Intregal]">$210</h2>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div>
+        <a href="#">
+          <div class="mb-3">
+            <img src="./assets/img/VERTICAL STRIPED SHIRT.png" alt="" />
+          </div>
+
+          <div>
+            <div>
+              <h4 class="md:text-xl text-base font-bold mb-2 font-[Satoshi]">
+                Vertical Striped Shirt
+              </h4>
+            </div>
+            <div class="flex gap-x-2 mb-3">
+              <p class="text-[#FFC633]"><i class="fa-solid fa-star"></i></p>
+              <p class="text-[#FFC633]"><i class="fa-solid fa-star"></i></p>
+              <p class="text-[#FFC633]"><i class="fa-solid fa-star"></i></p>
+              <p class="text-[#FFC633]"><i class="fa-solid fa-star"></i></p>
+              <p class="text-[#FFC633]"><i class="fa-solid fa-star"></i></p>
+
+              <p>5.0/<span class="opacity-[60%]">5</span></p>
+            </div>
+            <div class="flex gap-x-[10px]">
+              <h2 class="text-2xl font-bold font-[Intregal]">$212</h2>
+              <h2 class="text-2xl font-bold line-through opacity-[40%] font-[Intregal]">
+                $232
+              </h2>
+              <button
+                class="text-[#FF3333] bg-[#FF3333] font-[Intregal] bg-opacity-[10%] px-3 py-1 rounded-full"
+              >
+                -20%
+              </button>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div>
+        <a href="#">
+          <div class="mb-3">
+            <img src="./assets/img/COURAGE GRAPHIC T-SHIRT.png" alt="" />
+          </div>
+
+          <div>
+            <div>
+              <h4 class="md:text-xl text-base font-bold mb-2 font-[Satoshi]">
+                Courage Graphic T-shirt
+              </h4>
+            </div>
+            <div class="flex gap-x-2 mb-3">
+              <p class="text-[#FFC633]"><i class="fa-solid fa-star"></i></p>
+              <p class="text-[#FFC633]"><i class="fa-solid fa-star"></i></p>
+              <p class="text-[#FFC633]"><i class="fa-solid fa-star"></i></p>
+              <p class="text-[#FFC633]"><i class="fa-solid fa-star"></i></p>
+
+              <p>4.0/<span class="opacity-[60%]">5</span></p>
+            </div>
+            <div>
+              <h2 class="text-2xl font-bold font-[Intregal]">$145</h2>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div>
+        <a href="#">
+          <div class="mb-3">
+            <img src="./assets/img/LOOSE FIT BERMUDA SHORTS.png" alt="" />
+          </div>
+
+          <div>
+            <div>
+              <h4 class="md:text-xl text-base font-bold mb-2 font-[Satoshi]">
+                Loose Fit Bermuda Shorts
+              </h4>
+            </div>
+            <div class="flex gap-x-2 mb-3">
+              <p class="text-[#FFC633]"><i class="fa-solid fa-star"></i></p>
+              <p class="text-[#FFC633]"><i class="fa-solid fa-star"></i></p>
+              <p class="text-[#FFC633]"><i class="fa-solid fa-star"></i></p>
+              <p>3.0/<span class="opacity-[60%]">5</span></p>
+            </div>
+            <div>
+              <h2 class="text-2xl font-bold font-[Intregal]">$80</h2>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div>
+        <a href="#">
+          <div class="mb-3">
+            <img src="./assets/img/FADED SKINNY JEANS.png" alt="" />
+          </div>
+
+          <div>
+            <div>
+              <h4 class="md:text-xl text-base font-bold mb-2 font-[Satoshi]">
+                Faded Skinny Jeans
+              </h4>
+            </div>
+            <div class="flex gap-x-2 mb-3">
+              <p class="text-[#FFC633]"><i class="fa-solid fa-star"></i></p>
+              <p class="text-[#FFC633]"><i class="fa-solid fa-star"></i></p>
+              <p class="text-[#FFC633]"><i class="fa-solid fa-star"></i></p>
+              <p class="text-[#FFC633]"><i class="fa-solid fa-star"></i></p>
+              <p class="text-[#FFC633]">
+                <i class="fa-solid fa-star-half"></i>
+              </p>
+              <p>4.5/<span class="opacity-[60%]">5</span></p>
+            </div>
+            <div>
+              <h2 class="text-2xl font-bold font-[Intregal]">$210</h2>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+
+  
+  </div>
+</div>
+<!-- PRODUCT SELLING SLIDER SECTION END -->
+
+
     
 <!-- SCRIPT -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>

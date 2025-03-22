@@ -94,6 +94,7 @@ navMenuBtn.addEventListener("click",(event)=>{
   navMenuSlider.setAttribute("data-state","open")
  }
 })
+
 navMenuSliderCloseBtn.addEventListener("click",()=>{
   navMenuSlider.setAttribute("data-state","close")
 })
@@ -140,3 +141,28 @@ tabBtns.forEach((item) => {
 //    item.setAttribute("class", "text-[20px] font-[Satoshi] font-normal leading-[22px] w-[414px] text-[#000] text-opacity-[60%] border-b-2 border-b-transparent hover:text-[#000] hover:text-opacity-100 hover:border-b-2 hover:border-[#000]");
 
 // TABS SECTION END
+
+
+// CATEGORY PAGE CATEGORY BTN START
+
+const categoryBtn=document.querySelector(".category-btn")
+const categoryBtnSlider=document.querySelector("#category-btn-slider")
+const categoryBtnSliderClose=document.querySelector(".category-btn-slider-close")
+
+categoryBtn.addEventListener("click",(event)=>{
+  const value = event.currentTarget.getAttribute("data-click")
+  
+ if(value==="close"){
+  categoryBtnSlider.setAttribute("data-click","open")
+  document.body.classList.add("overflow-hidden")
+ }
+})
+
+
+categoryBtnSliderClose.addEventListener("click",()=>{
+  categoryBtnSlider.setAttribute("data-click","close")
+  document.body.classList.remove("overflow-hidden")
+})
+
+
+// CATEGORY PAGE CATEGORY BTN END

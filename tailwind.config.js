@@ -3,6 +3,7 @@ module.exports = {
   content: ["./index.html",
     "./product-details-page.html",
     "./category-page.html",
+    "./cart-page.html",
   ],
   theme: {
     screens: {

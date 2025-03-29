@@ -18,7 +18,12 @@ module.exports = {
 
       xl: "1240px",
     },
-    extend: {},
+    extend: {
+      fontFamily:{
+        intregal:["Integral","sans-serif"],
+        satoshi:["Satoshi","sans-serif"]
+      },
+    },
   },
   plugins: [],
 };

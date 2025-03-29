@@ -125,9 +125,9 @@ const tabContents = document.querySelectorAll(".tab-contents .tab-content");
 tabBtns.forEach((item) => {
   item.addEventListener("click", () => {
     tabBtns.forEach((t) => {
-      t.setAttribute("class", "md:text-[20px] text-base font-[Satoshi] font-normal leading-[22px] py-6 w-[131px]  md:w-[256px] lg:w-[414px] text-[#000] text-opacity-[60%] border-b-2 border-b-transparent hover:text-opacity-80");
+      t.setAttribute("class", "md:text-[20px] text-base font-satoshi font-normal leading-[22px] py-6 w-[131px]  md:w-[256px] lg:w-[414px] text-[#000] text-opacity-[60%] border-b-2 border-b-transparent hover:text-opacity-80");
     });
-    item.setAttribute("class", "md:text-[20px] text-base font-[Satoshi] font-medium leading-[22px] py-6 w-[131px]  md:w-[256px] lg:w-[414px] text-[#000] text-opacity-100 border-b-2 border-[#000]");
+    item.setAttribute("class", "md:text-[20px] text-base font-satoshi font-medium leading-[22px] py-6 w-[131px]  md:w-[256px] lg:w-[414px] text-[#000] text-opacity-100 border-b-2 border-[#000]");
     tabContents.forEach((tc) => {
       tc.setAttribute("class", "hidden tab-content");
     });
@@ -138,7 +138,7 @@ tabBtns.forEach((item) => {
   });
 });
 
-//    item.setAttribute("class", "text-[20px] font-[Satoshi] font-normal leading-[22px] w-[414px] text-[#000] text-opacity-[60%] border-b-2 border-b-transparent hover:text-[#000] hover:text-opacity-100 hover:border-b-2 hover:border-[#000]");
+//    item.setAttribute("class", "text-[20px] font-satoshi font-normal leading-[22px] w-[414px] text-[#000] text-opacity-[60%] border-b-2 border-b-transparent hover:text-[#000] hover:text-opacity-100 hover:border-b-2 hover:border-[#000]");
 
 // TABS SECTION END
 

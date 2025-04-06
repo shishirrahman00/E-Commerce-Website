@@ -1,4 +1,26 @@
+// --------------------OFFER SECTION START--------------
+
+
+const offerSignUp=document.querySelector(".offer-sign-up")
+const offerBtnClose=document.querySelector(".offer-close-btn")
+
+offerBtnClose.addEventListener("click",()=>{
+offerSignUp.classList.add("hidden")
+})
+
+
+
+
+// --------------------OFFER SECTION END----------------
+
+
+
+
+
+
+
 const mySlider = document.querySelector(".my-slider");
+
 const Slider = document.querySelector(".slider");
 const testimonialSlider = document.querySelector(".testimonial-slider");
 
@@ -92,24 +114,44 @@ navMenuBtn.addEventListener("click",(event)=>{
   const value = event.currentTarget.getAttribute("data-state")
  if(value==="close"){
   navMenuSlider.setAttribute("data-state","open")
+  document.body.classList.add("overflow-hidden")
  }
 })
 
 navMenuSliderCloseBtn.addEventListener("click",()=>{
   navMenuSlider.setAttribute("data-state","close")
+  document.body.classList.remove("overflow-hidden")
 })
 
 // NAV MENU SEARCHBOX START
 
+const navBar=document.querySelector("#navbar")
 const navSearchBtn=document.querySelector(".nav-search-btn")
-const navSearchBtnHover=document.querySelector(".nav-search-btn-hover")
 
-// navSearchBtn.addEventListener("click",(event)=>{
-//   const value = event.currentTarget.getAttribute("data-click")
-// console.log(value)
-// navSearchBtn.classList.add("hidden")
-// navSearchBtnHover.classList.remove("hidden")
-// })
+
+const navSearchBtnHover=document.querySelector("#nav-search-btn-hover")
+const navSearchBtnHoverClose=document.querySelector("#nav-search-btn-hover-close")
+
+
+
+navSearchBtn.addEventListener("click",(event)=>{
+  const value = event.currentTarget.getAttribute("data-click")
+  if(value==="close"){
+   navSearchBtnHover.setAttribute("data-click","open")
+   
+
+   }
+
+})
+
+navSearchBtnHoverClose.addEventListener("click",(event)=>{
+  navSearchBtnHover.setAttribute("data-click","close")
+  // if (!navSearchBtnHoverClose.contains(event.target)) {
+  //   navSearchBtnHover.setAttribute("data-click","close")
+  // }
+  
+
+})
 
 // NAV MENU SEARCHBOX END
 
@@ -143,26 +185,3 @@ tabBtns.forEach((item) => {
 // TABS SECTION END
 
 
-// CATEGORY PAGE CATEGORY BTN START
-
-const categoryBtn=document.querySelector(".category-btn")
-const categoryBtnSlider=document.querySelector("#category-btn-slider")
-const categoryBtnSliderClose=document.querySelector(".category-btn-slider-close")
-
-categoryBtn.addEventListener("click",(event)=>{
-  const value = event.currentTarget.getAttribute("data-click")
-  
- if(value==="close"){
-  categoryBtnSlider.setAttribute("data-click","open")
-  document.body.classList.add("overflow-hidden")
- }
-})
-
-
-categoryBtnSliderClose.addEventListener("click",()=>{
-  categoryBtnSlider.setAttribute("data-click","close")
-  document.body.classList.remove("overflow-hidden")
-})
-
-
-// CATEGORY PAGE CATEGORY BTN END

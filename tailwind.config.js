@@ -20,7 +20,7 @@ module.exports = {
     },
     extend: {
       fontFamily:{
-        intregal:["Integral","sans-serif"],
+        integral:["Integral","sans-serif"],
         satoshi:["Satoshi","sans-serif"]
       },
     },

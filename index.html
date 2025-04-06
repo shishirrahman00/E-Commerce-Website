@@ -18,20 +18,20 @@
   </head>
   <body>
     <!-- SIGN-UP-NOW-POP-UP-START-->
-    <div class="bg-black py-2 px-4">
+    <div class="bg-black py-2 px-4 offer-sign-up">
       <div class="container mx-auto">
-        <div class="grid grid-cols-12 items-center">
+        <div class="grid grid-cols-12 items-center justify-center">
           <div
-            class="md:col-start-1 md:col-end-11 col-start-1 col-end-12 lg:justify-items-center"
+            class="md:col-start-1 md:col-end-11 col-start-1 col-end-13 justify-items-center"
           >
             <p class="text-white text-sm font-satoshi">
               Sign up and get 20% off to your first order.
               <a href="#" class="border-b font-medium">Sign Up Now</a>
             </p>
           </div>
-          <div class="col-start-12 col-end-13 justify-items-end">
+          <div class="md:col-start-12 md:col-end-13 md:justify-items-end md:block hidden">
             <div>
-              <button class="text-white text-[20px]">
+              <button class="text-white text-[20px] offer-close-btn">
                 <i class="fa-solid fa-xmark"></i>
               </button>
             </div>
@@ -41,19 +41,23 @@
     </div>
     <!-- SIGN-UP-NOW-POP-UP-END-->
 
-    <!-- NAV-BAR-START -->
-    <div data-state="close" id="nav-menu-slider" class="fixed  inset-0 w-full h-full bg-[#0c3f50] bg-opacity-85 z-50 data-[state=close]:opacity-0 data-[state=close]:invisible transition-transform -translate-x-full data-[state=open]:translate-x-0 duration-500">
-      <div  class="w-[315px] bg-[#ffffff] h-full z-50 p-10 flex flex-col gap-y-[80px]">
+
+    <!-- NAV BAR START -->
+
+    <!-- hamburger button section start -->
+
+    <div data-state="close" id="nav-menu-slider" class="fixed  inset-0 w-full h-full bg-[#222] bg-opacity-85 z-50 data-[state=close]:opacity-0 data-[state=close]:invisible transition-transform translate-y-full data-[state=open]:translate-y-0 duration-500">
+      <div  class="w-[315px] bg-[#3F4F44] h-full z-50 p-10 flex flex-col gap-y-[80px]">
         <div class="flex items-center justify-between">
           <div>
-            <a href="#"> <h1 class="xl:text-[32px] text-[26px] font-[Integral] font-bold" >SHOP.CO</h1></a>
+            <a href="#"> <h1 class="xl:text-[32px] text-[26px] font-integral font-extrabold text-[#fff]" >SHOP.CO</h1></a>
           </div> 
          <div>
           <button
-          class="inline-flex items-center justify-between gap-x-2.5" id="nav-menu-slider-close-btn"
+          class="inline-flex items-center justify-center w-8 h-8 border border-transparent text-sm rounded-full bg-[#F8F6F4] text-[#000] gap-x-2.5" id="nav-menu-slider-close-btn"
           
         >
-          <span><i class="fa-solid fa-x text-[#373737] text-base"></i></span
+          <span><i class="fa-solid fa-x "></i></span
           >
           
          
@@ -64,7 +68,7 @@
           <li>
             <a
               href="#"
-              class="text-[20px] text-[#000] font-normal hover:text-opacity-[40%]"
+              class="text-[20px] text-[#fff] font-normal hover:text-opacity-[40%]"
               >Shop <span><i class="fa-solid fa-angle-down"></i></span
                 ></a
             >
@@ -72,33 +76,156 @@
           <li>
             <a
               href="#"
-              class="text-[20px] text-[#000] font-normal hover:text-opacity-[40%]"
+              class="text-[20px] text-[#fff] font-normal hover:text-opacity-[40%]"
               >On Sale</a
             >
           </li>
           <li>
             <a
               href="#"
-              class="text-[20px] text-[#000] font-normal hover:text-opacity-[40%]"
+              class="text-[20px] text-[#fff] font-normal hover:text-opacity-[40%]"
               >Case Study</a
             >
           </li>
           <li>
             <a
               href="#"
-              class="text-[20px] text-[#000] font-normal hover:text-opacity-[40%]"
+              class="text-[20px] text-[#fff] font-normal hover:text-opacity-[40%]"
               >Blog</a
             >
           </li>
         
         </ul>
       </div>
-     
     </div>
+
+    <!-- hamburger button section end -->
+
+
+    <!-- search button hover section start -->
+
+   <div data-click="false" id="nav-search-btn-hover" class=" fixed w-full h-full  z-50 top-0 left-0  data-[click=false]:invisible transition-transform translate-x-full data-[click=open]:translate-x-0 data-[click=close]:translate-x-full duration-1000 ">
+      <div class="w-full max-w-[1240px] h-full  z-50 fixed top-[65px]  mx-auto  "> 
+        <div class="flex items-center justify-center " >
+ 
+          <button id="nav-search-btn-hover-close" class="md:w-14 md:h-12 h-[44px] w-10  inline-flex items-center justify-center rounded bg-[#000] text-[#fff] "><i class="fa-solid fa-arrow-left"></i></button>
+
+
+          <form action="#" class="relative grow  md:h-12 h-[44px] ">
+           
+            <input
+              type="text"
+              placeholder="Search for products..."
+              class="w-full font-integral placeholder:text-base placeholder:text-[#000000] placeholder:opacity-[40%] outline-none bg-[#F0F0F0] md:py-3 py-2.5  pr-[70px] pl-6"
+            />
+
+            <button  type="submit"
+            class="absolute  top-1/2 right-8 transform -translate-y-1/2 md:text-[18px] text-base text-[#000000] "
+          >
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+          </form>
+        </div>
+
+      </div>
+    </div> 
+
+
+    <!-- search button hover section end -->
+
+    
+
+   
+
+
+
+<!-- nav-menu-start -->
+
+     <nav class=" py-6 px-5 xl:px-0" id="navbar">
+      <div class="container mx-auto">
+        <div class="flex items-center gap-x-[40px] justify-between">
+
+          
+          <div class="flex items-center justify-center gap-x-4">
+            <div class="nav-menu-btn xl:hidden " data-state="close">
+              <button class="text-[20px]"><i class="fa-solid fa-bars"></i></button>
+            </div>
+            <a href="#"> <h1 class="xl:text-[32px] text-[26px] font-integral font-extrabold" >SHOP.CO</h1></a>
+          </div> 
+
+          <div class="xl:flex hidden">
+            <ul class="flex gap-x-6">
+              <li>
+                <a href="#" class="font-satoshi"
+                  >Shop <span class="text-sm"><i class="fa-solid fa-angle-down"></i></span
+                ></a>
+              </li>
+              <li>
+                <a href="#" class="font-satoshi font-normal text-base">On Sale</a>
+              </li>
+              <li>
+                <a href="#" class="font-satoshi"> New Arrivals</a>
+              </li>
+              <li>
+                <a href="#" class="font-satoshi"> Brands</a>
+              </li>
+            </ul>
+          </div>
+
+          
+          <div>
+           
+            
+            <div class="w-[570px] relative hidden xl:block">
+              
+                
+              <form action="#">
+                <button 
+                  class="absolute inline-block top-1/2 left-4 transform -translate-y-1/2 text-[18px] text-[#000000] opacity-[40%]"
+                >
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+                <input
+                  type="text"
+                  placeholder="Search for products..."
+                  class="w-full font-integral placeholder:text-base placeholder:text-[#000000] placeholder:opacity-[40%] outline-none bg-[#F0F0F0] py-3 rounded-full pl-11 pr-10"
+                />
+              </form>
+            </div>
+          </div>
+          
+
+          <div class="flex xl:gap-x-3 md:gap-x-6 gap-x-5">
+
+            <div class="xl:hidden flex items-center ">
+              <button class="nav-search-btn text-lg" data-click="close"> <i class="fa-solid fa-magnifying-glass"></i></button>
+            
+            </div>
+          
+            <button class="text-lg">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </button>
+            <button class="text-lg">
+              <i class="fa-solid fa-user"></i>
+            </button>
+          </div>
+
+        </div>
+        
+      </div>
+    </nav>
+
+<!-- nav-menu-end -->
+
+
+    <!-- NAV BAR END -->
+
+  
+<!--    
     <nav class="py-6 px-5 xl:px-0">
       <div class="container mx-auto">
         <div class="grid grid-cols-12 items-center xl:gap-x-[40px] ">
-          <div class="xl:col-start-1 xl:col-end-6 lg:col-start-1 lg:col-end-6 md:col-start-1 md:col-end-6 col-start-1 col-end-6  ">
+          <div class="xl:col-start-1 xl:col-end-7 lg:col-start-1 lg:col-end-6 md:col-start-1 md:col-end-6 col-start-1 col-end-6  ">
            
            <div class="flex items-center xl:justify-between gap-x-4 xl:gap-x-0">
              <div class="nav-menu-btn xl:hidden " data-state="close">
@@ -106,7 +233,7 @@
             </div>
             
             <div>
-              <a href="#"> <h1 class="xl:text-[32px] text-[26px] font-[Integral] font-bold" >SHOP.CO</h1></a>
+              <a href="#"> <h1 class="xl:text-[32px] text-[26px] font-integral font-extrabold " >SHOP.CO</h1></a>
             </div>
          
             <div class="xl:flex hidden " id="nav-menu">
@@ -131,7 +258,7 @@
           </div>
 
         
-          <div class="xl:col-start-6 xl:col-end-12 md:col-start-11 md:col-end-12 col-start-10 col-end-11 justify-items-center lg:justify-items-end ">
+          <div class="xl:col-start-7 xl:col-end-12 md:col-start-11 md:col-end-12 col-start-10 col-end-11 justify-items-center lg:justify-items-end ">
             <div class="xl:hidden block ">
               <button class="nav-search-btn" data-click="false"> <i class="fa-solid fa-magnifying-glass"></i></button>
             
@@ -147,7 +274,7 @@
                 <input
                   type="text"
                   placeholder="Search for products..."
-                  class="w-full font-intregal placeholder:text-base placeholder:text-[#000000] placeholder:opacity-[40%] outline-none bg-[#F0F0F0] py-3 rounded-full pl-11 pr-10"
+                  class="w-full font-integral placeholder:text-base placeholder:text-[#000000] placeholder:opacity-[40%] outline-none bg-[#F0F0F0] py-3 rounded-full pl-11 pr-10"
                 />
               </form>
             </div>
@@ -165,7 +292,7 @@
         </div>
       </div>
     </nav>
-    <!-- NAV-BAR-END -->
+     -->
 
     <!-- HERO-SECTION-START -->
 
@@ -185,7 +312,7 @@
         <div class="grid grid-cols-12 items-center ">
           <div class="xl:col-start-1 xl:col-end-7 md:col-start-1 md:col-end-7 col-start-1 col-end-13">
             <div>
-              <h1 class="xl:text-[64px] md:text-[30px] lg:text-[48px] text-[36px] xl:leading-[64px] md:leading-[46px] leading-[34px] font-bold mb-5 font-[Integral]">
+              <h1 class="xl:text-[64px] md:text-[30px] lg:text-[48px] text-[36px] xl:leading-[64px] md:leading-[46px] leading-[34px] font-extrabold mb-5 font-integral">
                 FIND CLOTHES THAT MATCHES YOUR STYLE
               </h1>
 
@@ -198,7 +325,7 @@
               </p>
 
               <button
-                class="px-[68px] py-3.5 bg-[#000] text-white font-intregal text-base font-medium rounded-full mb-14"
+                class="px-[68px] py-3.5 bg-[#000] text-white font-integral text-base font-medium rounded-full mb-14"
               >
                 Shop Now
               </button>
@@ -256,11 +383,11 @@
     </div>
     <!-- HERO-SECTION-END -->
     <!-- BRAND-SECTION-START -->
-    <div class="bg-black py-10 px-1 md:px-4 xl:px-0">
+    <div class="bg-black py-16 px-1 md:px-4 xl:px-0">
       <div class="container mx-auto">
         <div class="grid grid-cols-12">
           <div class="md:col-start-1 md:col-end-13 col-start-1 col-end-13">
-            <div
+            <!-- <div
               class="flex flex-wrap gap-x-[14px] justify-evenly gap-y-6 md:flex-nowrap md:justify-between md:gap-x-5 lg:gap-x-0"
             >
               <a href="#"> <img src="assets/img/versace-logo.png" alt="" /></a>
@@ -270,6 +397,18 @@
               <a href="#"
                 ><img src="assets/img/calvin-klein-logo.png" alt=""
               /></a>
+            </div> -->
+
+            <div class="flex items-center justify-between flex-wrap">
+              <a href="#"> <img src="assets/img/versace-logo.png" alt="" /></a>
+              <a href="#"> <img src="assets/img/zara-logo.png" alt="" /></a>
+              <a href="#"> <img src="assets/img/gucci-logo.png" alt="" /></a>
+              <a href="#"> <img src="assets/img/prada-logo.png" alt="" /></a>
+              <a href="#"
+                ><img src="assets/img/calvin-klein-logo.png" alt=""
+              /></a>
+
+             
             </div>
           </div>
         </div>
@@ -281,7 +420,7 @@
     <div class="pt-20 pb-[60px] px-4 xl:px-0">
       <div class="container mx-auto">
         <div class="text-center mb-14">
-          <h1 class="md:text-5xl text-[32px] font-bold font-intregal">NEW ARRIVALS</h1>
+          <h1 class="md:text-5xl text-[32px] font-bold font-integral">NEW ARRIVALS</h1>
         </div>
 
         <div class="slider mb-10">
@@ -316,7 +455,7 @@
                   <p>4.5/<span class="opacity-[60%]">5</span></p>
                 </div>
                 <div>
-                  <h2 class="text-2xl font-bold font-intregal">$120</h2>
+                  <h2 class="text-2xl font-bold font-integral">$120</h2>
                 </div>
               </div>
             </a>
@@ -349,12 +488,12 @@
                   <p>3.5/<span class="opacity-[60%]">5</span></p>
                 </div>
                 <div class="flex gap-x-[10px]">
-                  <h2 class="text-2xl font-bold font-intregal">$240</h2>
-                  <h2 class="text-2xl font-bold line-through opacity-[40%] font-intregal">
+                  <h2 class="text-2xl font-bold font-integral">$240</h2>
+                  <h2 class="text-2xl font-bold line-through opacity-[40%] font-integral">
                     $260
                   </h2>
                   <button
-                    class="text-[#FF3333] bg-[#FF3333] bg-opacity-[10%] px-3 py-1 rounded-full font-intregal"
+                    class="text-[#FF3333] bg-[#FF3333] bg-opacity-[10%] px-3 py-1 rounded-full font-integral"
                   >
                     -20%
                   </button>
@@ -393,7 +532,7 @@
                   <p>4.5/<span class="opacity-[60%]">5</span></p>
                 </div>
                 <div>
-                  <h2 class="text-2xl font-bold font-intregal">$180</h2>
+                  <h2 class="text-2xl font-bold font-integral">$180</h2>
                 </div>
               </div>
             </a>
@@ -421,12 +560,12 @@
                   <p>4.5/<span class="opacity-[60%]">5</span></p>
                 </div>
                 <div class="flex gap-x-[10px]">
-                  <h2 class="text-2xl font-bold font-intregal">$130</h2>
-                  <h2 class="text-2xl font-bold line-through opacity-[40%] font-intregal">
+                  <h2 class="text-2xl font-bold font-integral">$130</h2>
+                  <h2 class="text-2xl font-bold line-through opacity-[40%] font-integral">
                     $160
                   </h2>
                   <button
-                    class="text-[#FF3333] bg-[#FF3333] bg-opacity-[10%] px-3 py-1 rounded-full font-intregal"
+                    class="text-[#FF3333] bg-[#FF3333] bg-opacity-[10%] px-3 py-1 rounded-full font-integral"
                   >
                     -30%
                   </button>
@@ -465,7 +604,7 @@
                   <p>4.5/<span class="opacity-[60%]">5</span></p>
                 </div>
                 <div>
-                  <h2 class="text-2xl font-bold font-intregal">$120</h2>
+                  <h2 class="text-2xl font-bold font-integral">$120</h2>
                 </div>
               </div>
             </a>
@@ -498,12 +637,12 @@
                   <p>3.5/<span class="opacity-[60%]">5</span></p>
                 </div>
                 <div class="flex gap-x-[10px]">
-                  <h2 class="text-2xl font-bold font-intregal">$240</h2>
-                  <h2 class="text-2xl font-bold line-through opacity-[40%] font-intregal">
+                  <h2 class="text-2xl font-bold font-integral">$240</h2>
+                  <h2 class="text-2xl font-bold line-through opacity-[40%] font-integral">
                     $260
                   </h2>
                   <button
-                    class="text-[#FF3333] bg-[#FF3333] bg-opacity-[10%] px-3 py-1 rounded-full font-intregal"
+                    class="text-[#FF3333] bg-[#FF3333] bg-opacity-[10%] px-3 py-1 rounded-full font-integral"
                   >
                     -20%
                   </button>
@@ -542,7 +681,7 @@
                   <p>4.5/<span class="opacity-[60%]">5</span></p>
                 </div>
                 <div>
-                  <h2 class="text-2xl font-bold font-intregal">$180</h2>
+                  <h2 class="text-2xl font-bold font-integral">$180</h2>
                 </div>
               </div>
             </a>
@@ -570,12 +709,12 @@
                   <p>4.5/<span class="opacity-[60%]">5</span></p>
                 </div>
                 <div class="flex gap-x-[10px]">
-                  <h2 class="text-2xl font-bold font-intregal">$130</h2>
-                  <h2 class="text-2xl font-bold line-through opacity-[40%] font-intregal">
+                  <h2 class="text-2xl font-bold font-integral">$130</h2>
+                  <h2 class="text-2xl font-bold line-through opacity-[40%] font-integral">
                     $160
                   </h2>
                   <button
-                    class="text-[#FF3333] bg-[#FF3333] bg-opacity-[10%] px-3 py-1 rounded-full font-intregal"
+                    class="text-[#FF3333] bg-[#FF3333] bg-opacity-[10%] px-3 py-1 rounded-full font-integral"
                   >
                     -30%
                   </button>
@@ -587,7 +726,7 @@
 
         <div class="text-center">
           <button
-            class="px-[76px] py-3.5 text-base font-medium border rounded-full border-[#000] border-opacity-[10%] font-intregal"
+            class="px-[76px] py-3.5 text-base font-medium border rounded-full border-[#000] border-opacity-[10%] font-integral"
           >
             View All
           </button>
@@ -606,7 +745,7 @@
     <div class="pt-20 pb-[60px] px-4 xl:px-0">
       <div class="container mx-auto">
         <div class="text-center mb-14">
-          <h1 class="md:text-5xl text-[32px] font-bold font-intregal">TOP SELLING</h1>
+          <h1 class="md:text-5xl text-[32px] font-bold font-integral">TOP SELLING</h1>
         </div>
 
         <div class="my-slider mb-10">
@@ -632,12 +771,12 @@
                   <p>5.0/<span class="opacity-[60%]">5</span></p>
                 </div>
                 <div class="flex gap-x-[10px]">
-                  <h2 class="text-2xl font-bold font-intregal">$212</h2>
-                  <h2 class="text-2xl font-bold line-through opacity-[40%] font-intregal">
+                  <h2 class="text-2xl font-bold font-integral">$212</h2>
+                  <h2 class="text-2xl font-bold line-through opacity-[40%] font-integral">
                     $232
                   </h2>
                   <button
-                    class="text-[#FF3333] bg-[#FF3333] bg-opacity-[10%] px-3 py-1 rounded-full font-intregal"
+                    class="text-[#FF3333] bg-[#FF3333] bg-opacity-[10%] px-3 py-1 rounded-full font-integral"
                   >
                     -20%
                   </button>
@@ -666,7 +805,7 @@
                   <p>4.0/<span class="opacity-[60%]">5</span></p>
                 </div>
                 <div>
-                  <h2 class="text-2xl font-bold font-intregal">$145</h2>
+                  <h2 class="text-2xl font-bold font-integral">$145</h2>
                 </div>
               </div>
             </a>
@@ -690,7 +829,7 @@
                   <p>3.0/<span class="opacity-[60%]">5</span></p>
                 </div>
                 <div>
-                  <h2 class="text-2xl font-bold font-intregal">$80</h2>
+                  <h2 class="text-2xl font-bold font-integral">$80</h2>
                 </div>
               </div>
             </a>
@@ -718,7 +857,7 @@
                   <p>4.5/<span class="opacity-[60%]">5</span></p>
                 </div>
                 <div>
-                  <h2 class="text-2xl font-bold font-intregal">$210</h2>
+                  <h2 class="text-2xl font-bold font-integral">$210</h2>
                 </div>
               </div>
             </a>
@@ -745,12 +884,12 @@
                   <p>5.0/<span class="opacity-[60%]">5</span></p>
                 </div>
                 <div class="flex gap-x-[10px]">
-                  <h2 class="text-2xl font-bold font-intregal">$212</h2>
-                  <h2 class="text-2xl font-bold line-through opacity-[40%] font-intregal">
+                  <h2 class="text-2xl font-bold font-integral">$212</h2>
+                  <h2 class="text-2xl font-bold line-through opacity-[40%] font-integral">
                     $232
                   </h2>
                   <button
-                    class="text-[#FF3333] bg-[#FF3333] font-intregal bg-opacity-[10%] px-3 py-1 rounded-full"
+                    class="text-[#FF3333] bg-[#FF3333] font-integral bg-opacity-[10%] px-3 py-1 rounded-full"
                   >
                     -20%
                   </button>
@@ -779,7 +918,7 @@
                   <p>4.0/<span class="opacity-[60%]">5</span></p>
                 </div>
                 <div>
-                  <h2 class="text-2xl font-bold font-intregal">$145</h2>
+                  <h2 class="text-2xl font-bold font-integral">$145</h2>
                 </div>
               </div>
             </a>
@@ -803,7 +942,7 @@
                   <p>3.0/<span class="opacity-[60%]">5</span></p>
                 </div>
                 <div>
-                  <h2 class="text-2xl font-bold font-intregal">$80</h2>
+                  <h2 class="text-2xl font-bold font-integral">$80</h2>
                 </div>
               </div>
             </a>
@@ -831,7 +970,7 @@
                   <p>4.5/<span class="opacity-[60%]">5</span></p>
                 </div>
                 <div>
-                  <h2 class="text-2xl font-bold font-intregal">$210</h2>
+                  <h2 class="text-2xl font-bold font-integral">$210</h2>
                 </div>
               </div>
             </a>
@@ -840,7 +979,7 @@
 
         <div class="text-center">
           <button
-            class="px-[76px] py-3.5 text-base font-intregal font-medium border rounded-full border-[#000] border-opacity-[10%]"
+            class="px-[76px] py-3.5 text-base font-integral font-medium border rounded-full border-[#000] border-opacity-[10%]"
           >
             View All
           </button>
@@ -854,7 +993,7 @@
       <div class="container mx-auto">
         <div class="bg-[#F0F0F0] rounded-[20px] py-20">
           <div class="text-center mb-[58px]">
-            <p class="font-bold md:text-5xl text-[32px] font-intregal">
+            <p class="font-bold md:text-5xl text-[32px] font-integral">
               BROWSE BY DRESS STYLE
             </p>
           </div>
@@ -926,7 +1065,7 @@
     <div class="py-[90px] px-5 xl:px-0">
       <div class="container mx-auto">
         <div class="mb-9">
-          <h1 class="md:text-5xl text-[32px] font-bold font-intregal">OUR HAPPY CUSTOMERS</h1>
+          <h1 class="md:text-5xl text-[32px] font-bold font-integral">OUR HAPPY CUSTOMERS</h1>
         </div>
         <!-- <div id="controls">
           <button class="previous">
@@ -967,7 +1106,7 @@
               </div>
 
               <div>
-                <h4 class="md:text-[20px] text-base font-bold mb-3 font-intregal">
+                <h4 class="md:text-[20px] text-base font-bold mb-3 font-integral">
                   Sarah M.<span class="text-[#01AB31] text-[19px] ml-2"
                     ><i class="fa-solid fa-circle-check"></i
                   ></span>
@@ -1003,7 +1142,7 @@
               </div>
 
               <div>
-                <h4 class="md:text-[20px] text-base font-bold mb-3 font-intregal">
+                <h4 class="md:text-[20px] text-base font-bold mb-3 font-integral">
                   Sarah M.<span class="text-[#01AB31] text-[19px] ml-2"
                     ><i class="fa-solid fa-circle-check"></i
                   ></span>
@@ -1039,7 +1178,7 @@
               </div>
 
               <div>
-                <h4 class="md:text-[20px] text-base font-bold mb-3 font-intregal">
+                <h4 class="md:text-[20px] text-base font-bold mb-3 font-integral">
                   Sarah M.<span class="text-[#01AB31] text-[19px] ml-2"
                     ><i class="fa-solid fa-circle-check"></i
                   ></span>
@@ -1075,7 +1214,7 @@
               </div>
 
               <div>
-                <h4 class="md:text-[20px] text-base font-bold mb-3 font-intregal">
+                <h4 class="md:text-[20px] text-base font-bold mb-3 font-integral">
                   Sarah M.<span class="text-[#01AB31] text-[19px] ml-2"
                     ><i class="fa-solid fa-circle-check"></i
                   ></span>
@@ -1111,7 +1250,7 @@
               </div>
 
               <div>
-                <h4 class="md:text-[20px] text-base font-bold mb-3 font-intregal">
+                <h4 class="md:text-[20px] text-base font-bold mb-3 font-integral">
                   Sarah M.<span class="text-[#01AB31] text-[19px] ml-2"
                     ><i class="fa-solid fa-circle-check"></i
                   ></span>
@@ -1243,18 +1382,284 @@
     </div>
     <!-- OUR CUSTOMER SLIDER END -->
 
+
+
+    <!-- --------------------FOOTER SECTION START------------------- -->
+
+<div class="bg-red-600 ">
+  <div class="container mx-auto">
+   <div class="relative">
+    <div class="px-5 lg:px-0 absolute -top-48 translate-y-0">
+      <div
+    class="grid grid-cols-12 bg-[#000] items-center px-[54px] py-[45px] xl:px-[64px] lg:px-[50px] lg:py-[45px] md:py-[30px] md:px-[30px] rounded-[20px] gap-y-6"
+  >
+    <div
+      class="xl:col-start-1 xl:col-end-7 lg:col-start-1 lg:col-end-8 md:col-start-1 md:col-end-8 col-start-1 col-end-13"
+    >
+      <div>
+        <h2
+          class="lg:text-[40px] text-[32px] leading-[35px] md:leading-[45px] font-bold text-white font-integral"
+        >
+          STAY UPTO DATE ABOUT OUR LATEST OFFERS
+        </h2>
+      </div>
+    </div>
+    <div
+      class="xl:col-start-9 xl:col-end-13 lg:col-start-8 lg:col-end-13 md:col-start-8 md:col-end-13 col-start-1 col-end-13"
+    >
+      <form action="#">
+        <div class="relative mb-5">
+          <input
+            type="email"
+            placeholder="Enter your email address"
+            class="w-full outline-none placeholder:font-integral font-integral placeholder:text-opacity-[40%] py-3.5 px-10 rounded-[62px]"
+          />
+          <span
+            class="cursor-pointer text-[#000] text-opacity-[40%] absolute top-1/2 -translate-y-1/2 left-4"
+          >
+            <i class="fa-solid fa-envelope"></i
+          ></span>
+        </div>
+        <button
+          type="submit"
+          class="font-normal bg-[#FFFFFF] text-[#000] w-full py-3.5 rounded-[62px] font-integral"
+        >
+          Subscribe to Newsletter
+        </button>
+      </form>
+    </div>
+  </div>
+    </div>
+    <div class="py-[300px] md:py-44">
+      <div class="grid grid-cols-12 gap-y-12 xl:gap-y-0">
+        <div class="col-start-1 col-end-13 xl:col-start-1 xl:col-end-4">
+          <div>
+            <div class="mb-6">
+              <a href="#"> <h1 class="text-[32px] font-bold">SHOP.CO</h1></a>
+            </div>
+            <div class="xl:w-[255px] w-full mb-8">
+              <p
+                class="text-sm md:text-base xl:text-sm leading-5 md:leading-[22px] font-normal text-[#000] text-opacity-[60%] font-satoshi"
+              >
+                We have clothes that suits your style and which you’re proud
+                to wear. From women to men.
+              </p>
+            </div>
+            <div class="flex gap-x-3">
+              <a
+                href="#"
+                class="w-[30px] h-[30px] bg-[#FFF] border border-[#000] border-opacity-[20%] inline-flex justify-center items-center rounded-full hover:bg-[#000] hover:text-[#FFF]"
+              >
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+              <a
+                href="#"
+                class="w-[30px] h-[30px] bg-[#FFF] border border-[#000] border-opacity-[20%] inline-flex justify-center items-center rounded-full hover:bg-[#000] hover:text-[#FFF]"
+              >
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+              <a
+                href="#"
+                class="w-[30px] h-[30px] bg-[#FFF] border border-[#000] border-opacity-[20%] inline-flex justify-center items-center rounded-full hover:bg-[#000] hover:text-[#FFF]"
+              >
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a
+                href="#"
+                class="w-[30px] h-[30px] bg-[#FFF] border border-[#000] border-opacity-[20%] inline-flex justify-center items-center rounded-full hover:bg-[#000] hover:text-[#FFF]"
+              >
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-start-1 col-end-7 xl:col-start-4 xl:col-end-6">
+          <div class="justify-items-start xl:justify-self-center">
+            <h4
+              class="text-sm md:text-base leading-[18px] tracking-[3px] font-medium mb-12 font-integral"
+            >
+              COMPANY
+            </h4>
+            <ul class="">
+              <li class="mb-2">
+                <a
+                  href="#"
+                  class="md:text-base font-satoshi text-sm leading-4 md:leading-[19px] text-[#000] text-opacity-[60%]"
+                  >About</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="#"
+                  class="md:text-base font-satoshi text-sm leading-4 md:leading-[19px] text-[#000] text-opacity-[60%]"
+                >
+                  Features
+                </a>
+              </li>
+              <li class="mb-2">
+                <a
+                  href="#"
+                  class="md:text-base font-satoshi text-sm leading-4 md:leading-[19px] text-[#000] text-opacity-[60%]"
+                  >Works</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="md:text-base  font-satoshi text-sm leading-4 md:leading-[19px] text-[#000] text-opacity-[60%]"
+                  >Carrer</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-start-7 col-end-13 xl:col-start-6 xl:col-end-8">
+          <div class="justify-items-start xl:justify-self-end">
+            <h4
+              class="text-sm md:text-base leading-[18px] tracking-[3px] font-medium mb-11 font-integral"
+            >
+              HELP
+            </h4>
+            <ul>
+              <li class="mb-2">
+                <a
+                  href="#"
+                  class="md:text-base font-satoshi text-sm leading-4 md:leading-[19px] text-[#000] text-opacity-[60%]"
+                  >Customer Support</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="#"
+                  class="md:text-base font-satoshi text-sm leading-4 md:leading-[19px] text-[#000] text-opacity-[60%]"
+                  >Delivery Details</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="#"
+                  class="md:text-base font-satoshi text-sm leading-4 md:leading-[19px] text-[#000] text-opacity-[60%]"
+                  >Terms & Conditions</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="md:text-base font-satoshi text-sm leading-4 md:leading-[19px] text-[#000] text-opacity-[60%]"
+                  >Privacy Policy</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-start-1 col-end-7 xl:col-start-9 xl:col-end-11">
+          <div class="justify-self-start xl:justify-self-center">
+            <h4
+              class="text-sm md:text-base leading-[18px] tracking-[3px] font-medium mb-12 font-integral"
+            >
+              FAQ
+            </h4>
+            <ul class="">
+              <li class="mb-2">
+                <a
+                  href="#"
+                  class="md:text-base font-satoshi text-sm leading-4 md:leading-[19px] text-[#000] text-opacity-[60%]"
+                  >Account</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="#"
+                  class="md:text-base font-satoshi text-sm leading-4 md:leading-[19px] text-[#000] text-opacity-[60%]"
+                  >Manage Deliveries</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="#"
+                  class="md:text-base font-satoshi text-sm leading-4 md:leading-[19px] text-[#000] text-opacity-[60%]"
+                  >Orders</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="md:text-base font-satoshi text-sm leading-4 md:leading-[19px] text-[#000] text-opacity-[60%]"
+                  >Payments</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-start-7 col-end-13 xl:col-start-11 xl:col-end-13">
+          <div class="justify-self-start xl:justify-self-end">
+            <h4
+              class="text-sm md:text-base leading-[18px] tracking-[3px] font-medium mb-12 font-integral"
+            >
+              RESOURCES
+            </h4>
+            <ul class="">
+              <li class="mb-2">
+                <a
+                  href="#"
+                  class="md:text-base font-satoshi text-sm leading-4 md:leading-[19px] text-[#000] text-opacity-[60%]"
+                  >Free eBooks</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="#"
+                  class="md:text-base font-satoshi text-sm leading-4 md:leading-[19px] text-[#000] text-opacity-[60%]"
+                  >Development Tutorial</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="#"
+                  class="md:text-base font-satoshi text-sm leading-4 md:leading-[19px] text-[#000] text-opacity-[60%]"
+                  >How to -Blog</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="md:text-base font-satoshi text-sm leading-4 md:leading-[19px] text-[#000] text-opacity-[60%]"
+                  >Youtube Playlist</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+   </div>
+  </div>
+</div>
+
+
+
+  
+  
+
+ 
+   
+
+ 
+    <!-- --------------------FOOTER SECTION END------------------- -->
+
     <!-- OFFER SECTION START -->
-    <div>
-      <div class="container mx-auto bg-[#000] rounded-[20px]">
+    <div class="px-5 xl:px-0" >
+      <div class="container mx-auto  rounded-[20px]">
         <div
-          class="grid grid-cols-12 items-center px-[54px] py-[45px] xl:px-[64px] lg:px-[50px] lg:py-[45px] md:py-[30px] md:px-[30px] rounded-[20px] gap-y-6"
+          class="grid grid-cols-12 bg-[#000] items-center px-[54px] py-[45px] xl:px-[64px] lg:px-[50px] lg:py-[45px] md:py-[30px] md:px-[30px] rounded-[20px] gap-y-6"
         >
           <div
             class="xl:col-start-1 xl:col-end-7 lg:col-start-1 lg:col-end-8 md:col-start-1 md:col-end-8 col-start-1 col-end-13"
           >
             <div>
               <h2
-                class="lg:text-[40px] text-[32px] leading-[35px] md:leading-[45px] font-bold text-white font-intregal"
+                class="lg:text-[40px] text-[32px] leading-[35px] md:leading-[45px] font-bold text-white font-integral"
               >
                 STAY UPTO DATE ABOUT OUR LATEST OFFERS
               </h2>
@@ -1268,7 +1673,7 @@
                 <input
                   type="email"
                   placeholder="Enter your email address"
-                  class="w-full outline-none placeholder:font-intregal font-intregal placeholder:text-opacity-[40%] py-3.5 px-10 rounded-[62px]"
+                  class="w-full outline-none placeholder:font-integral font-integral placeholder:text-opacity-[40%] py-3.5 px-10 rounded-[62px]"
                 />
                 <span
                   class="cursor-pointer text-[#000] text-opacity-[40%] absolute top-1/2 -translate-y-1/2 left-4"
@@ -1278,7 +1683,7 @@
               </div>
               <button
                 type="submit"
-                class="font-normal bg-[#FFFFFF] text-[#000] w-full py-3.5 rounded-[62px] font-intregal"
+                class="font-normal bg-[#FFFFFF] text-[#000] w-full py-3.5 rounded-[62px] font-integral"
               >
                 Subscribe to Newsletter
               </button>
@@ -1337,7 +1742,7 @@
           <div class="col-start-1 col-end-7 xl:col-start-4 xl:col-end-6">
             <div class="justify-items-start xl:justify-self-center">
               <h4
-                class="text-sm md:text-base leading-[18px] tracking-[3px] font-medium mb-12 font-intregal"
+                class="text-sm md:text-base leading-[18px] tracking-[3px] font-medium mb-12 font-integral"
               >
                 COMPANY
               </h4>
@@ -1377,7 +1782,7 @@
           <div class="col-start-7 col-end-13 xl:col-start-6 xl:col-end-8">
             <div class="justify-items-start xl:justify-self-end">
               <h4
-                class="text-sm md:text-base leading-[18px] tracking-[3px] font-medium mb-11 font-intregal"
+                class="text-sm md:text-base leading-[18px] tracking-[3px] font-medium mb-11 font-integral"
               >
                 HELP
               </h4>
@@ -1416,7 +1821,7 @@
           <div class="col-start-1 col-end-7 xl:col-start-9 xl:col-end-11">
             <div class="justify-self-start xl:justify-self-center">
               <h4
-                class="text-sm md:text-base leading-[18px] tracking-[3px] font-medium mb-12 font-intregal"
+                class="text-sm md:text-base leading-[18px] tracking-[3px] font-medium mb-12 font-integral"
               >
                 FAQ
               </h4>
@@ -1455,7 +1860,7 @@
           <div class="col-start-7 col-end-13 xl:col-start-11 xl:col-end-13">
             <div class="justify-self-start xl:justify-self-end">
               <h4
-                class="text-sm md:text-base leading-[18px] tracking-[3px] font-medium mb-12 font-intregal"
+                class="text-sm md:text-base leading-[18px] tracking-[3px] font-medium mb-12 font-integral"
               >
                 RESOURCES
               </h4>

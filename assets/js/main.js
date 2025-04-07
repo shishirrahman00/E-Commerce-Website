@@ -138,6 +138,7 @@ navSearchBtn.addEventListener("click",(event)=>{
   const value = event.currentTarget.getAttribute("data-click")
   if(value==="close"){
    navSearchBtnHover.setAttribute("data-click","open")
+  //  navBar.classList.add("hidden")
    
 
    }
@@ -152,6 +153,8 @@ navSearchBtnHoverClose.addEventListener("click",(event)=>{
   
 
 })
+
+// xl:gap-x-6 lg:gap-x-4 md:gap-x-2.5 gap-x-4
 
 // NAV MENU SEARCHBOX END
 

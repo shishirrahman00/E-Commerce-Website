@@ -22,7 +22,7 @@
       <div class="container mx-auto">
         <div class="grid grid-cols-12 items-center justify-center">
           <div
-            class="md:col-start-1 md:col-end-11 col-start-1 col-end-13 justify-items-center"
+            class="md:col-start-2 md:col-end-12 col-start-1 col-end-13 justify-items-center"
           >
             <p class="text-white text-sm font-satoshi">
               Sign up and get 20% off to your first order.
@@ -102,36 +102,7 @@
     <!-- hamburger button section end -->
 
 
-    <!-- search button hover section start -->
-
-   <div data-click="false" id="nav-search-btn-hover" class=" fixed w-full h-full  z-50 top-0 left-0  data-[click=false]:invisible transition-transform translate-x-full data-[click=open]:translate-x-0 data-[click=close]:translate-x-full duration-1000 ">
-      <div class="w-full max-w-[1240px] h-full  z-50 fixed top-[65px]  mx-auto  "> 
-        <div class="flex items-center justify-center " >
- 
-          <button id="nav-search-btn-hover-close" class="md:w-14 md:h-12 h-[44px] w-10  inline-flex items-center justify-center rounded bg-[#000] text-[#fff] "><i class="fa-solid fa-arrow-left"></i></button>
-
-
-          <form action="#" class="relative grow  md:h-12 h-[44px] ">
-           
-            <input
-              type="text"
-              placeholder="Search for products..."
-              class="w-full font-integral placeholder:text-base placeholder:text-[#000000] placeholder:opacity-[40%] outline-none bg-[#F0F0F0] md:py-3 py-2.5  pr-[70px] pl-6"
-            />
-
-            <button  type="submit"
-            class="absolute  top-1/2 right-8 transform -translate-y-1/2 md:text-[18px] text-base text-[#000000] "
-          >
-            <i class="fa-solid fa-magnifying-glass"></i>
-          </button>
-          </form>
-        </div>
-
-      </div>
-    </div> 
-
-
-    <!-- search button hover section end -->
+   
 
     
 
@@ -144,8 +115,6 @@
      <nav class=" py-6 px-5 xl:px-0" id="navbar">
       <div class="container mx-auto">
         <div class="flex items-center gap-x-[40px] justify-between">
-
-          
           <div class="flex items-center justify-center gap-x-4">
             <div class="nav-menu-btn xl:hidden " data-state="close">
               <button class="text-[20px]"><i class="fa-solid fa-bars"></i></button>
@@ -211,8 +180,38 @@
           </div>
 
         </div>
-        
       </div>
+
+       <!-- search button hover section start -->
+
+   <div data-click="false" id="nav-search-btn-hover" class=" fixed w-full h-full  z-50 top-0 left-0  data-[click=false]:invisible transition-transform translate-x-full data-[click=open]:translate-x-0 data-[click=close]:translate-x-full duration-1000 ">
+      <div class="w-full max-w-[1240px] h-full  z-50 fixed top-[65px]  mx-auto  "> 
+        <div class="flex items-center justify-center " >
+ 
+          <button id="nav-search-btn-hover-close" class="md:w-14 md:h-12 h-[44px] w-10  inline-flex items-center justify-center rounded bg-[#000] text-[#fff] "><i class="fa-solid fa-arrow-left"></i></button>
+
+
+          <form action="#" class="relative grow  md:h-12 h-[44px] ">
+           
+            <input
+              type="text"
+              placeholder="Search for products..."
+              class="w-full font-integral placeholder:text-base placeholder:text-[#000000] placeholder:opacity-[40%] outline-none bg-[#F0F0F0] md:py-3 py-2.5  pr-[70px] pl-6"
+            />
+
+            <button  type="submit"
+            class="absolute  top-1/2 right-8 transform -translate-y-1/2 md:text-[18px] text-base text-[#000000] "
+          >
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+          </form>
+        </div>
+
+      </div>
+    </div> 
+
+
+    <!-- search button hover section end -->
     </nav>
 
 <!-- nav-menu-end -->
@@ -301,7 +300,7 @@
     <div
     style="background-image: url(./assets/img/hero-banner.png);"
 
-      class=" bg-center bg-no-repeat bg-cover  relative px-5 xl:px-0 pt-5 md:py-0"
+      class=" bg-center bg-no-repeat bg-cover  relative px-5 lg:pt-0 pt-7 "
     >
       <!-- <div>
         <div class="absolute top-[130px] right-24">
@@ -312,12 +311,12 @@
         <div class="grid grid-cols-12 items-center ">
           <div class="xl:col-start-1 xl:col-end-7 md:col-start-1 md:col-end-7 col-start-1 col-end-13">
             <div>
-              <h1 class="xl:text-[64px] md:text-[30px] lg:text-[48px] text-[36px] xl:leading-[64px] md:leading-[46px] leading-[34px] font-extrabold mb-5 font-integral">
+              <h1 class="xl:text-[64px] md:text-[28px] lg:text-[48px] text-[36px] xl:leading-[64px] md:leading-[32px] lg:leading-[46px] leading-[34px] font-extrabold mb-8 font-integral">
                 FIND CLOTHES THAT MATCHES YOUR STYLE
               </h1>
 
               <p
-                class="xl:text-base text-sm text-[#000] opacity-[60%] leading-[22px] mb-6 xl:w-[500px] lg:w-[380px] md:w-[340px] font-satoshi"
+                class="xl:text-base text-sm text-[#000] opacity-[60%] leading-[22px] mb-9 xl:w-[560px] lg:w-[460px] w-[355px] font-satoshi"
               >
                 Browse through our diverse range of meticulously crafted
                 garments, designed to bring out your individuality and cater to
@@ -325,35 +324,35 @@
               </p>
 
               <button
-                class="px-[68px] py-3.5 bg-[#000] text-white font-integral text-base font-medium rounded-full mb-14"
+                class="xl:w-[270px] md:w-[90%] w-full  py-3.5 bg-[#000] text-white font-integral text-base font-medium rounded-full lg:mb-10 md:mb-8 mb-10"
               >
                 Shop Now
               </button>
 
-              <div class="flex xl:gap-x-6 lg:gap-x-4 md:gap-x-2.5 gap-x-4">
-                <div >
-                 <div class="border-r border-[#000] border-opacity-[10%] ">
+               <div class="flex flex-wrap gap-x-[34px] md:gap-x-[34px]  lg:gap-x-10 xl:gap-x-8 gap-y-4 xl:px-0 ps-[40px] ">
+                <div class="grow">
+                 <div class="xl:border-r border-r-2 border-[#000] border-opacity-[10%] ">
                   <span class="font-bold xl:text-[40px] lg:text-[32px] text-[26px]">200+</span>
                   <p
-                    class="lg:text-base text-[12px] font-satoshi font-normal leading-[22px] opacity-[60%] xl:mr-5 lg:mr-3 md:mr-2 mr-3 "
+                    class="lg:text-base text-[12px] font-satoshi font-normal leading-[22px] opacity-[60%] xl:mr-8 md:mr-0 lg:mr-0  mr-0 "
                   >
                     International Brands
                   </p>
                  </div>
                 </div>
 
-                <div>
-                  <div class="border-r border-[#000] border-opacity-[10%]">
+                <div class="grow" >
+                  <div class="xl:border-r  border-[#000] border-opacity-[10%]">
                     <span class="font-bold xl:text-[40px] lg:text-[32px] text-[26px]">2,000+</span>
                   <p
-                    class="lg:text-base text-[12px] font-satoshi font-normal leading-[22px] opacity-[60%] xl:mr-5 lg:mr-3 md:mr-2 mr-3"
+                    class="lg:text-base text-[12px] font-satoshi font-normal leading-[22px] opacity-[60%] xl:mr-8"
                   >
                     High-Quality Products
                   </p>
                   </div>
                 </div>
                 
-                <div>
+                <div class="grow xl:justify-items-start justify-items-center  xl:text-start xl:mr-0 lg:mr-9 md:mr-[32px] mr-[32px]">
                   <div>
                     <span class="font-bold xl:text-[40px] lg:text-[32px] text-[26px]">30,000+</span>
                     <p class="lg:text-base text-[12px] font-satoshi font-normal leading-[22px] opacity-[60%]">
@@ -362,7 +361,10 @@
                   </div>
                  
                 </div>
-              </div>
+              </div> 
+              
+            
+              
             </div>
           </div>
           <div class="xl:col-start-7 xl:col-end-13 md:col-start-7 md:col-end-13 col-start-1 col-end-13">
@@ -373,7 +375,7 @@
               <!-- <div class="absolute top-[40%] -translate-y-1/3 left-[12%]">
                 <img src="assets/img/star.png" alt="" />
               </div> -->
-              <div class="w-full h-full">
+              <div >
                 <img src="./assets/img/hero-img-1.png" alt="" class="w-full h-full"  />
               </div>
             </div>
@@ -420,7 +422,7 @@
     <div class="pt-20 pb-[60px] px-4 xl:px-0">
       <div class="container mx-auto">
         <div class="text-center mb-14">
-          <h1 class="md:text-5xl text-[32px] font-bold font-integral">NEW ARRIVALS</h1>
+          <h1 class="md:text-5xl text-[32px] font-extrabold font-integral">NEW ARRIVALS</h1>
         </div>
 
         <div class="slider mb-10">
@@ -436,26 +438,26 @@
                     T-shirt with Tape Details
                   </h4>
                 </div>
-                <div class="flex gap-x-2 mb-3">
-                  <p class="text-[#FFC633]">
+                <div class="flex gap-x-2 mb-3 items-center">
+                  <p class="text-[#FFC633] text-sm md:text-base ">
                     <i class="fa-solid fa-star"></i>
                   </p>
-                  <p class="text-[#FFC633]">
+                  <p class="text-[#FFC633] text-sm md:text-base ">
                     <i class="fa-solid fa-star"></i>
                   </p>
-                  <p class="text-[#FFC633]">
+                  <p class="text-[#FFC633] text-sm md:text-base ">
                     <i class="fa-solid fa-star"></i>
                   </p>
-                  <p class="text-[#FFC633]">
+                  <p class="text-[#FFC633] text-sm md:text-base ">
                     <i class="fa-solid fa-star"></i>
                   </p>
-                  <p class="text-[#FFC633]">
+                  <p class="text-[#FFC633] text-sm md:text-base ">
                     <i class="fa-solid fa-star-half"></i>
                   </p>
-                  <p>4.5/<span class="opacity-[60%]">5</span></p>
+                  <p class="text-sm md:text-base">4.5/<span class="opacity-[60%]">5</span></p>
                 </div>
                 <div>
-                  <h2 class="text-2xl font-bold font-integral">$120</h2>
+                  <h2 class="md:text-2xl text-[20px] font-bold font-satoshi">$120</h2>
                 </div>
               </div>
             </a>
@@ -472,28 +474,28 @@
                     Skinny Fit Jeans
                   </h4>
                 </div>
-                <div class="flex gap-x-2 mb-3">
-                  <p class="text-[#FFC633]">
+                <div class="flex gap-x-2 mb-3 items-center">
+                  <p class="text-[#FFC633] text-sm md:text-base ">
                     <i class="fa-solid fa-star"></i>
                   </p>
-                  <p class="text-[#FFC633]">
+                  <p class="text-[#FFC633] text-sm md:text-base ">
                     <i class="fa-solid fa-star"></i>
                   </p>
-                  <p class="text-[#FFC633]">
+                  <p class="text-[#FFC633] text-sm md:text-base ">
                     <i class="fa-solid fa-star"></i>
                   </p>
-                  <p class="text-[#FFC633]">
+                  <p class="text-[#FFC633] text-sm md:text-base ">
                     <i class="fa-solid fa-star-half"></i>
                   </p>
-                  <p>3.5/<span class="opacity-[60%]">5</span></p>
+                  <p class="text-sm md:text-base">3.5/<span class="opacity-[60%]">5</span></p>
                 </div>
-                <div class="flex gap-x-[10px]">
-                  <h2 class="text-2xl font-bold font-integral">$240</h2>
-                  <h2 class="text-2xl font-bold line-through opacity-[40%] font-integral">
+                <div class="flex gap-x-[10px] items-center">
+                  <h2 class="md:text-2xl text-[20px] font-bold font-satoshi">$240</h2>
+                  <h2 class="md:text-2xl text-[20px] font-bold line-through opacity-[40%] font-satoshi">
                     $260
                   </h2>
                   <button
-                    class="text-[#FF3333] bg-[#FF3333] bg-opacity-[10%] px-3 py-1 rounded-full font-integral"
+                    class= "text-[12px] md:w-[58px] md:h-[28px] w-[42px] h-5  font-medium text-[#FF3333] bg-[#FF3333] bg-opacity-[10%]  rounded-full font-satoshi"
                   >
                     -20%
                   </button>
@@ -513,26 +515,26 @@
                     Checkered Shirt
                   </h4>
                 </div>
-                <div class="flex gap-x-2 mb-3">
-                  <p class="text-[#FFC633]">
+                <div class="flex gap-x-2 mb-3 items-center">
+                  <p class="text-[#FFC633] text-sm md:text-base ">
                     <i class="fa-solid fa-star"></i>
                   </p>
-                  <p class="text-[#FFC633]">
+                  <p class="text-[#FFC633] text-sm md:text-base ">
                     <i class="fa-solid fa-star"></i>
                   </p>
-                  <p class="text-[#FFC633]">
+                  <p class="text-[#FFC633] text-sm md:text-base ">
                     <i class="fa-solid fa-star"></i>
                   </p>
-                  <p class="text-[#FFC633]">
+                  <p class="text-[#FFC633] text-sm md:text-base ">
                     <i class="fa-solid fa-star"></i>
                   </p>
-                  <p class="text-[#FFC633]">
+                  <p class="text-[#FFC633] text-sm md:text-base ">
                     <i class="fa-solid fa-star-half"></i>
                   </p>
-                  <p>4.5/<span class="opacity-[60%]">5</span></p>
+                  <p class="text-sm md:text-base">4.5/<span class="opacity-[60%]">5</span></p>
                 </div>
                 <div>
-                  <h2 class="text-2xl font-bold font-integral">$180</h2>
+                  <h2 class="md:text-2xl text-[20px] font-bold font-satoshi">$180</h2>
                 </div>
               </div>
             </a>
@@ -549,23 +551,23 @@
                     Sleeve Striped T-shirt
                   </h4>
                 </div>
-                <div class="flex gap-x-2 mb-3">
-                  <p class="text-[#FFC633]"><i class="fa-solid fa-star"></i></p>
-                  <p class="text-[#FFC633]"><i class="fa-solid fa-star"></i></p>
-                  <p class="text-[#FFC633]"><i class="fa-solid fa-star"></i></p>
-                  <p class="text-[#FFC633]"><i class="fa-solid fa-star"></i></p>
-                  <p class="text-[#FFC633]">
+                <div class="flex gap-x-2 mb-3 items-center">
+                  <p class="text-[#FFC633] text-sm md:text-base "><i class="fa-solid fa-star"></i></p>
+                  <p class="text-[#FFC633] text-sm md:text-base "><i class="fa-solid fa-star"></i></p>
+                  <p class="text-[#FFC633] text-sm md:text-base "><i class="fa-solid fa-star"></i></p>
+                  <p class="text-[#FFC633] text-sm md:text-base "><i class="fa-solid fa-star"></i></p>
+                  <p class="text-[#FFC633] text-sm md:text-base ">
                     <i class="fa-solid fa-star-half"></i>
                   </p>
-                  <p>4.5/<span class="opacity-[60%]">5</span></p>
+                  <p class="text-sm md:text-base">4.5/<span class="opacity-[60%]">5</span></p>
                 </div>
-                <div class="flex gap-x-[10px]">
-                  <h2 class="text-2xl font-bold font-integral">$130</h2>
-                  <h2 class="text-2xl font-bold line-through opacity-[40%] font-integral">
+                <div class="flex gap-x-[10px] items-center">
+                  <h2 class="md:text-2xl text-[20px] font-bold font-satoshi">$130</h2>
+                  <h2 class="md:text-2xl text-[20px] font-bold line-through opacity-[40%] font-satoshi">
                     $160
                   </h2>
                   <button
-                    class="text-[#FF3333] bg-[#FF3333] bg-opacity-[10%] px-3 py-1 rounded-full font-integral"
+                    class="text-[12px] md:w-[58px] md:h-[28px] w-[42px] h-5  font-medium text-[#FF3333] bg-[#FF3333] bg-opacity-[10%]  rounded-full font-satoshi"
                   >
                     -30%
                   </button>
@@ -585,26 +587,26 @@
                     T-shirt with Tape Details
                   </h4>
                 </div>
-                <div class="flex gap-x-2 mb-3">
-                  <p class="text-[#FFC633]">
+                <div class="flex gap-x-2 mb-3 items-center">
+                  <p class="text-[#FFC633] text-sm md:text-base ">
                     <i class="fa-solid fa-star"></i>
                   </p>
-                  <p class="text-[#FFC633]">
+                  <p class="text-[#FFC633] text-sm md:text-base ">
                     <i class="fa-solid fa-star"></i>
                   </p>
-                  <p class="text-[#FFC633]">
+                  <p class="text-[#FFC633] text-sm md:text-base ">
                     <i class="fa-solid fa-star"></i>
                   </p>
-                  <p class="text-[#FFC633]">
+                  <p class="text-[#FFC633] text-sm md:text-base ">
                     <i class="fa-solid fa-star"></i>
                   </p>
-                  <p class="text-[#FFC633]">
+                  <p class="text-[#FFC633] text-sm md:text-base ">
                     <i class="fa-solid fa-star-half"></i>
                   </p>
-                  <p>4.5/<span class="opacity-[60%]">5</span></p>
+                  <p class="text-sm md:text-base">4.5/<span class="opacity-[60%]">5</span></p>
                 </div>
                 <div>
-                  <h2 class="text-2xl font-bold font-integral">$120</h2>
+                  <h2 class="md:text-2xl text-[20px] font-bold font-satoshi">$120</h2>
                 </div>
               </div>
             </a>
@@ -621,28 +623,28 @@
                     Skinny Fit Jeans
                   </h4>
                 </div>
-                <div class="flex gap-x-2 mb-3">
-                  <p class="text-[#FFC633]">
+                <div class="flex gap-x-2 mb-3 items-center">
+                  <p class="text-[#FFC633] text-sm md:text-base ">
                     <i class="fa-solid fa-star"></i>
                   </p>
-                  <p class="text-[#FFC633]">
+                  <p class="text-[#FFC633] text-sm md:text-base ">
                     <i class="fa-solid fa-star"></i>
                   </p>
-                  <p class="text-[#FFC633]">
+                  <p class="text-[#FFC633] text-sm md:text-base ">
                     <i class="fa-solid fa-star"></i>
                   </p>
-                  <p class="text-[#FFC633]">
+                  <p class="text-[#FFC633] text-sm md:text-base ">
                     <i class="fa-solid fa-star-half"></i>
                   </p>
-                  <p>3.5/<span class="opacity-[60%]">5</span></p>
+                  <p class="text-sm md:text-base">3.5/<span class="opacity-[60%]">5</span></p>
                 </div>
-                <div class="flex gap-x-[10px]">
-                  <h2 class="text-2xl font-bold font-integral">$240</h2>
-                  <h2 class="text-2xl font-bold line-through opacity-[40%] font-integral">
+                <div class="flex gap-x-[10px] items-center">
+                  <h2 class="md:text-2xl text-[20px] font-bold font-satoshi">$240</h2>
+                  <h2 class="md:text-2xl text-[20px] font-bold line-through opacity-[40%] font-satoshi">
                     $260
                   </h2>
                   <button
-                    class="text-[#FF3333] bg-[#FF3333] bg-opacity-[10%] px-3 py-1 rounded-full font-integral"
+                    class="text-[12px] md:w-[58px] md:h-[28px] w-[42px] h-5  font-medium text-[#FF3333] bg-[#FF3333] bg-opacity-[10%]  rounded-full font-satoshi"
                   >
                     -20%
                   </button>
@@ -662,26 +664,26 @@
                     Checkered Shirt
                   </h4>
                 </div>
-                <div class="flex gap-x-2 mb-3">
-                  <p class="text-[#FFC633]">
+                <div class="flex gap-x-2 mb-3 items-center" >
+                  <p class="text-[#FFC633] text-sm md:text-base ">
                     <i class="fa-solid fa-star"></i>
                   </p>
-                  <p class="text-[#FFC633]">
+                  <p class="text-[#FFC633] text-sm md:text-base ">
                     <i class="fa-solid fa-star"></i>
                   </p>
-                  <p class="text-[#FFC633]">
+                  <p class="text-[#FFC633] text-sm md:text-base ">
                     <i class="fa-solid fa-star"></i>
                   </p>
-                  <p class="text-[#FFC633]">
+                  <p class="text-[#FFC633] text-sm md:text-base ">
                     <i class="fa-solid fa-star"></i>
                   </p>
-                  <p class="text-[#FFC633]">
+                  <p class="text-[#FFC633] text-sm md:text-base ">
                     <i class="fa-solid fa-star-half"></i>
                   </p>
-                  <p>4.5/<span class="opacity-[60%]">5</span></p>
+                  <p class="text-sm md:text-base">4.5/<span class="opacity-[60%]">5</span></p>
                 </div>
                 <div>
-                  <h2 class="text-2xl font-bold font-integral">$180</h2>
+                  <h2 class="md:text-2xl text-[20px] font-bold font-satoshi">$180</h2>
                 </div>
               </div>
             </a>
@@ -698,23 +700,23 @@
                     Sleeve Striped T-shirt
                   </h4>
                 </div>
-                <div class="flex gap-x-2 mb-3">
-                  <p class="text-[#FFC633]"><i class="fa-solid fa-star"></i></p>
-                  <p class="text-[#FFC633]"><i class="fa-solid fa-star"></i></p>
-                  <p class="text-[#FFC633]"><i class="fa-solid fa-star"></i></p>
-                  <p class="text-[#FFC633]"><i class="fa-solid fa-star"></i></p>
-                  <p class="text-[#FFC633]">
+                <div class="flex gap-x-2 mb-3 items-center">
+                  <p class="text-[#FFC633] text-sm md:text-base "><i class="fa-solid fa-star"></i></p>
+                  <p class="text-[#FFC633] text-sm md:text-base "><i class="fa-solid fa-star"></i></p>
+                  <p class="text-[#FFC633] text-sm md:text-base "><i class="fa-solid fa-star"></i></p>
+                  <p class="text-[#FFC633] text-sm md:text-base "><i class="fa-solid fa-star"></i></p>
+                  <p class="text-[#FFC633] text-sm md:text-base ">
                     <i class="fa-solid fa-star-half"></i>
                   </p>
-                  <p>4.5/<span class="opacity-[60%]">5</span></p>
+                  <p class="text-sm md:text-base">4.5/<span class="opacity-[60%]">5</span></p>
                 </div>
-                <div class="flex gap-x-[10px]">
-                  <h2 class="text-2xl font-bold font-integral">$130</h2>
-                  <h2 class="text-2xl font-bold line-through opacity-[40%] font-integral">
+                <div class="flex gap-x-[10px] items-center">
+                  <h2 class="md:text-2xl text-[20px] font-bold font-satoshi">$130</h2>
+                  <h2 class="md:text-2xl text-[20px] font-bold line-through opacity-[40%] font-satoshi">
                     $160
                   </h2>
                   <button
-                    class="text-[#FF3333] bg-[#FF3333] bg-opacity-[10%] px-3 py-1 rounded-full font-integral"
+                    class="text-[12px] md:w-[58px] md:h-[28px] w-[42px] h-5  font-medium text-[#FF3333] bg-[#FF3333] bg-opacity-[10%]  rounded-full font-satoshi "
                   >
                     -30%
                   </button>
@@ -726,7 +728,7 @@
 
         <div class="text-center">
           <button
-            class="px-[76px] py-3.5 text-base font-medium border rounded-full border-[#000] border-opacity-[10%] font-integral"
+            class="md:w-[220px] h-[52px] w-full  text-base font-medium border rounded-full border-[#000] border-opacity-[10%] font-integral"
           >
             View All
           </button>
@@ -762,11 +764,11 @@
                   </h4>
                 </div>
                 <div class="flex gap-x-2 mb-3">
-                  <p class="text-[#FFC633]"><i class="fa-solid fa-star"></i></p>
-                  <p class="text-[#FFC633]"><i class="fa-solid fa-star"></i></p>
-                  <p class="text-[#FFC633]"><i class="fa-solid fa-star"></i></p>
-                  <p class="text-[#FFC633]"><i class="fa-solid fa-star"></i></p>
-                  <p class="text-[#FFC633]"><i class="fa-solid fa-star"></i></p>
+                  <p class="text-[#FFC633] text-sm md:text-base "><i class="fa-solid fa-star"></i></p>
+                  <p class="text-[#FFC633] text-sm md:text-base "><i class="fa-solid fa-star"></i></p>
+                  <p class="text-[#FFC633] text-sm md:text-base "><i class="fa-solid fa-star"></i></p>
+                  <p class="text-[#FFC633] text-sm md:text-base "><i class="fa-solid fa-star"></i></p>
+                  <p class="text-[#FFC633] text-sm md:text-base "><i class="fa-solid fa-star"></i></p>
 
                   <p>5.0/<span class="opacity-[60%]">5</span></p>
                 </div>
@@ -797,10 +799,10 @@
                   </h4>
                 </div>
                 <div class="flex gap-x-2 mb-3">
-                  <p class="text-[#FFC633]"><i class="fa-solid fa-star"></i></p>
-                  <p class="text-[#FFC633]"><i class="fa-solid fa-star"></i></p>
-                  <p class="text-[#FFC633]"><i class="fa-solid fa-star"></i></p>
-                  <p class="text-[#FFC633]"><i class="fa-solid fa-star"></i></p>
+                  <p class="text-[#FFC633] text-sm md:text-base "><i class="fa-solid fa-star"></i></p>
+                  <p class="text-[#FFC633] text-sm md:text-base "><i class="fa-solid fa-star"></i></p>
+                  <p class="text-[#FFC633] text-sm md:text-base "><i class="fa-solid fa-star"></i></p>
+                  <p class="text-[#FFC633] text-sm md:text-base "><i class="fa-solid fa-star"></i></p>
 
                   <p>4.0/<span class="opacity-[60%]">5</span></p>
                 </div>
@@ -823,9 +825,9 @@
                   </h4>
                 </div>
                 <div class="flex gap-x-2 mb-3">
-                  <p class="text-[#FFC633]"><i class="fa-solid fa-star"></i></p>
-                  <p class="text-[#FFC633]"><i class="fa-solid fa-star"></i></p>
-                  <p class="text-[#FFC633]"><i class="fa-solid fa-star"></i></p>
+                  <p class="text-[#FFC633] text-sm md:text-base "><i class="fa-solid fa-star"></i></p>
+                  <p class="text-[#FFC633] text-sm md:text-base "><i class="fa-solid fa-star"></i></p>
+                  <p class="text-[#FFC633] text-sm md:text-base "><i class="fa-solid fa-star"></i></p>
                   <p>3.0/<span class="opacity-[60%]">5</span></p>
                 </div>
                 <div>
@@ -847,11 +849,11 @@
                   </h4>
                 </div>
                 <div class="flex gap-x-2 mb-3">
-                  <p class="text-[#FFC633]"><i class="fa-solid fa-star"></i></p>
-                  <p class="text-[#FFC633]"><i class="fa-solid fa-star"></i></p>
-                  <p class="text-[#FFC633]"><i class="fa-solid fa-star"></i></p>
-                  <p class="text-[#FFC633]"><i class="fa-solid fa-star"></i></p>
-                  <p class="text-[#FFC633]">
+                  <p class="text-[#FFC633] text-sm md:text-base "><i class="fa-solid fa-star"></i></p>
+                  <p class="text-[#FFC633] text-sm md:text-base "><i class="fa-solid fa-star"></i></p>
+                  <p class="text-[#FFC633] text-sm md:text-base "><i class="fa-solid fa-star"></i></p>
+                  <p class="text-[#FFC633] text-sm md:text-base "><i class="fa-solid fa-star"></i></p>
+                  <p class="text-[#FFC633] text-sm md:text-base ">
                     <i class="fa-solid fa-star-half"></i>
                   </p>
                   <p>4.5/<span class="opacity-[60%]">5</span></p>
@@ -875,11 +877,11 @@
                   </h4>
                 </div>
                 <div class="flex gap-x-2 mb-3">
-                  <p class="text-[#FFC633]"><i class="fa-solid fa-star"></i></p>
-                  <p class="text-[#FFC633]"><i class="fa-solid fa-star"></i></p>
-                  <p class="text-[#FFC633]"><i class="fa-solid fa-star"></i></p>
-                  <p class="text-[#FFC633]"><i class="fa-solid fa-star"></i></p>
-                  <p class="text-[#FFC633]"><i class="fa-solid fa-star"></i></p>
+                  <p class="text-[#FFC633] text-sm md:text-base "><i class="fa-solid fa-star"></i></p>
+                  <p class="text-[#FFC633] text-sm md:text-base "><i class="fa-solid fa-star"></i></p>
+                  <p class="text-[#FFC633] text-sm md:text-base "><i class="fa-solid fa-star"></i></p>
+                  <p class="text-[#FFC633] text-sm md:text-base "><i class="fa-solid fa-star"></i></p>
+                  <p class="text-[#FFC633] text-sm md:text-base "><i class="fa-solid fa-star"></i></p>
 
                   <p>5.0/<span class="opacity-[60%]">5</span></p>
                 </div>
@@ -910,10 +912,10 @@
                   </h4>
                 </div>
                 <div class="flex gap-x-2 mb-3">
-                  <p class="text-[#FFC633]"><i class="fa-solid fa-star"></i></p>
-                  <p class="text-[#FFC633]"><i class="fa-solid fa-star"></i></p>
-                  <p class="text-[#FFC633]"><i class="fa-solid fa-star"></i></p>
-                  <p class="text-[#FFC633]"><i class="fa-solid fa-star"></i></p>
+                  <p class="text-[#FFC633] text-sm md:text-base "><i class="fa-solid fa-star"></i></p>
+                  <p class="text-[#FFC633] text-sm md:text-base "><i class="fa-solid fa-star"></i></p>
+                  <p class="text-[#FFC633] text-sm md:text-base "><i class="fa-solid fa-star"></i></p>
+                  <p class="text-[#FFC633] text-sm md:text-base "><i class="fa-solid fa-star"></i></p>
 
                   <p>4.0/<span class="opacity-[60%]">5</span></p>
                 </div>
@@ -936,9 +938,9 @@
                   </h4>
                 </div>
                 <div class="flex gap-x-2 mb-3">
-                  <p class="text-[#FFC633]"><i class="fa-solid fa-star"></i></p>
-                  <p class="text-[#FFC633]"><i class="fa-solid fa-star"></i></p>
-                  <p class="text-[#FFC633]"><i class="fa-solid fa-star"></i></p>
+                  <p class="text-[#FFC633] text-sm md:text-base "><i class="fa-solid fa-star"></i></p>
+                  <p class="text-[#FFC633] text-sm md:text-base "><i class="fa-solid fa-star"></i></p>
+                  <p class="text-[#FFC633] text-sm md:text-base "><i class="fa-solid fa-star"></i></p>
                   <p>3.0/<span class="opacity-[60%]">5</span></p>
                 </div>
                 <div>
@@ -960,11 +962,11 @@
                   </h4>
                 </div>
                 <div class="flex gap-x-2 mb-3">
-                  <p class="text-[#FFC633]"><i class="fa-solid fa-star"></i></p>
-                  <p class="text-[#FFC633]"><i class="fa-solid fa-star"></i></p>
-                  <p class="text-[#FFC633]"><i class="fa-solid fa-star"></i></p>
-                  <p class="text-[#FFC633]"><i class="fa-solid fa-star"></i></p>
-                  <p class="text-[#FFC633]">
+                  <p class="text-[#FFC633] text-sm md:text-base "><i class="fa-solid fa-star"></i></p>
+                  <p class="text-[#FFC633] text-sm md:text-base "><i class="fa-solid fa-star"></i></p>
+                  <p class="text-[#FFC633] text-sm md:text-base "><i class="fa-solid fa-star"></i></p>
+                  <p class="text-[#FFC633] text-sm md:text-base "><i class="fa-solid fa-star"></i></p>
+                  <p class="text-[#FFC633] text-sm md:text-base ">
                     <i class="fa-solid fa-star-half"></i>
                   </p>
                   <p>4.5/<span class="opacity-[60%]">5</span></p>
@@ -1088,55 +1090,19 @@
           <div>
             <div class="border py-5 pl-8 pr-6 rounded-[20px] h-[240px]">
               <div class="flex gap-x-2 mb-3">
-                <p class="text-[#FFC633] text-[20px]">
+                <p class="text-[#FFC633] text-sm md:text-base  text-[20px]">
                   <i class="fa-solid fa-star"></i>
                 </p>
-                <p class="text-[#FFC633] text-[20px]">
+                <p class="text-[#FFC633] text-sm md:text-base  text-[20px]">
                   <i class="fa-solid fa-star"></i>
                 </p>
-                <p class="text-[#FFC633] text-[20px]">
+                <p class="text-[#FFC633] text-sm md:text-base  text-[20px]">
                   <i class="fa-solid fa-star"></i>
                 </p>
-                <p class="text-[#FFC633] text-[20px]">
+                <p class="text-[#FFC633] text-sm md:text-base  text-[20px]">
                   <i class="fa-solid fa-star"></i>
                 </p>
-                <p class="text-[#FFC633] text-[20px]">
-                  <i class="fa-solid fa-star"></i>
-                </p>
-              </div>
-
-              <div>
-                <h4 class="md:text-[20px] text-base font-bold mb-3 font-integral">
-                  Sarah M.<span class="text-[#01AB31] text-[19px] ml-2"
-                    ><i class="fa-solid fa-circle-check"></i
-                  ></span>
-                </h4>
-              </div>
-              <div>
-                <p class="md:text-base text-sm font-normal opacity-[60%] font-satoshi">
-                  "I'm blown away by the quality and style of the clothes I
-                  received from Shop.co. From casual wear to elegant dresses,
-                  every piece I've bought has exceeded my expectations.”
-                </p>
-              </div>
-            </div>
-          </div>
-          <div>
-            <div class="border py-5 pl-8 pr-6 rounded-[20px] h-[240px]">
-              <div class="flex gap-x-2 mb-3">
-                <p class="text-[#FFC633] text-[20px]">
-                  <i class="fa-solid fa-star"></i>
-                </p>
-                <p class="text-[#FFC633] text-[20px]">
-                  <i class="fa-solid fa-star"></i>
-                </p>
-                <p class="text-[#FFC633] text-[20px]">
-                  <i class="fa-solid fa-star"></i>
-                </p>
-                <p class="text-[#FFC633] text-[20px]">
-                  <i class="fa-solid fa-star"></i>
-                </p>
-                <p class="text-[#FFC633] text-[20px]">
+                <p class="text-[#FFC633] text-sm md:text-base  text-[20px]">
                   <i class="fa-solid fa-star"></i>
                 </p>
               </div>
@@ -1160,55 +1126,19 @@
           <div>
             <div class="border py-5 pl-8 pr-6 rounded-[20px] h-[240px]">
               <div class="flex gap-x-2 mb-3">
-                <p class="text-[#FFC633] text-[20px]">
+                <p class="text-[#FFC633] text-sm md:text-base  text-[20px]">
                   <i class="fa-solid fa-star"></i>
                 </p>
-                <p class="text-[#FFC633] text-[20px]">
+                <p class="text-[#FFC633] text-sm md:text-base  text-[20px]">
                   <i class="fa-solid fa-star"></i>
                 </p>
-                <p class="text-[#FFC633] text-[20px]">
+                <p class="text-[#FFC633] text-sm md:text-base  text-[20px]">
                   <i class="fa-solid fa-star"></i>
                 </p>
-                <p class="text-[#FFC633] text-[20px]">
+                <p class="text-[#FFC633] text-sm md:text-base  text-[20px]">
                   <i class="fa-solid fa-star"></i>
                 </p>
-                <p class="text-[#FFC633] text-[20px]">
-                  <i class="fa-solid fa-star"></i>
-                </p>
-              </div>
-
-              <div>
-                <h4 class="md:text-[20px] text-base font-bold mb-3 font-integral">
-                  Sarah M.<span class="text-[#01AB31] text-[19px] ml-2"
-                    ><i class="fa-solid fa-circle-check"></i
-                  ></span>
-                </h4>
-              </div>
-              <div>
-                <p class="md:text-base text-sm font-normal opacity-[60%] font-satoshi">
-                  "I'm blown away by the quality and style of the clothes I
-                  received from Shop.co. From casual wear to elegant dresses,
-                  every piece I've bought has exceeded my expectations.”
-                </p>
-              </div>
-            </div>
-          </div>
-          <div>
-            <div class="border py-5 pl-8 pr-6 rounded-[20px] h-[240px]">
-              <div class="flex gap-x-2 mb-3">
-                <p class="text-[#FFC633] text-[20px]">
-                  <i class="fa-solid fa-star"></i>
-                </p>
-                <p class="text-[#FFC633] text-[20px]">
-                  <i class="fa-solid fa-star"></i>
-                </p>
-                <p class="text-[#FFC633] text-[20px]">
-                  <i class="fa-solid fa-star"></i>
-                </p>
-                <p class="text-[#FFC633] text-[20px]">
-                  <i class="fa-solid fa-star"></i>
-                </p>
-                <p class="text-[#FFC633] text-[20px]">
+                <p class="text-[#FFC633] text-sm md:text-base  text-[20px]">
                   <i class="fa-solid fa-star"></i>
                 </p>
               </div>
@@ -1232,19 +1162,91 @@
           <div>
             <div class="border py-5 pl-8 pr-6 rounded-[20px] h-[240px]">
               <div class="flex gap-x-2 mb-3">
-                <p class="text-[#FFC633] text-[20px]">
+                <p class="text-[#FFC633] text-sm md:text-base  text-[20px]">
                   <i class="fa-solid fa-star"></i>
                 </p>
-                <p class="text-[#FFC633] text-[20px]">
+                <p class="text-[#FFC633] text-sm md:text-base  text-[20px]">
                   <i class="fa-solid fa-star"></i>
                 </p>
-                <p class="text-[#FFC633] text-[20px]">
+                <p class="text-[#FFC633] text-sm md:text-base  text-[20px]">
                   <i class="fa-solid fa-star"></i>
                 </p>
-                <p class="text-[#FFC633] text-[20px]">
+                <p class="text-[#FFC633] text-sm md:text-base  text-[20px]">
                   <i class="fa-solid fa-star"></i>
                 </p>
-                <p class="text-[#FFC633] text-[20px]">
+                <p class="text-[#FFC633] text-sm md:text-base  text-[20px]">
+                  <i class="fa-solid fa-star"></i>
+                </p>
+              </div>
+
+              <div>
+                <h4 class="md:text-[20px] text-base font-bold mb-3 font-integral">
+                  Sarah M.<span class="text-[#01AB31] text-[19px] ml-2"
+                    ><i class="fa-solid fa-circle-check"></i
+                  ></span>
+                </h4>
+              </div>
+              <div>
+                <p class="md:text-base text-sm font-normal opacity-[60%] font-satoshi">
+                  "I'm blown away by the quality and style of the clothes I
+                  received from Shop.co. From casual wear to elegant dresses,
+                  every piece I've bought has exceeded my expectations.”
+                </p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="border py-5 pl-8 pr-6 rounded-[20px] h-[240px]">
+              <div class="flex gap-x-2 mb-3">
+                <p class="text-[#FFC633] text-sm md:text-base  text-[20px]">
+                  <i class="fa-solid fa-star"></i>
+                </p>
+                <p class="text-[#FFC633] text-sm md:text-base  text-[20px]">
+                  <i class="fa-solid fa-star"></i>
+                </p>
+                <p class="text-[#FFC633] text-sm md:text-base  text-[20px]">
+                  <i class="fa-solid fa-star"></i>
+                </p>
+                <p class="text-[#FFC633] text-sm md:text-base  text-[20px]">
+                  <i class="fa-solid fa-star"></i>
+                </p>
+                <p class="text-[#FFC633] text-sm md:text-base  text-[20px]">
+                  <i class="fa-solid fa-star"></i>
+                </p>
+              </div>
+
+              <div>
+                <h4 class="md:text-[20px] text-base font-bold mb-3 font-integral">
+                  Sarah M.<span class="text-[#01AB31] text-[19px] ml-2"
+                    ><i class="fa-solid fa-circle-check"></i
+                  ></span>
+                </h4>
+              </div>
+              <div>
+                <p class="md:text-base text-sm font-normal opacity-[60%] font-satoshi">
+                  "I'm blown away by the quality and style of the clothes I
+                  received from Shop.co. From casual wear to elegant dresses,
+                  every piece I've bought has exceeded my expectations.”
+                </p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="border py-5 pl-8 pr-6 rounded-[20px] h-[240px]">
+              <div class="flex gap-x-2 mb-3">
+                <p class="text-[#FFC633] text-sm md:text-base  text-[20px]">
+                  <i class="fa-solid fa-star"></i>
+                </p>
+                <p class="text-[#FFC633] text-sm md:text-base  text-[20px]">
+                  <i class="fa-solid fa-star"></i>
+                </p>
+                <p class="text-[#FFC633] text-sm md:text-base  text-[20px]">
+                  <i class="fa-solid fa-star"></i>
+                </p>
+                <p class="text-[#FFC633] text-sm md:text-base  text-[20px]">
+                  <i class="fa-solid fa-star"></i>
+                </p>
+                <p class="text-[#FFC633] text-sm md:text-base  text-[20px]">
                   <i class="fa-solid fa-star"></i>
                 </p>
               </div>
@@ -1270,19 +1272,19 @@
           <div class="col-start-1 col-end-5">
             <div class="border py-5 pl-8 pr-6 rounded-[20px] h-[240px]">
               <div class="flex gap-x-2 mb-3">
-                <p class="text-[#FFC633] text-[20px]">
+                <p class="text-[#FFC633] text-sm md:text-base  text-[20px]">
                   <i class="fa-solid fa-star"></i>
                 </p>
-                <p class="text-[#FFC633] text-[20px]">
+                <p class="text-[#FFC633] text-sm md:text-base  text-[20px]">
                   <i class="fa-solid fa-star"></i>
                 </p>
-                <p class="text-[#FFC633] text-[20px]">
+                <p class="text-[#FFC633] text-sm md:text-base  text-[20px]">
                   <i class="fa-solid fa-star"></i>
                 </p>
-                <p class="text-[#FFC633] text-[20px]">
+                <p class="text-[#FFC633] text-sm md:text-base  text-[20px]">
                   <i class="fa-solid fa-star"></i>
                 </p>
-                <p class="text-[#FFC633] text-[20px]">
+                <p class="text-[#FFC633] text-sm md:text-base  text-[20px]">
                   <i class="fa-solid fa-star"></i>
                 </p>
               </div>
@@ -1306,19 +1308,19 @@
           <div class="col-start-5 col-end-9">
             <div class="border py-5 pl-8 pr-6 rounded-[20px] max-h-[240px]">
               <div class="flex gap-x-2 mb-3">
-                <p class="text-[#FFC633] text-[20px]">
+                <p class="text-[#FFC633] text-sm md:text-base  text-[20px]">
                   <i class="fa-solid fa-star"></i>
                 </p>
-                <p class="text-[#FFC633] text-[20px]">
+                <p class="text-[#FFC633] text-sm md:text-base  text-[20px]">
                   <i class="fa-solid fa-star"></i>
                 </p>
-                <p class="text-[#FFC633] text-[20px]">
+                <p class="text-[#FFC633] text-sm md:text-base  text-[20px]">
                   <i class="fa-solid fa-star"></i>
                 </p>
-                <p class="text-[#FFC633] text-[20px]">
+                <p class="text-[#FFC633] text-sm md:text-base  text-[20px]">
                   <i class="fa-solid fa-star"></i>
                 </p>
-                <p class="text-[#FFC633] text-[20px]">
+                <p class="text-[#FFC633] text-sm md:text-base  text-[20px]">
                   <i class="fa-solid fa-star"></i>
                 </p>
               </div>
@@ -1343,19 +1345,19 @@
           <div class="col-start-9 col-end-13">
             <div class="border py-5 pl-8 pr-8 rounded-[20px] h-[240px]">
               <div class="flex gap-x-2 mb-3">
-                <p class="text-[#FFC633] text-[20px]">
+                <p class="text-[#FFC633] text-sm md:text-base  text-[20px]">
                   <i class="fa-solid fa-star"></i>
                 </p>
-                <p class="text-[#FFC633] text-[20px]">
+                <p class="text-[#FFC633] text-sm md:text-base  text-[20px]">
                   <i class="fa-solid fa-star"></i>
                 </p>
-                <p class="text-[#FFC633] text-[20px]">
+                <p class="text-[#FFC633] text-sm md:text-base  text-[20px]">
                   <i class="fa-solid fa-star"></i>
                 </p>
-                <p class="text-[#FFC633] text-[20px]">
+                <p class="text-[#FFC633] text-sm md:text-base  text-[20px]">
                   <i class="fa-solid fa-star"></i>
                 </p>
-                <p class="text-[#FFC633] text-[20px]">
+                <p class="text-[#FFC633] text-sm md:text-base  text-[20px]">
                   <i class="fa-solid fa-star"></i>
                 </p>
               </div>

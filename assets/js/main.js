@@ -13,41 +13,10 @@ offerSignUp.classList.add("hidden")
 
 // --------------------OFFER SECTION END----------------
 
-
-
-
-
-
-
-const mySlider = document.querySelector(".my-slider");
-
 const Slider = document.querySelector(".slider");
 const testimonialSlider = document.querySelector(".testimonial-slider");
 
-if (mySlider) {
-  tns({
-    container: mySlider,
-    slideBy: "page",
-    mouseDrag: true,
-    controls: false,
-    gutter: 25,
-    responsive: {
-      425: {
-        items: 1.6,
-        gutter: 20,
-      },
-      768: {
-        items: 2.6,
-      },
-      1024: {
-        items: 3.6,
-      },
-      1440: {
-        items: 4,
-      },
-    },
-  });
-}
+
 
 if (Slider) {
   tns({
@@ -162,29 +131,5 @@ navSearchBtnHoverClose.addEventListener("click",(event)=>{
 
 
 
-// TABS SECTION START
-
-const tabBtns = document.querySelectorAll(".tab-btn-list button");
-const tabContents = document.querySelectorAll(".tab-contents .tab-content");
-
-tabBtns.forEach((item) => {
-  item.addEventListener("click", () => {
-    tabBtns.forEach((t) => {
-      t.setAttribute("class", "md:text-[20px] text-base font-satoshi font-normal leading-[22px] py-6 w-[131px]  md:w-[256px] lg:w-[414px] text-[#000] text-opacity-[60%] border-b-2 border-b-transparent hover:text-opacity-80");
-    });
-    item.setAttribute("class", "md:text-[20px] text-base font-satoshi font-medium leading-[22px] py-6 w-[131px]  md:w-[256px] lg:w-[414px] text-[#000] text-opacity-100 border-b-2 border-[#000]");
-    tabContents.forEach((tc) => {
-      tc.setAttribute("class", "hidden tab-content");
-    });
-    const value = item.getAttribute("data-value");
-    document
-      .getElementById(value)
-      .setAttribute("class", "tab-content ");
-  });
-});
-
-//    item.setAttribute("class", "text-[20px] font-satoshi font-normal leading-[22px] w-[414px] text-[#000] text-opacity-[60%] border-b-2 border-b-transparent hover:text-[#000] hover:text-opacity-100 hover:border-b-2 hover:border-[#000]");
-
-// TABS SECTION END
 
 

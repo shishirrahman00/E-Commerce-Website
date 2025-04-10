@@ -1,27 +1,52 @@
 // --------------------OFFER SECTION START--------------
 
+const offerSignUp = document.querySelector('.offer-sign-up');
+const offerBtnClose = document.querySelector('.offer-close-btn');
 
-const offerSignUp=document.querySelector(".offer-sign-up")
-const offerBtnClose=document.querySelector(".offer-close-btn")
-
-offerBtnClose.addEventListener("click",()=>{
-offerSignUp.classList.add("hidden")
-})
-
-
-
+offerBtnClose.addEventListener('click', () => {
+  offerSignUp.classList.add('hidden');
+});
 
 // --------------------OFFER SECTION END----------------
 
-const Slider = document.querySelector(".slider");
-const testimonialSlider = document.querySelector(".testimonial-slider");
+const Slider = document.querySelector('.slider');
+const testimonialSlider = document.querySelector('.testimonial-slider');
 
+// SLIDER SECTION START
 
+const mySlider = document.querySelector('.my-slider');
+
+if (mySlider) {
+  tns({
+    container: mySlider,
+    slideBy: 'page',
+    mouseDrag: true,
+    controls: false,
+    gutter: 25,
+    responsive: {
+      425: {
+        items: 1.6,
+        gutter: 20,
+      },
+      768: {
+        items: 2.6,
+      },
+      1024: {
+        items: 3.6,
+      },
+      1440: {
+        items: 4,
+      },
+    },
+  });
+}
+
+// SLIDER SECTION END
 
 if (Slider) {
   tns({
     container: Slider,
-    slideBy: "page",
+    slideBy: 'page',
     mouseDrag: true,
     controls: false,
     gutter: 25,
@@ -45,9 +70,9 @@ if (Slider) {
 if (testimonialSlider) {
   tns({
     container: testimonialSlider,
-    slideBy: "page",
+    slideBy: 'page',
     controls: false,
-    mouseDrag:true,
+    mouseDrag: true,
     // controlsContainer: "#controls",
     // prevButton: ".previous",
     // nextButton: ".next",
@@ -70,66 +95,53 @@ if (testimonialSlider) {
   });
 }
 
-
 // -----------------------NAV MENU START
 
-const navMenuBtn= document.querySelector(".nav-menu-btn")
-const navMenu= document.querySelector("#nav-menu")
-const navMenuSlider= document.querySelector("#nav-menu-slider")
-const navMenuSliderCloseBtn= document.querySelector("#nav-menu-slider-close-btn")
+const navMenuBtn = document.querySelector('.nav-menu-btn');
+const navMenu = document.querySelector('#nav-menu');
+const navMenuSlider = document.querySelector('#nav-menu-slider');
+const navMenuSliderCloseBtn = document.querySelector('#nav-menu-slider-close-btn');
 
+navMenuBtn.addEventListener('click', (event) => {
+  const value = event.currentTarget.getAttribute('data-state');
+  if (value === 'close') {
+    navMenuSlider.setAttribute('data-state', 'open');
+    document.body.classList.add('overflow-hidden');
+  }
+});
 
-navMenuBtn.addEventListener("click",(event)=>{
-  const value = event.currentTarget.getAttribute("data-state")
- if(value==="close"){
-  navMenuSlider.setAttribute("data-state","open")
-  document.body.classList.add("overflow-hidden")
- }
-})
-
-navMenuSliderCloseBtn.addEventListener("click",()=>{
-  navMenuSlider.setAttribute("data-state","close")
-  document.body.classList.remove("overflow-hidden")
-})
+navMenuSliderCloseBtn.addEventListener('click', () => {
+  navMenuSlider.setAttribute('data-state', 'close');
+  document.body.classList.remove('overflow-hidden');
+});
 
 // NAV MENU SEARCHBOX START
 
-const navBar=document.querySelector("#navbar")
-const navSearchBtn=document.querySelector(".nav-search-btn")
+const navSearchBtn = document.querySelector('.nav-search-btn');
+const navSearchover = document.querySelector('#search-hover');
+const navSearchBtnHoverClose = document.querySelector('#nav-search-btn-hover-close');
 
+navSearchBtn.addEventListener('click', (event) => {
+  const value = event.currentTarget.getAttribute('data-click');
+  if (value === 'close') {
+    navSearchover.setAttribute('data-click', !value);
+  }
+});
 
-const navSearchBtnHover=document.querySelector("#nav-search-btn-hover")
-const navSearchBtnHoverClose=document.querySelector("#nav-search-btn-hover-close")
+navSearchBtnHoverClose.addEventListener('click', () => {
+  navSearchover.setAttribute('data-click', 'close');
+});
 
+// const navSearchBtnHover = document.querySelector('#nav-search-btn-hover');
 
-
-navSearchBtn.addEventListener("click",(event)=>{
-  const value = event.currentTarget.getAttribute("data-click")
-  if(value==="close"){
-   navSearchBtnHover.setAttribute("data-click","open")
-  //  navBar.classList.add("hidden")
-   
-
-   }
-
-})
-
-navSearchBtnHoverClose.addEventListener("click",(event)=>{
-  navSearchBtnHover.setAttribute("data-click","close")
-  // if (!navSearchBtnHoverClose.contains(event.target)) {
-  //   navSearchBtnHover.setAttribute("data-click","close")
-  // }
-  
-
-})
-
-// xl:gap-x-6 lg:gap-x-4 md:gap-x-2.5 gap-x-4
+// navSearchBtn.addEventListener('click', (event) => {
+//   const value = event.currentTarget.getAttribute('data-click');
+//   if (value === 'close') {
+//     navSearchBtnHover.setAttribute('data-click', 'open');
+//     //  navBar.classList.add("hidden")
+//   }
+// });
 
 // NAV MENU SEARCHBOX END
 
 //------------------------- NAV MENU END
-
-
-
-
-

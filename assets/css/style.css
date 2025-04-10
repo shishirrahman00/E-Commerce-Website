@@ -1,11 +1,12 @@
 @font-face {
-  font-family: "Satoshi";
-  src: url("../font/Satoshi-Variable.ttf") format("ttf");
+  font-family: 'Satoshi';
+  src: url('../font/Satoshi-Variable.ttf') format('ttf');
 }
 
 @font-face {
-  font-family: "Integral";
-  src: url("../font/Fontspring-DEMO-integralcf-bold.otf") format("otf");
+  font-family: 'Integral';
+  src: url('../font/Fontspring-DEMO-integralcf-bold.otf') format('otf');
+  font-weight: bold;
 }
 
 @tailwind base;

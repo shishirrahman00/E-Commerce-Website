@@ -1,3 +1,14 @@
+// --------------------OFFER SECTION START--------------
+
+const offerSignUp = document.querySelector('.offer-sign-up');
+const offerBtnClose = document.querySelector('.offer-close-btn');
+
+offerBtnClose.addEventListener('click', () => {
+  offerSignUp.classList.add('hidden');
+});
+
+// --------------------OFFER SECTION END----------------
+
 // -----------------------NAV MENU START
 
 const navMenuBtn = document.querySelector('.nav-menu-btn');
@@ -20,28 +31,30 @@ navMenuSliderCloseBtn.addEventListener('click', () => {
 
 // NAV MENU SEARCHBOX START
 
-const navBar = document.querySelector('#navbar');
 const navSearchBtn = document.querySelector('.nav-search-btn');
-
-const navSearchBtnHover = document.querySelector('#nav-search-btn-hover');
+const navSearchover = document.querySelector('#search-hover');
 const navSearchBtnHoverClose = document.querySelector('#nav-search-btn-hover-close');
 
 navSearchBtn.addEventListener('click', (event) => {
   const value = event.currentTarget.getAttribute('data-click');
   if (value === 'close') {
-    navSearchBtnHover.setAttribute('data-click', 'open');
-    //  navBar.classList.add("hidden")
+    navSearchover.setAttribute('data-click', !value);
   }
 });
 
-navSearchBtnHoverClose.addEventListener('click', (event) => {
-  navSearchBtnHover.setAttribute('data-click', 'close');
-  // if (!navSearchBtnHoverClose.contains(event.target)) {
-  //   navSearchBtnHover.setAttribute("data-click","close")
-  // }
+navSearchBtnHoverClose.addEventListener('click', () => {
+  navSearchover.setAttribute('data-click', 'close');
 });
 
-// xl:gap-x-6 lg:gap-x-4 md:gap-x-2.5 gap-x-4
+// const navSearchBtnHover = document.querySelector('#nav-search-btn-hover');
+
+// navSearchBtn.addEventListener('click', (event) => {
+//   const value = event.currentTarget.getAttribute('data-click');
+//   if (value === 'close') {
+//     navSearchBtnHover.setAttribute('data-click', 'open');
+//     //  navBar.classList.add("hidden")
+//   }
+// });
 
 // NAV MENU SEARCHBOX END
 
@@ -71,8 +84,6 @@ navSearchBtnHoverClose.addEventListener('click', (event) => {
 // ----------------SLICK SLIDER SYNCING SECTION END------------------
 
 // SELECT COLOR SECTION START
-
-// console.log()
 
 const colors = document.querySelectorAll('.colors');
 

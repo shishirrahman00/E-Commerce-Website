@@ -116,12 +116,12 @@ tabBtns.forEach((item) => {
     tabBtns.forEach((t) => {
       t.setAttribute(
         'class',
-        'md:text-[20px] text-base font-satoshi font-normal leading-[22px] py-6 w-[33%] text-[#000] text-opacity-[60%] border-b-2 border-b-transparent hover:text-opacity-80'
+        'md:text-[20px] text-base  font-normal leading-[22px] py-6 w-[33%] text-[#000] text-opacity-[60%] border-b-2 border-b-transparent hover:text-opacity-80'
       );
     });
     item.setAttribute(
       'class',
-      'md:text-[20px] text-base font-satoshi font-medium leading-[22px] py-6 w-[33%] text-[#000] text-opacity-100 border-b-2 border-[#000]'
+      'md:text-[20px] text-base  font-medium leading-[22px] py-6 w-[33%] text-[#000] text-opacity-100 border-b-2 border-[#000]'
     );
     tabContents.forEach((tc) => {
       tc.setAttribute('class', 'hidden tab-content');
@@ -131,7 +131,7 @@ tabBtns.forEach((item) => {
   });
 });
 
-//    item.setAttribute("class", "text-[20px] font-satoshi font-normal leading-[22px] w-[414px] text-[#000] text-opacity-[60%] border-b-2 border-b-transparent hover:text-[#000] hover:text-opacity-100 hover:border-b-2 hover:border-[#000]");
+//    item.setAttribute("class", "text-[20px]  font-normal leading-[22px] w-[414px] text-[#000] text-opacity-[60%] border-b-2 border-b-transparent hover:text-[#000] hover:text-opacity-100 hover:border-b-2 hover:border-[#000]");
 
 // TABS SECTION END
 

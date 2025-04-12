@@ -13,7 +13,7 @@
     <div class="bg-black py-2 px-4 offer-sign-up">
       <div class="container mx-auto">
         <div class="text-center relative">
-          <p class="text-white text-sm font-satoshi">
+          <p class="text-white text-sm ">
             Sign up and get 20% off to your first order.
             <a href="#" class="border-b font-medium">Sign Up Now</a>
           </p>
@@ -25,7 +25,6 @@
       </div>
     </div>
     <!-- SIGN-UP-NOW-POP-UP-END-->
-
     <!--------------------- NAV BAR START ---------------->
 
     <!-- hamburger button section start -->
@@ -74,7 +73,7 @@
 
     <!-- nav-menu-start -->
 
-    <nav class="py-6 px-5 xl:px-0" id="navbar">
+    <nav class="py-6 px-5 xl:px-0">
       <div class="container mx-auto">
         <div class="flex items-center gap-x-[40px] justify-between">
           <div class="flex items-center justify-center gap-x-4">
@@ -87,18 +86,18 @@
           <div class="xl:flex hidden">
             <ul class="flex gap-x-6">
               <li>
-                <a href="#" class="font-satoshi"
+                <a href="#" class=""
                   >Shop <span class="text-sm"><i class="fa-solid fa-angle-down"></i></span
                 ></a>
               </li>
               <li>
-                <a href="#" class="font-satoshi font-normal text-base">On Sale</a>
+                <a href="#" class=" font-normal text-base">On Sale</a>
               </li>
               <li>
-                <a href="#" class="font-satoshi"> New Arrivals</a>
+                <a href="#" class=""> New Arrivals</a>
               </li>
               <li>
-                <a href="#" class="font-satoshi"> Brands</a>
+                <a href="#" class=""> Brands</a>
               </li>
             </ul>
           </div>
@@ -135,16 +134,35 @@
             </button>
           </div>
         </div>
+
+        <div data-click="close" id="search-hover" class="data-[click=close]:hidden z-50">
+          <div class="flex items-center gap-x-5">
+            <div class="relative w-full">
+              <input
+                type="text"
+                placeholder="Search for products..."
+                class="w-full  text-[#FFF] placeholder:text-base placeholder:text-[#FFF] placeholder:opacity-[80%] outline-none bg-[#2b83d6] py-3.5 pr-[70px] pl-6"
+              />
+
+              <button class="absolute top-1/2 right-8 transform -translate-y-1/2 md:text-[18px] text-base text-[#FFF]">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </div>
+            <button id="nav-search-btn-hover-close" class="text-red-600 md:text-[28px] text-[18px]">
+              <i class="fa-solid fa-x"></i>
+            </button>
+          </div>
+        </div>
       </div>
 
       <!-- search button hover section start -->
 
-      <div
+      <!-- <div
         data-click="false"
         id="nav-search-btn-hover"
-        class="fixed w-full h-full z-50 top-0 left-0 data-[click=false]:invisible transition-transform translate-x-full data-[click=open]:translate-x-0 data-[click=close]:translate-x-full duration-1000"
+        class="relative w-full h-full z-50 top-0 left-0 data-[click=false]:invisible transition-transform translate-x-full data-[click=open]:translate-x-0 data-[click=close]:translate-x-full duration-1000"
       >
-        <div class="w-full max-w-[1240px] h-full z-50 fixed top-[65px] mx-auto">
+        <div class="w-full max-w-[1240px] h-full z-50 absolute top-[65px] mx-auto">
           <div class="flex items-center justify-center">
             <button
               id="nav-search-btn-hover-close"
@@ -169,7 +187,7 @@
             </form>
           </div>
         </div>
-      </div>
+      </div> -->
 
       <!-- search button hover section end -->
     </nav>
@@ -194,7 +212,7 @@
                 <li class="inline-flex items-center gap-x-2 text-[#000] text-opacity-[60%]">
                   <a
                     href="#"
-                    class="flex items-center font-normal text-sm font-satoshi md:text-base text-[#000] text-opacity-[60%] hover:text-opacity-100"
+                    class="flex items-center font-normal text-sm  md:text-base text-[#000] text-opacity-[60%] hover:text-opacity-100"
                   >
                     Home
                   </a>
@@ -203,7 +221,7 @@
                 <li class="inline-flex items-center gap-x-2 text-[#000] text-opacity-[60%]">
                   <a
                     href="#"
-                    class="flex items-center font-normal text-sm font-satoshi md:text-base text-[#000] text-opacity-[60%] hover:text-opacity-100"
+                    class="flex items-center font-normal text-sm  md:text-base text-[#000] text-opacity-[60%] hover:text-opacity-100"
                   >
                     Cart
                   </a>
@@ -233,23 +251,23 @@
                 </div>
                 <div class="grow">
                   <div class="flex grow justify-between mb-2">
-                    <h4 class="font-satoshi text-base md:text-[20px] font-bold">Gradient Graphic T-shirt</h4>
+                    <h4 class=" text-base md:text-[20px] font-bold">Gradient Graphic T-shirt</h4>
                     <button class="text-[#FF3333]">
                       <span><i class="fa-solid fa-trash"></i></span>
                     </button>
                   </div>
 
                   <div>
-                    <p class="text-[12px] md:text-sm font-satoshi text-[#000]">
+                    <p class="text-[12px] md:text-sm  text-[#000]">
                       Size:<a href="#" class="text-[#000] text-opacity-60 ml-1.5">Large</a>
                     </p>
-                    <p class="text-[12px] md:text-sm font-satoshi text-[#000]">
+                    <p class="text-[12px] md:text-sm  text-[#000]">
                       Color:<a href="#" class="text-[#000] text-opacity-60 ml-1.5">White</a>
                     </p>
                   </div>
 
                   <div class="flex items-center justify-between">
-                    <h4 class="font-satoshi text-[20px] md:text-2xl font-bold">$145</h4>
+                    <h4 class=" text-[20px] md:text-2xl font-bold">$145</h4>
                     <div>
                       <form action="#" class="flex items-center bg-[#F0F0F0] rounded-[62px] px-1.5 py-2">
                         <button class="text-base px-3 text-[#000]"><i class="fa-solid fa-minus"></i></button>
@@ -276,23 +294,23 @@
                 </div>
                 <div class="grow">
                   <div class="flex grow justify-between mb-2">
-                    <h4 class="font-satoshi text-base md:text-[20px] font-bold">Checkered Shirt</h4>
+                    <h4 class=" text-base md:text-[20px] font-bold">Checkered Shirt</h4>
                     <button class="text-[#FF3333]">
                       <span><i class="fa-solid fa-trash"></i></span>
                     </button>
                   </div>
 
                   <div>
-                    <p class="text-[12px] md:text-sm font-satoshi text-[#000]">
+                    <p class="text-[12px] md:text-sm  text-[#000]">
                       Size:<a href="#" class="text-[#000] text-opacity-60 ml-1.5">Medium</a>
                     </p>
-                    <p class="text-[12px] md:text-sm font-satoshi text-[#000]">
+                    <p class="text-[12px] md:text-sm  text-[#000]">
                       Color:<a href="#" class="text-[#000] text-opacity-60 ml-1.5">Red</a>
                     </p>
                   </div>
 
                   <div class="flex items-center justify-between">
-                    <h4 class="font-satoshi text-[20px] md:text-2xl font-bold">$180</h4>
+                    <h4 class=" text-[20px] md:text-2xl font-bold">$180</h4>
                     <div>
                       <form action="#" class="flex items-center bg-[#F0F0F0] rounded-[62px] px-1.5 py-2">
                         <button class="text-base px-3 text-[#000]"><i class="fa-solid fa-minus"></i></button>
@@ -319,23 +337,23 @@
                 </div>
                 <div class="grow">
                   <div class="flex grow justify-between mb-2">
-                    <h4 class="font-satoshi text-base md:text-[20px] font-bold">Skinny Fit Jeans</h4>
+                    <h4 class=" text-base md:text-[20px] font-bold">Skinny Fit Jeans</h4>
                     <button class="text-[#FF3333]">
                       <span><i class="fa-solid fa-trash"></i></span>
                     </button>
                   </div>
 
                   <div>
-                    <p class="text-[12px] md:text-sm font-satoshi text-[#000]">
+                    <p class="text-[12px] md:text-sm  text-[#000]">
                       Size:<a href="#" class="text-[#000] text-opacity-60 ml-1.5">Large</a>
                     </p>
-                    <p class="text-[12px] md:text-sm font-satoshi text-[#000]">
+                    <p class="text-[12px] md:text-sm  text-[#000]">
                       Color:<a href="#" class="text-[#000] text-opacity-60 ml-1.5">Blue</a>
                     </p>
                   </div>
 
                   <div class="flex items-center justify-between">
-                    <h4 class="font-satoshi text-[20px] md:text-2xl font-bold">$240</h4>
+                    <h4 class=" text-[20px] md:text-2xl font-bold">$240</h4>
                     <div>
                       <form action="#" class="flex items-center bg-[#F0F0F0] rounded-[62px] px-1.5 py-2">
                         <button class="text-base px-3 text-[#000]"><i class="fa-solid fa-minus"></i></button>
@@ -353,72 +371,63 @@
             </div>
           </div>
           <div class="lg:col-start-8 lg:col-end-13 col-start-1 col-end-13">
-            <div class="border rounded-[20px] py-6 px-6">
-              <div class="mb-6">
-                <h2 class="text-[20px] md:text-2xl font-bold font-satoshi">Order Summary</h2>
-              </div>
-              <div class="grow">
-                <ul>
-                  <!-- <p class="text-base md:text-[20px] font-normal font-satoshi">Subtotal</p>
-                              <a class="text-base md:text-[20px] font-normal font-satoshi" href="#"><h4>$565</h4></a> -->
-
-                  <li
-                    class="flex items-center justify-between mb-5 text-base md:text-[20px] font-normal font-satoshi text-[#000] text-opacity-60"
-                  >
-                    Subtotal<a href="#" class="text-[#000] text-opacity-100"><h4>$565</h4></a>
-                  </li>
-                  <li
-                    class="flex items-center justify-between mb-5 text-base md:text-[20px] font-normal font-satoshi text-[#000] text-opacity-60"
-                  >
-                    <a href="#">Discount (-20%)</a>
-                    <a href="#" class="text-[#FF3333] text-opacity-100"><h4>-$113</h4></a>
-                  </li>
-                  <li
-                    class="flex items-center justify-between text-base md:text-[20px] font-normal font-satoshi text-[#000] text-opacity-60"
-                  >
-                    Delivery Fee<a href="#" class="text-[#000] text-opacity-100"><h4>$15</h4></a>
-                  </li>
-
-                  <!-- BORDER START -->
-                  <div class="py-6">
-                    <div class="border border-[#000] border-opacity-[10%]"></div>
-                  </div>
-                  <!-- BORDER END -->
-
-                  <li
-                    class="flex items-center justify-between mb-5 text-base md:text-[20px] font-normal font-satoshi text-[#000] text-opacity-60"
-                  >
-                    Total<a href="#" class="text-2xl text-[#000] text-opacity-100"><h4>$467</h4></a>
-                  </li>
-                </ul>
-              </div>
-              <div>
-                <form action="#" class="flex gap-x-3 mb-6 relative">
-                  <div class="grow">
-                    <span class="absolute left-5 top-1/2 -translate-y-1/2 text-[18px] text-[#000000] opacity-[40%]">
-                      <i class="fa-solid fa-tag"></i>
-                    </span>
-                    <input
-                      type="text"
-                      placeholder="Add promo code"
-                      class="bg-[#F0F0F0] md:px-12 px-10 w-full py-3 rounded-[62px] focus:outline-none"
-                    />
-                  </div>
-                  <button>
-                    <a
-                      href="#"
-                      class="text-sm md:text-base font-light py-3.5 px-10 border border-transparent font-satoshi bg-[#000] rounded-[62px] text-[#FFF]"
-                      >Apply</a
-                    >
-                  </button>
-                </form>
+            <div class="border flex flex-col gap-y-6 rounded-[20px] py-6 px-6">
+              <div >
+                <h2 class="text-[20px] md:text-2xl font-bold ">Order Summary</h2>
               </div>
 
-              <button
-                class="bg-[#000] text-[#fff] w-full py-[18px] text-sm md:text-base font-medium font-satoshi inline-flex items-center justify-center rounded-[62px]"
-              >
-                Go to Checkout<span class="ml-3 text-base"><i class="fa-solid fa-arrow-right"></i></span>
-              </button>
+              <div class="flex flex-col gap-y-5">
+                <div class="relative">
+                  <p class="text-base md:text-[20px] font-normal  text-[#000] text-opacity-[60%]">Subtotal</p>
+                  <span class="absolute top-1/2 -translate-y-1/2 right-0 text-base md:text-[20px] font-bold  text-[#000]">$525</span>
+                </div>
+                <div class="relative">
+                  <p class="text-base md:text-[20px] font-normal  text-[#000] text-opacity-[60%] inline-flex  items-center justify-center gap-x-[6px]">Discount<span>(20%)</span></p>
+                  <span class="absolute top-1/2 -translate-y-1/2 right-0 text-base md:text-[20px] font-bold  text-[#FF3333]">-$113</span>
+                </div>
+                <div class="relative">
+                  <p class="text-base md:text-[20px] font-normal  text-[#000] text-opacity-[60%]">Delivery Fee</p>
+                  <span class="absolute top-1/2 -translate-y-1/2 right-0 text-base md:text-[20px] font-bold  text-[#000]">$15</span>
+                </div>
+
+                <div >
+                  <div class="border border-[#000] border-opacity-[10%]"></div>
+                </div>
+
+                <div class="relative">
+                  <p class="text-[20px] md:text-2xl font-normal  text-[#000] text-opacity-[60%]">Total</p>
+                  <span class="absolute top-1/2 -translate-y-1/2 right-0 text-base md:text-[20px] font-bold  text-[#000]">$15</span>
+                </div>
+              </div>
+                <div>
+                  <form action="#" class="flex gap-x-3  relative">
+                    <div class="w-full">
+                      <span class="absolute left-5 top-1/2 -translate-y-1/2 text-[18px] text-[#000000] opacity-[40%]">
+                        <i class="fa-solid fa-tag"></i>
+                      </span>
+                      <input
+                        type="text"
+                        placeholder="Add promo code"
+                        class="bg-[#F0F0F0] md:px-[38px] px-[26px] w-full py-[13px] rounded-[62px] focus:outline-none "
+                      />
+                    </div>
+                    <button>
+                      <a
+                        href="#"
+                        class="text-sm md:text-base font-light py-[15px] px-10 border border-[#333] border-opacity-40   rounded-[62px] text-[#000] hover:bg-[#000] hover:text-[#FFF]"
+                        >Apply</a
+                      >
+                    </button>
+                  </form>
+                </div>
+  
+                <button
+                  class="bg-[#000] text-[#fff] w-full py-[18px] text-sm md:text-base font-medium  inline-flex items-center justify-center rounded-[62px]"
+                >
+                  Go to Checkout<span class="ml-3 text-base"><i class="fa-solid fa-arrow-right"></i></span>
+                </button>
+              </div>
+             
             </div>
           </div>
         </div>
@@ -481,7 +490,7 @@
               </div>
               <div class="xl:w-[255px] w-full mb-8">
                 <p
-                  class="text-sm md:text-base xl:text-sm leading-5 md:leading-[22px] font-normal text-[#000] text-opacity-[60%] font-satoshi"
+                  class="text-sm md:text-base xl:text-sm leading-5 md:leading-[22px] font-normal text-[#000] text-opacity-[60%] "
                 >
                   We have clothes that suits your style and which you’re proud to wear. From women to men.
                 </p>
@@ -523,14 +532,14 @@
                 <li class="mb-2">
                   <a
                     href="#"
-                    class="md:text-base font-satoshi text-sm leading-4 md:leading-[19px] text-[#000] text-opacity-[60%]"
+                    class="md:text-base  text-sm leading-4 md:leading-[19px] text-[#000] text-opacity-[60%]"
                     >About</a
                   >
                 </li>
                 <li class="mb-2">
                   <a
                     href="#"
-                    class="md:text-base font-satoshi text-sm leading-4 md:leading-[19px] text-[#000] text-opacity-[60%]"
+                    class="md:text-base  text-sm leading-4 md:leading-[19px] text-[#000] text-opacity-[60%]"
                   >
                     Features
                   </a>
@@ -538,14 +547,14 @@
                 <li class="mb-2">
                   <a
                     href="#"
-                    class="md:text-base font-satoshi text-sm leading-4 md:leading-[19px] text-[#000] text-opacity-[60%]"
+                    class="md:text-base  text-sm leading-4 md:leading-[19px] text-[#000] text-opacity-[60%]"
                     >Works</a
                   >
                 </li>
                 <li>
                   <a
                     href="#"
-                    class="md:text-base font-satoshi text-sm leading-4 md:leading-[19px] text-[#000] text-opacity-[60%]"
+                    class="md:text-base  text-sm leading-4 md:leading-[19px] text-[#000] text-opacity-[60%]"
                     >Carrer</a
                   >
                 </li>
@@ -559,28 +568,28 @@
                 <li class="mb-2">
                   <a
                     href="#"
-                    class="md:text-base font-satoshi text-sm leading-4 md:leading-[19px] text-[#000] text-opacity-[60%]"
+                    class="md:text-base  text-sm leading-4 md:leading-[19px] text-[#000] text-opacity-[60%]"
                     >Customer Support</a
                   >
                 </li>
                 <li class="mb-2">
                   <a
                     href="#"
-                    class="md:text-base font-satoshi text-sm leading-4 md:leading-[19px] text-[#000] text-opacity-[60%]"
+                    class="md:text-base  text-sm leading-4 md:leading-[19px] text-[#000] text-opacity-[60%]"
                     >Delivery Details</a
                   >
                 </li>
                 <li class="mb-2">
                   <a
                     href="#"
-                    class="md:text-base font-satoshi text-sm leading-4 md:leading-[19px] text-[#000] text-opacity-[60%]"
+                    class="md:text-base  text-sm leading-4 md:leading-[19px] text-[#000] text-opacity-[60%]"
                     >Terms & Conditions</a
                   >
                 </li>
                 <li>
                   <a
                     href="#"
-                    class="md:text-base font-satoshi text-sm leading-4 md:leading-[19px] text-[#000] text-opacity-[60%]"
+                    class="md:text-base  text-sm leading-4 md:leading-[19px] text-[#000] text-opacity-[60%]"
                     >Privacy Policy</a
                   >
                 </li>
@@ -594,28 +603,28 @@
                 <li class="mb-2">
                   <a
                     href="#"
-                    class="md:text-base font-satoshi text-sm leading-4 md:leading-[19px] text-[#000] text-opacity-[60%]"
+                    class="md:text-base  text-sm leading-4 md:leading-[19px] text-[#000] text-opacity-[60%]"
                     >Account</a
                   >
                 </li>
                 <li class="mb-2">
                   <a
                     href="#"
-                    class="md:text-base font-satoshi text-sm leading-4 md:leading-[19px] text-[#000] text-opacity-[60%]"
+                    class="md:text-base  text-sm leading-4 md:leading-[19px] text-[#000] text-opacity-[60%]"
                     >Manage Deliveries</a
                   >
                 </li>
                 <li class="mb-2">
                   <a
                     href="#"
-                    class="md:text-base font-satoshi text-sm leading-4 md:leading-[19px] text-[#000] text-opacity-[60%]"
+                    class="md:text-base  text-sm leading-4 md:leading-[19px] text-[#000] text-opacity-[60%]"
                     >Orders</a
                   >
                 </li>
                 <li>
                   <a
                     href="#"
-                    class="md:text-base font-satoshi text-sm leading-4 md:leading-[19px] text-[#000] text-opacity-[60%]"
+                    class="md:text-base  text-sm leading-4 md:leading-[19px] text-[#000] text-opacity-[60%]"
                     >Payments</a
                   >
                 </li>
@@ -631,28 +640,28 @@
                 <li class="mb-2">
                   <a
                     href="#"
-                    class="md:text-base font-satoshi text-sm leading-4 md:leading-[19px] text-[#000] text-opacity-[60%]"
+                    class="md:text-base  text-sm leading-4 md:leading-[19px] text-[#000] text-opacity-[60%]"
                     >Free eBooks</a
                   >
                 </li>
                 <li class="mb-2">
                   <a
                     href="#"
-                    class="md:text-base font-satoshi text-sm leading-4 md:leading-[19px] text-[#000] text-opacity-[60%]"
+                    class="md:text-base  text-sm leading-4 md:leading-[19px] text-[#000] text-opacity-[60%]"
                     >Development Tutorial</a
                   >
                 </li>
                 <li class="mb-2">
                   <a
                     href="#"
-                    class="md:text-base font-satoshi text-sm leading-4 md:leading-[19px] text-[#000] text-opacity-[60%]"
+                    class="md:text-base  text-sm leading-4 md:leading-[19px] text-[#000] text-opacity-[60%]"
                     >How to -Blog</a
                   >
                 </li>
                 <li>
                   <a
                     href="#"
-                    class="md:text-base font-satoshi text-sm leading-4 md:leading-[19px] text-[#000] text-opacity-[60%]"
+                    class="md:text-base  text-sm leading-4 md:leading-[19px] text-[#000] text-opacity-[60%]"
                     >Youtube Playlist</a
                   >
                 </li>
@@ -677,7 +686,7 @@
             class="xl:col-start-1 xl:col-end-4 lg:col-start-1 lg:col-end-5 md:col-start-1 md:col-end-13 col-start-1 col-end-13"
           >
             <div class="text-center lg:text-start">
-              <p class="text-sm text-[#000] text-opacity-[60%] font-satoshi">
+              <p class="text-sm text-[#000] text-opacity-[60%] ">
                 Shop.co &#169; 2000-2023, All Rights Reserved
               </p>
             </div>

@@ -21,6 +21,6 @@
 
 @layer base {
   body {
-    @apply;
+    @apply font-satoshi;
   }
 }

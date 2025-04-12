@@ -576,9 +576,12 @@
               <div>
                 <div class="flex items-center justify-between mb-4">
                   <h4 class="text-[20px] font-bold font-satoshi">Price</h4>
-                  <button class="text-[#000]"><i class="fa-solid fa-angle-up"></i></button>
+                  <button data-hide="false" class="text-[#000] group hide-btn">
+                    <i class="fa-solid fa-angle-up group-data-[hide=true]:hidden"></i>
+                    <i class="fa-solid fa-angle-down group-data-[hide=false]:hidden"></i>
+                  </button>
                 </div>
-                <div class="relative">
+                <div data-hide="false" class="relative price-content">
                   <div class="w-full h-[6px] bg-gray-200 rounded-full progress-item">
                     <div class="w-5 h-5 rounded-full bg-black absolute top-1/2 left-5 -translate-y-1/2"></div>
                     <div class="w-5 h-5 rounded-full bg-black absolute top-1/2 right-24 -translate-y-1/2"></div>
@@ -602,10 +605,13 @@
               <div>
                 <div class="flex items-center justify-between mb-4">
                   <h4 class="text-[20px] font-bold font-satoshi">Colors</h4>
-                  <button class="text-[#000]"><i class="fa-solid fa-angle-up"></i></button>
+                  <button data-hide="false" class="text-[#000] group hide-btn">
+                    <i class="fa-solid fa-angle-up group-data-[hide=true]:hidden"></i>
+                    <i class="fa-solid fa-angle-down group-data-[hide=false]:hidden"></i>
+                  </button>
                 </div>
 
-                <div class="flex items-center gap-x-[15px] gap-y-4 flex-wrap">
+                <div data-hide="false" class="flex items-center gap-x-[15px] gap-y-4 flex-wrap">
                   <button
                     data-color="00C12B"
                     class="colors w-9 h-9 bg-[#00C12B] border rounded-full inline-flex items-center justify-center text-[20px]"
@@ -660,9 +666,12 @@
               <div>
                 <div class="flex items-center justify-between mb-4">
                   <h4 class="text-[20px] font-bold font-satoshi">Size</h4>
-                  <button class="text-[#000]"><i class="fa-solid fa-angle-up"></i></button>
+                  <button data-hide="false" class="text-[#000] group hide-btn">
+                    <i class="fa-solid fa-angle-up group-data-[hide=true]:hidden"></i>
+                    <i class="fa-solid fa-angle-down group-data-[hide=false]:hidden"></i>
+                  </button>
                 </div>
-                <div class="flex items-center flex-wrap gap-x-3 gap-y-2">
+                <div class="flex items-center flex-wrap gap-x-3 gap-y-2 size-content">
                   <button
                     class="text-sm font-medium py-[10px] px-5 font-satoshi bg-[#F0F0F0] rounded-[62px] text-[#000] text-opacity-[60%] hover:bg-[#000] hover:text-[#fff] duration-500"
                   >
@@ -722,10 +731,13 @@
               <div class="pb-5">
                 <div class="flex items-center justify-between mb-4">
                   <h4 class="text-[20px] font-bold font-satoshi">Dressing Style</h4>
-                  <button class="text-[#000]"><i class="fa-solid fa-angle-up"></i></button>
+                  <button data-hide="false" class="text-[#000] group hide-btn">
+                    <i class="fa-solid fa-angle-up group-data-[hide=true]:hidden"></i>
+                    <i class="fa-solid fa-angle-down group-data-[hide=false]:hidden"></i>
+                  </button>
                 </div>
 
-                <div>
+                <div class="dressing-content">
                   <ul>
                     <li>
                       <a
@@ -1081,12 +1093,10 @@
 
             <div class="flex justify-between items-center">
               <div>
-                <button>
-                  <a
-                    href="#"
-                    class="md:px-[24px] px-4 py-1.5 border rounded-lg border-[#000] border-opacity-[10%] inline-flex items-center text-sm leading-5 font-medium font-satoshi gap-x-2 hover:bg-[#000] hover:text-[#fff] duration-500"
-                    ><span class="text-sm"><i class="fa-solid fa-arrow-left"></i></span>Previous</a
-                  >
+                <button
+                  class="md:px-[24px] px-4 py-2 border rounded-lg border-[#000] border-opacity-[10%] inline-flex items-center text-sm leading-5 font-medium font-satoshi gap-x-2 hover:bg-[#000] hover:text-[#fff] duration-500"
+                >
+                  <span class="text-sm"><i class="fa-solid fa-arrow-left"></i></span>Previous
                 </button>
               </div>
               <div>
@@ -1143,12 +1153,10 @@
                 </ul>
               </div>
               <div>
-                <button>
-                  <a
-                    href="#"
-                    class="md:px-[24px] px-4 py-1.5 border rounded-lg border-[#000] border-opacity-[10%] inline-flex items-center text-sm leading-5 font-medium font-satoshi gap-x-2 hover:bg-[#000] hover:text-[#fff] duration-500"
-                    >Next<span class="text-sm"><i class="fa-solid fa-arrow-right"></i></span
-                  ></a>
+                <button
+                  class="md:px-[24px] px-4 py-2 border rounded-lg border-[#000] border-opacity-[10%] inline-flex items-center text-sm leading-5 font-medium font-satoshi gap-x-2 hover:bg-[#000] hover:text-[#fff] duration-500"
+                >
+                  Next<span class="text-sm"><i class="fa-solid fa-arrow-right"></i></span>
                 </button>
               </div>
             </div>

@@ -103,4 +103,16 @@ colors.forEach((item) => {
 
 // SELECT COLOR SECTION END
 
+const hideBtn = document.querySelectorAll('.hide-btn');
+const priceContent = document.querySelector('.price-content');
+const dressingContent = document.querySelector('.dressing-content');
+const sizeContent = document.querySelector('.size-content');
+
+hideBtn.forEach((item) => {
+  item.addEventListener('click', (event) => {
+    const value = event.currentTarget.getAttribute('data-hide') === 'false';
+    event.currentTarget.setAttribute('data-hide', value);
+  });
+});
+
 // --------------------------CATEGORY PAGE CATEGORY BTN END--------------------

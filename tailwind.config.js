@@ -16,7 +16,7 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        integral: ['Integral', 'sans-serif'],
+        integral: ['Integral-Bold', 'sans-serif'],
         satoshi: ['Satoshi-Regular', 'sans-serif'],
       },
     },

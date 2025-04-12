@@ -14,11 +14,15 @@
 }
 
 @font-face {
-  font-family: 'Integral';
+  font-family: 'Integral-Bold';
 
-  src: url('../font/Fontspring-DEMO-integralcf-bold.otf') format('otf');
+  src: url('../fonts/integral/Fontspring-DEMO-integralcf-bold.otf') format('otf');
 
   font-weight: bold;
+
+  font-display: swap;
+
+  font-style: normal;
 }
 
 *, ::before, ::after {
@@ -579,6 +583,11 @@ video {
 
 body {
   font-family: Satoshi-Regular, sans-serif;
+}
+
+h1,
+  h2 {
+  font-family: Integral-Bold, sans-serif;
 }
 
 .container {
@@ -1674,7 +1683,7 @@ body {
 }
 
 .font-integral {
-  font-family: Integral, sans-serif;
+  font-family: Integral-Bold, sans-serif;
 }
 
 .text-2xl {
@@ -1924,11 +1933,11 @@ body {
 }
 
 .placeholder\:font-integral::-moz-placeholder {
-  font-family: Integral, sans-serif;
+  font-family: Integral-Bold, sans-serif;
 }
 
 .placeholder\:font-integral::placeholder {
-  font-family: Integral, sans-serif;
+  font-family: Integral-Bold, sans-serif;
 }
 
 .placeholder\:text-base::-moz-placeholder {

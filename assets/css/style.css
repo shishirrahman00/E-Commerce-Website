@@ -10,9 +10,11 @@
 }
 
 @font-face {
-  font-family: 'Integral';
-  src: url('../font/Fontspring-DEMO-integralcf-bold.otf') format('otf');
+  font-family: 'Integral-Bold';
+  src: url('../fonts/integral/Fontspring-DEMO-integralcf-bold.otf') format('otf');
   font-weight: bold;
+  font-display: swap;
+  font-style: normal;
 }
 
 @tailwind base;
@@ -22,5 +24,9 @@
 @layer base {
   body {
     @apply font-satoshi;
+  }
+  h1,
+  h2 {
+    @apply font-integral;
   }
 }

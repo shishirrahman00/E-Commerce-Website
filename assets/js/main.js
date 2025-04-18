@@ -118,19 +118,17 @@ navMenuSliderCloseBtn.addEventListener('click', () => {
 // NAV MENU SEARCHBOX START
 
 const navSearchBtn = document.querySelector('.nav-search-btn');
-const navSearchover = document.querySelector('#search-hover');
-const navSearchBtnHoverClose = document.querySelector('#nav-search-btn-hover-close');
+const navSearchover = document.querySelector('.search-hover');
+
+// const navSearchBtnHoverClose = document.querySelector('#nav-search-btn-hover-close');
 
 navSearchBtn.addEventListener('click', (event) => {
-  const value = event.currentTarget.getAttribute('data-click');
-  if (value === 'close') {
-    navSearchover.setAttribute('data-click', !value);
-  }
+  navSearchover.classList.remove('hidden');
 });
 
-navSearchBtnHoverClose.addEventListener('click', () => {
-  navSearchover.setAttribute('data-click', 'close');
-});
+// navSearchBtnHoverClose.addEventListener('click', () => {
+//   navSearchover.setAttribute('data-click', 'close');
+// });
 
 // const navSearchBtnHover = document.querySelector('#nav-search-btn-hover');
 

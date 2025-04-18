@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./index.html', './product-details-page.html', './category-page.html', './cart-page.html'],
+  content: ['./*.html'],
   theme: {
     screens: {
       sm: '640px',
@@ -18,6 +18,8 @@ module.exports = {
       fontFamily: {
         integral: ['Integral-Bold', 'sans-serif'],
         satoshi: ['Satoshi-Regular', 'sans-serif'],
+        satoshiBold: ['Satoshi-Bold', 'sans-serif'],
+        satoshiMedium: ['Satoshi-Medium', 'sans-serif'],
       },
     },
   },

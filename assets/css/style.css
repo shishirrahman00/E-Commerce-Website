@@ -25,9 +25,9 @@
   font-family: 'Satoshi-Bold';
   src:
     url('../fonts/satoshi/Satoshi-Bold.eot') format('eot'),
-    url('../fonts/satoshi/Satoshi-Bold.ttf') format('ttf'),
     url('../fonts/satoshi/Satoshi-Bold.woff') format('woff'),
-    url('../fonts/satoshi/Satoshi-Bold.woff2') format('woff2');
+    url('../fonts/satoshi/Satoshi-Bold.woff2') format('woff2'),
+    url('../fonts/satoshi/Satoshi-Bold.ttf') format('truetype');
   font-weight: bold;
   font-display: swap;
   font-style: normal;

@@ -123,7 +123,13 @@ const navSearchover = document.querySelector('.search-hover');
 // const navSearchBtnHoverClose = document.querySelector('#nav-search-btn-hover-close');
 
 navSearchBtn.addEventListener('click', (event) => {
-  navSearchover.classList.remove('hidden');
+  navSearchover.classList.toggle('hidden');
+});
+
+document.addEventListener('click', (event) => {
+  if (!navSearchover.contains(event.target) && !navSearchBtn.contains(event.target)) {
+    navSearchover.classList.add('hidden');
+  }
 });
 
 // navSearchBtnHoverClose.addEventListener('click', () => {

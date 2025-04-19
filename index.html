@@ -35,7 +35,7 @@
     <div
       data-state="close"
       id="nav-menu-slider"
-      class="fixed inset-0 w-full h-full bg-[#222] bg-opacity-85 z-50 data-[state=close]:opacity-0 data-[state=close]:invisible transition-transform ease-out -translate-x-full data-[state=open]:translate-x-0 duration-500"
+      class="fixed inset-0 w-full h-full bg-[#222] bg-opacity-85 z-50 data-[state=close]:opacity-0 data-[state=close]:invisible transition-all ease-in-out -translate-x-full data-[state=open]:translate-x-0 duration-500"
     >
       <div class="w-[315px] bg-[#3F4F44] h-full z-50 p-10 flex flex-col gap-y-[80px]">
         <div class="flex items-center justify-between">
@@ -99,9 +99,9 @@
                 <a href="#"
                   >Shop <span class="text-sm"><i class="fa-solid fa-angle-down"></i></span
                 ></a>
-
+                <!-- dropdown-menu-start -->
                 <div
-                  class="absolute top-full left-0 bg-[#ffff] z-50 w-[250px] duration-500 ease-in-out hidden group-hover:block"
+                  class="absolute top-full left-0 bg-[#ffff] z-50 w-[250px] transition-all duration-1000 ease-in-out hidden group-hover:block"
                 >
                   <ul>
                     <li>
@@ -126,6 +126,7 @@
                     </li>
                   </ul>
                 </div>
+                <!-- dropdown-menu-end -->
               </li>
               <li>
                 <a href="#" class="font-normal text-base">On Sale</a>
@@ -166,7 +167,7 @@
               </button>
 
               <div
-                class="search-hover absolute w-[350px] top-full -right-14 md:right-0 bg-[#FbFbFb] border rounded shadow-lg z-50 transition-all ease-in-out duration-700 hidden"
+                class="search-hover absolute w-[350px] top-full -right-14 md:right-0 bg-[#FbFbFb] border rounded shadow-lg z-50 transition-all ease-in-out duration-1000 hidden"
               >
                 <div
                   class="relative after:absolute after:content-[''] after:top-0 after:right-0 after:w-full after:h-[3px] after:bg-[#4db2ec]"
@@ -298,7 +299,7 @@
               </p>
 
               <button
-                class="xl:w-[270px] md:w-[90%] w-full py-3.5 bg-[#000] text-white font-integral text-base font-medium rounded-full lg:mb-10 md:mb-8 mb-10"
+                class="xl:w-[210px] md:w-[90%] w-full py-3 bg-[#000] text-[#fff] hover:bg-opacity-75 font-satoshiMedium text-base rounded-full lg:mb-10 md:mb-8 mb-10 transition-all duration-500 ease-in-out"
               >
                 Shop Now
               </button>
@@ -442,12 +443,14 @@
                     />
                   </svg>
                 </p>
-                <svg width="9" height="17" viewBox="0 0 9 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M3.56595 16.9793L8.99999 13.956V0.255005L6.38079 5.89491L0.207535 6.6431L4.76203 10.8769L3.56595 16.9793Z"
-                    fill="#FFC633"
-                  />
-                </svg>
+                <p>
+                  <svg width="9" height="17" viewBox="0 0 9 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M3.56595 16.9793L8.99999 13.956V0.255005L6.38079 5.89491L0.207535 6.6431L4.76203 10.8769L3.56595 16.9793Z"
+                      fill="#FFC633"
+                    />
+                  </svg>
+                </p>
 
                 <p class="text-sm md:text-base ml-2 inline-block">4.5/<span class="opacity-[60%]">5</span></p>
               </div>
@@ -490,12 +493,14 @@
                     />
                   </svg>
                 </p>
-                <svg width="9" height="17" viewBox="0 0 9 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M3.56595 16.9793L8.99999 13.956V0.255005L6.38079 5.89491L0.207535 6.6431L4.76203 10.8769L3.56595 16.9793Z"
-                    fill="#FFC633"
-                  />
-                </svg>
+                <p>
+                  <svg width="9" height="17" viewBox="0 0 9 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M3.56595 16.9793L8.99999 13.956V0.255005L6.38079 5.89491L0.207535 6.6431L4.76203 10.8769L3.56595 16.9793Z"
+                      fill="#FFC633"
+                    />
+                  </svg>
+                </p>
 
                 <p class="text-sm md:text-base ml-2 inline-block">3.5/<span class="opacity-[60%]">5</span></p>
               </div>
@@ -503,7 +508,7 @@
                 <h2 class="md:text-2xl text-[20px] font-satoshiBold">$240</h2>
                 <h2 class="md:text-2xl text-[20px] font-satoshiBold line-through opacity-[40%]">$260</h2>
                 <button
-                  class="text-[12px] md:w-[58px] md:h-[28px] w-[42px] h-5 font-satoshiMedium text-[#FF3333] bg-[#FF3333] bg-opacity-[10%] rounded-full"
+                  class="text-[10px] md:text-[12px] px-2 md:px-[13px] py-[3px] md:py-[6px] font-satoshiMedium text-[#FF3333] bg-[#FF3333] bg-opacity-[10%] rounded-full"
                 >
                   -20%
                 </button>
@@ -552,12 +557,14 @@
                     />
                   </svg>
                 </p>
-                <svg width="9" height="17" viewBox="0 0 9 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M3.56595 16.9793L8.99999 13.956V0.255005L6.38079 5.89491L0.207535 6.6431L4.76203 10.8769L3.56595 16.9793Z"
-                    fill="#FFC633"
-                  />
-                </svg>
+                <p>
+                  <svg width="9" height="17" viewBox="0 0 9 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M3.56595 16.9793L8.99999 13.956V0.255005L6.38079 5.89491L0.207535 6.6431L4.76203 10.8769L3.56595 16.9793Z"
+                      fill="#FFC633"
+                    />
+                  </svg>
+                </p>
 
                 <p class="text-sm md:text-base ml-2 inline-block">4.5/<span class="opacity-[60%]">5</span></p>
               </div>
@@ -567,7 +574,7 @@
             </div>
           </div>
           <div>
-            <div class="mb-3">
+            <div class="mb-4">
               <img src="./assets/img/SLEEVE STRIPED T-SHIRT.png" alt="" />
             </div>
 
@@ -608,12 +615,14 @@
                     />
                   </svg>
                 </p>
-                <svg width="9" height="17" viewBox="0 0 9 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M3.56595 16.9793L8.99999 13.956V0.255005L6.38079 5.89491L0.207535 6.6431L4.76203 10.8769L3.56595 16.9793Z"
-                    fill="#FFC633"
-                  />
-                </svg>
+                <p>
+                  <svg width="9" height="17" viewBox="0 0 9 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M3.56595 16.9793L8.99999 13.956V0.255005L6.38079 5.89491L0.207535 6.6431L4.76203 10.8769L3.56595 16.9793Z"
+                      fill="#FFC633"
+                    />
+                  </svg>
+                </p>
 
                 <p class="text-sm md:text-base ml-2 inline-block">4.5/<span class="opacity-[60%]">5</span></p>
               </div>
@@ -621,13 +630,14 @@
                 <h2 class="md:text-2xl text-[20px] font-satoshiBold">$130</h2>
                 <h2 class="md:text-2xl text-[20px] font-satoshiBold line-through opacity-[40%]">$160</h2>
                 <button
-                  class="text-[12px] md:w-[58px] md:h-[28px] w-[42px] h-5 font-satoshiMedium text-[#FF3333] bg-[#FF3333] bg-opacity-[10%] rounded-full"
+                  class="text-[10px] md:text-[12px] px-2 md:px-[13px] py-[3px] md:py-[6px] font-satoshiMedium text-[#FF3333] bg-[#FF3333] bg-opacity-[10%] rounded-full"
                 >
                   -30%
                 </button>
               </div>
             </div>
           </div>
+          <!-- 2 -->
           <div>
             <div class="mb-4">
               <img src="./assets/img/T-SHIRT WITH TAPE DETAILS.png" alt="" />
@@ -670,12 +680,14 @@
                     />
                   </svg>
                 </p>
-                <svg width="9" height="17" viewBox="0 0 9 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M3.56595 16.9793L8.99999 13.956V0.255005L6.38079 5.89491L0.207535 6.6431L4.76203 10.8769L3.56595 16.9793Z"
-                    fill="#FFC633"
-                  />
-                </svg>
+                <p>
+                  <svg width="9" height="17" viewBox="0 0 9 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M3.56595 16.9793L8.99999 13.956V0.255005L6.38079 5.89491L0.207535 6.6431L4.76203 10.8769L3.56595 16.9793Z"
+                      fill="#FFC633"
+                    />
+                  </svg>
+                </p>
 
                 <p class="text-sm md:text-base ml-2 inline-block">4.5/<span class="opacity-[60%]">5</span></p>
               </div>
@@ -718,12 +730,14 @@
                     />
                   </svg>
                 </p>
-                <svg width="9" height="17" viewBox="0 0 9 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M3.56595 16.9793L8.99999 13.956V0.255005L6.38079 5.89491L0.207535 6.6431L4.76203 10.8769L3.56595 16.9793Z"
-                    fill="#FFC633"
-                  />
-                </svg>
+                <p>
+                  <svg width="9" height="17" viewBox="0 0 9 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M3.56595 16.9793L8.99999 13.956V0.255005L6.38079 5.89491L0.207535 6.6431L4.76203 10.8769L3.56595 16.9793Z"
+                      fill="#FFC633"
+                    />
+                  </svg>
+                </p>
 
                 <p class="text-sm md:text-base ml-2 inline-block">3.5/<span class="opacity-[60%]">5</span></p>
               </div>
@@ -731,7 +745,7 @@
                 <h2 class="md:text-2xl text-[20px] font-satoshiBold">$240</h2>
                 <h2 class="md:text-2xl text-[20px] font-satoshiBold line-through opacity-[40%]">$260</h2>
                 <button
-                  class="text-[12px] md:w-[58px] md:h-[28px] w-[42px] h-5 font-satoshiMedium text-[#FF3333] bg-[#FF3333] bg-opacity-[10%] rounded-full"
+                  class="text-[10px] md:text-[12px] px-2 md:px-[13px] py-[3px] md:py-[6px] font-satoshiMedium text-[#FF3333] bg-[#FF3333] bg-opacity-[10%] rounded-full"
                 >
                   -20%
                 </button>
@@ -780,12 +794,14 @@
                     />
                   </svg>
                 </p>
-                <svg width="9" height="17" viewBox="0 0 9 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M3.56595 16.9793L8.99999 13.956V0.255005L6.38079 5.89491L0.207535 6.6431L4.76203 10.8769L3.56595 16.9793Z"
-                    fill="#FFC633"
-                  />
-                </svg>
+                <p>
+                  <svg width="9" height="17" viewBox="0 0 9 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M3.56595 16.9793L8.99999 13.956V0.255005L6.38079 5.89491L0.207535 6.6431L4.76203 10.8769L3.56595 16.9793Z"
+                      fill="#FFC633"
+                    />
+                  </svg>
+                </p>
 
                 <p class="text-sm md:text-base ml-2 inline-block">4.5/<span class="opacity-[60%]">5</span></p>
               </div>
@@ -795,7 +811,7 @@
             </div>
           </div>
           <div>
-            <div class="mb-3">
+            <div class="mb-4">
               <img src="./assets/img/SLEEVE STRIPED T-SHIRT.png" alt="" />
             </div>
 
@@ -836,12 +852,14 @@
                     />
                   </svg>
                 </p>
-                <svg width="9" height="17" viewBox="0 0 9 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M3.56595 16.9793L8.99999 13.956V0.255005L6.38079 5.89491L0.207535 6.6431L4.76203 10.8769L3.56595 16.9793Z"
-                    fill="#FFC633"
-                  />
-                </svg>
+                <p>
+                  <svg width="9" height="17" viewBox="0 0 9 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M3.56595 16.9793L8.99999 13.956V0.255005L6.38079 5.89491L0.207535 6.6431L4.76203 10.8769L3.56595 16.9793Z"
+                      fill="#FFC633"
+                    />
+                  </svg>
+                </p>
 
                 <p class="text-sm md:text-base ml-2 inline-block">4.5/<span class="opacity-[60%]">5</span></p>
               </div>
@@ -849,7 +867,7 @@
                 <h2 class="md:text-2xl text-[20px] font-satoshiBold">$130</h2>
                 <h2 class="md:text-2xl text-[20px] font-satoshiBold line-through opacity-[40%]">$160</h2>
                 <button
-                  class="text-[12px] md:w-[58px] md:h-[28px] w-[42px] h-5 font-satoshiMedium text-[#FF3333] bg-[#FF3333] bg-opacity-[10%] rounded-full"
+                  class="text-[10px] md:text-[12px] px-2 md:px-[13px] py-[3px] md:py-[6px] font-satoshiMedium text-[#FF3333] bg-[#FF3333] bg-opacity-[10%] rounded-full"
                 >
                   -30%
                 </button>
@@ -860,7 +878,7 @@
 
         <div class="text-center">
           <button
-            class="md:w-[218px] py-[15px] w-full md:text-base text-sm font-medium border rounded-full border-[#000] border-opacity-[10%] hover:bg-[#000] hover:text-[#FFF]"
+            class="md:w-[218px] py-[15px] w-full md:text-base text-sm font-medium border rounded-full border-[#000] border-opacity-[10%] hover:bg-[#000] hover:text-[#FFF] transition-all duration-500 ease-in-out"
           >
             View All
           </button>
@@ -884,216 +902,437 @@
 
         <div class="my-slider mb-10">
           <div>
-            <a href="#">
-              <div class="mb-3">
-                <img src="./assets/img/VERTICAL STRIPED SHIRT.png" alt="" />
-              </div>
-
+            <div class="mb-4">
+              <img src="./assets/img/VERTICAL STRIPED SHIRT.png" alt="" />
+            </div>
+            <div>
               <div>
-                <div>
-                  <h4 class="md:text-xl text-base font-bold mb-2">Vertical Striped Shirt</h4>
-                </div>
-                <div class="flex gap-x-2 mb-3 items-center">
-                  <p class="text-[#FFC633] text-sm md:text-base"><i class="fa-solid fa-star"></i></p>
-                  <p class="text-[#FFC633] text-sm md:text-base"><i class="fa-solid fa-star"></i></p>
-                  <p class="text-[#FFC633] text-sm md:text-base"><i class="fa-solid fa-star"></i></p>
-                  <p class="text-[#FFC633] text-sm md:text-base"><i class="fa-solid fa-star"></i></p>
-                  <p class="text-[#FFC633] text-sm md:text-base"><i class="fa-solid fa-star"></i></p>
-
-                  <p class="text-sm md:text-base">5.0/<span class="opacity-[60%]">5</span></p>
-                </div>
-                <div class="flex gap-x-[10px] items-center">
-                  <h2 class="md:text-2xl text-[20px] font-bold">$212</h2>
-                  <h2 class="md:text-2xl text-[20px] font-bold line-through opacity-[40%]">$232</h2>
-                  <button
-                    class="text-[12px] md:w-[58px] md:h-[28px] w-[42px] h-5 font-medium text-[#FF3333] bg-[#FF3333] bg-opacity-[10%] rounded-full"
-                  >
-                    -20%
-                  </button>
-                </div>
+                <h4 class="md:text-xl text-base font-satoshiBold mb-2">Vertical Striped Shirt</h4>
               </div>
-            </a>
+              <div class="flex gap-x-[5px] mb-2 items-center">
+                <p>
+                  <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M9.24494 0.255005L11.8641 5.89491L18.0374 6.6431L13.4829 10.8769L14.679 16.9793L9.24494 13.956L3.8109 16.9793L5.00697 10.8769L0.452479 6.6431L6.62573 5.89491L9.24494 0.255005Z"
+                      fill="#FFC633"
+                    />
+                  </svg>
+                </p>
+                <p>
+                  <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M9.24494 0.255005L11.8641 5.89491L18.0374 6.6431L13.4829 10.8769L14.679 16.9793L9.24494 13.956L3.8109 16.9793L5.00697 10.8769L0.452479 6.6431L6.62573 5.89491L9.24494 0.255005Z"
+                      fill="#FFC633"
+                    />
+                  </svg>
+                </p>
+                <p>
+                  <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M9.24494 0.255005L11.8641 5.89491L18.0374 6.6431L13.4829 10.8769L14.679 16.9793L9.24494 13.956L3.8109 16.9793L5.00697 10.8769L0.452479 6.6431L6.62573 5.89491L9.24494 0.255005Z"
+                      fill="#FFC633"
+                    />
+                  </svg>
+                </p>
+                <p>
+                  <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M9.24494 0.255005L11.8641 5.89491L18.0374 6.6431L13.4829 10.8769L14.679 16.9793L9.24494 13.956L3.8109 16.9793L5.00697 10.8769L0.452479 6.6431L6.62573 5.89491L9.24494 0.255005Z"
+                      fill="#FFC633"
+                    />
+                  </svg>
+                </p>
+                <p>
+                  <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M9.24494 0.255005L11.8641 5.89491L18.0374 6.6431L13.4829 10.8769L14.679 16.9793L9.24494 13.956L3.8109 16.9793L5.00697 10.8769L0.452479 6.6431L6.62573 5.89491L9.24494 0.255005Z"
+                      fill="#FFC633"
+                    />
+                  </svg>
+                </p>
+
+                <p class="text-sm md:text-base ml-2 inline-block">5.0/<span class="opacity-[60%]">5</span></p>
+              </div>
+              <div class="flex gap-x-[10px] items-center">
+                <h2 class="md:text-2xl text-[20px] font-satoshiBold">$212</h2>
+                <h2 class="md:text-2xl text-[20px] font-satoshiBold line-through opacity-[40%]">$232</h2>
+                <button
+                  class="text-[10px] md:text-[12px] px-2 md:px-[13px] py-[3px] md:py-[6px] font-satoshiMedium text-[#FF3333] bg-[#FF3333] bg-opacity-[10%] rounded-full"
+                >
+                  -20%
+                </button>
+              </div>
+            </div>
           </div>
           <div>
-            <a href="#">
-              <div class="mb-3">
-                <img src="./assets/img/COURAGE GRAPHIC T-SHIRT.png" alt="" />
-              </div>
+            <div class="mb-4">
+              <img src="./assets/img/COURAGE GRAPHIC T-SHIRT.png" alt="" />
+            </div>
 
+            <div>
               <div>
-                <div>
-                  <h4 class="md:text-xl text-base font-bold mb-2">Courage Graphic T-shirt</h4>
-                </div>
-                <div class="flex gap-x-2 mb-3 items-center">
-                  <p class="text-[#FFC633] text-sm md:text-base"><i class="fa-solid fa-star"></i></p>
-                  <p class="text-[#FFC633] text-sm md:text-base"><i class="fa-solid fa-star"></i></p>
-                  <p class="text-[#FFC633] text-sm md:text-base"><i class="fa-solid fa-star"></i></p>
-                  <p class="text-[#FFC633] text-sm md:text-base"><i class="fa-solid fa-star"></i></p>
-
-                  <p class="text-sm md:text-base">4.0/<span class="opacity-[60%]">5</span></p>
-                </div>
-                <div>
-                  <h2 class="md:text-2xl text-[20px] font-bold">$145</h2>
-                </div>
+                <h4 class="md:text-xl text-base font-satoshiBold mb-2">Courage Graphic T-shirt</h4>
               </div>
-            </a>
+              <div class="flex gap-x-[5px] mb-2 items-center">
+                <p>
+                  <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M9.24494 0.255005L11.8641 5.89491L18.0374 6.6431L13.4829 10.8769L14.679 16.9793L9.24494 13.956L3.8109 16.9793L5.00697 10.8769L0.452479 6.6431L6.62573 5.89491L9.24494 0.255005Z"
+                      fill="#FFC633"
+                    />
+                  </svg>
+                </p>
+                <p>
+                  <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M9.24494 0.255005L11.8641 5.89491L18.0374 6.6431L13.4829 10.8769L14.679 16.9793L9.24494 13.956L3.8109 16.9793L5.00697 10.8769L0.452479 6.6431L6.62573 5.89491L9.24494 0.255005Z"
+                      fill="#FFC633"
+                    />
+                  </svg>
+                </p>
+                <p>
+                  <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M9.24494 0.255005L11.8641 5.89491L18.0374 6.6431L13.4829 10.8769L14.679 16.9793L9.24494 13.956L3.8109 16.9793L5.00697 10.8769L0.452479 6.6431L6.62573 5.89491L9.24494 0.255005Z"
+                      fill="#FFC633"
+                    />
+                  </svg>
+                </p>
+                <p>
+                  <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M9.24494 0.255005L11.8641 5.89491L18.0374 6.6431L13.4829 10.8769L14.679 16.9793L9.24494 13.956L3.8109 16.9793L5.00697 10.8769L0.452479 6.6431L6.62573 5.89491L9.24494 0.255005Z"
+                      fill="#FFC633"
+                    />
+                  </svg>
+                </p>
+
+                <p class="text-sm md:text-base ml-2 inline-block">4.0/<span class="opacity-[60%]">5</span></p>
+              </div>
+              <div>
+                <h2 class="md:text-2xl text-[20px] font-satoshiBold">$145</h2>
+              </div>
+            </div>
           </div>
           <div>
-            <a href="#">
-              <div class="mb-3">
-                <img src="./assets/img/LOOSE FIT BERMUDA SHORTS.png" alt="" />
-              </div>
+            <div class="mb-4">
+              <img src="./assets/img/LOOSE FIT BERMUDA SHORTS.png" alt="" />
+            </div>
 
+            <div>
               <div>
-                <div>
-                  <h4 class="md:text-xl text-base font-bold mb-2">Loose Fit Bermuda Shorts</h4>
-                </div>
-                <div class="flex gap-x-2 mb-3 items-center">
-                  <p class="text-[#FFC633] text-sm md:text-base"><i class="fa-solid fa-star"></i></p>
-                  <p class="text-[#FFC633] text-sm md:text-base"><i class="fa-solid fa-star"></i></p>
-                  <p class="text-[#FFC633] text-sm md:text-base"><i class="fa-solid fa-star"></i></p>
-                  <p class="text-sm md:text-base">3.0/<span class="opacity-[60%]">5</span></p>
-                </div>
-                <div>
-                  <h2 class="md:text-2xl text-[20px] font-bold">$80</h2>
-                </div>
+                <h4 class="md:text-xl text-base font-bold mb-2">Loose Fit Bermuda Shorts</h4>
               </div>
-            </a>
+              <div class="flex gap-x-[5px] mb-2 items-center">
+                <p>
+                  <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M9.24494 0.255005L11.8641 5.89491L18.0374 6.6431L13.4829 10.8769L14.679 16.9793L9.24494 13.956L3.8109 16.9793L5.00697 10.8769L0.452479 6.6431L6.62573 5.89491L9.24494 0.255005Z"
+                      fill="#FFC633"
+                    />
+                  </svg>
+                </p>
+                <p>
+                  <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M9.24494 0.255005L11.8641 5.89491L18.0374 6.6431L13.4829 10.8769L14.679 16.9793L9.24494 13.956L3.8109 16.9793L5.00697 10.8769L0.452479 6.6431L6.62573 5.89491L9.24494 0.255005Z"
+                      fill="#FFC633"
+                    />
+                  </svg>
+                </p>
+                <p>
+                  <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M9.24494 0.255005L11.8641 5.89491L18.0374 6.6431L13.4829 10.8769L14.679 16.9793L9.24494 13.956L3.8109 16.9793L5.00697 10.8769L0.452479 6.6431L6.62573 5.89491L9.24494 0.255005Z"
+                      fill="#FFC633"
+                    />
+                  </svg>
+                </p>
+
+                <p class="text-sm md:text-base ml-2 inline-block">3.0/<span class="opacity-[60%]">5</span></p>
+              </div>
+              <div>
+                <h2 class="md:text-2xl text-[20px] font-satoshiBold">$80</h2>
+              </div>
+            </div>
           </div>
           <div>
-            <a href="#">
-              <div class="mb-3">
-                <img src="./assets/img/FADED SKINNY JEANS.png" alt="" />
-              </div>
+            <div class="mb-4">
+              <img src="./assets/img/FADED SKINNY JEANS.png" alt="" />
+            </div>
 
+            <div>
               <div>
-                <div>
-                  <h4 class="md:text-xl text-base font-bold mb-2">Faded Skinny Jeans</h4>
-                </div>
-                <div class="flex gap-x-2 mb-3 items-center">
-                  <p class="text-[#FFC633] text-sm md:text-base"><i class="fa-solid fa-star"></i></p>
-                  <p class="text-[#FFC633] text-sm md:text-base"><i class="fa-solid fa-star"></i></p>
-                  <p class="text-[#FFC633] text-sm md:text-base"><i class="fa-solid fa-star"></i></p>
-                  <p class="text-[#FFC633] text-sm md:text-base"><i class="fa-solid fa-star"></i></p>
-                  <p class="text-[#FFC633] text-sm md:text-base">
-                    <i class="fa-solid fa-star-half"></i>
-                  </p>
-                  <p class="text-sm md:text-base">4.5/<span class="opacity-[60%]">5</span></p>
-                </div>
-                <div>
-                  <h2 class="md:text-2xl text-[20px] font-bold">$210</h2>
-                </div>
+                <h4 class="md:text-xl text-base font-satoshiBold mb-2">Faded Skinny Jeans</h4>
               </div>
-            </a>
+              <div class="flex gap-x-[5px] mb-2 items-center">
+                <p>
+                  <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M9.24494 0.255005L11.8641 5.89491L18.0374 6.6431L13.4829 10.8769L14.679 16.9793L9.24494 13.956L3.8109 16.9793L5.00697 10.8769L0.452479 6.6431L6.62573 5.89491L9.24494 0.255005Z"
+                      fill="#FFC633"
+                    />
+                  </svg>
+                </p>
+                <p>
+                  <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M9.24494 0.255005L11.8641 5.89491L18.0374 6.6431L13.4829 10.8769L14.679 16.9793L9.24494 13.956L3.8109 16.9793L5.00697 10.8769L0.452479 6.6431L6.62573 5.89491L9.24494 0.255005Z"
+                      fill="#FFC633"
+                    />
+                  </svg>
+                </p>
+                <p>
+                  <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M9.24494 0.255005L11.8641 5.89491L18.0374 6.6431L13.4829 10.8769L14.679 16.9793L9.24494 13.956L3.8109 16.9793L5.00697 10.8769L0.452479 6.6431L6.62573 5.89491L9.24494 0.255005Z"
+                      fill="#FFC633"
+                    />
+                  </svg>
+                </p>
+                <p>
+                  <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M9.24494 0.255005L11.8641 5.89491L18.0374 6.6431L13.4829 10.8769L14.679 16.9793L9.24494 13.956L3.8109 16.9793L5.00697 10.8769L0.452479 6.6431L6.62573 5.89491L9.24494 0.255005Z"
+                      fill="#FFC633"
+                    />
+                  </svg>
+                </p>
+                <p>
+                  <svg width="9" height="17" viewBox="0 0 9 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M3.56595 16.9793L8.99999 13.956V0.255005L6.38079 5.89491L0.207535 6.6431L4.76203 10.8769L3.56595 16.9793Z"
+                      fill="#FFC633"
+                    />
+                  </svg>
+                </p>
+
+                <p class="text-sm md:text-base ml-2 inline-block">4.5/<span class="opacity-[60%]">5</span></p>
+              </div>
+              <div>
+                <h2 class="md:text-2xl text-[20px] font-satoshiBold">$210</h2>
+              </div>
+            </div>
+          </div>
+          <!-- 2 -->
+          <div>
+            <div class="mb-4">
+              <img src="./assets/img/VERTICAL STRIPED SHIRT.png" alt="" />
+            </div>
+            <div>
+              <div>
+                <h4 class="md:text-xl text-base font-satoshiBold mb-2">Vertical Striped Shirt</h4>
+              </div>
+              <div class="flex gap-x-[5px] mb-2 items-center">
+                <p>
+                  <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M9.24494 0.255005L11.8641 5.89491L18.0374 6.6431L13.4829 10.8769L14.679 16.9793L9.24494 13.956L3.8109 16.9793L5.00697 10.8769L0.452479 6.6431L6.62573 5.89491L9.24494 0.255005Z"
+                      fill="#FFC633"
+                    />
+                  </svg>
+                </p>
+                <p>
+                  <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M9.24494 0.255005L11.8641 5.89491L18.0374 6.6431L13.4829 10.8769L14.679 16.9793L9.24494 13.956L3.8109 16.9793L5.00697 10.8769L0.452479 6.6431L6.62573 5.89491L9.24494 0.255005Z"
+                      fill="#FFC633"
+                    />
+                  </svg>
+                </p>
+                <p>
+                  <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M9.24494 0.255005L11.8641 5.89491L18.0374 6.6431L13.4829 10.8769L14.679 16.9793L9.24494 13.956L3.8109 16.9793L5.00697 10.8769L0.452479 6.6431L6.62573 5.89491L9.24494 0.255005Z"
+                      fill="#FFC633"
+                    />
+                  </svg>
+                </p>
+                <p>
+                  <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M9.24494 0.255005L11.8641 5.89491L18.0374 6.6431L13.4829 10.8769L14.679 16.9793L9.24494 13.956L3.8109 16.9793L5.00697 10.8769L0.452479 6.6431L6.62573 5.89491L9.24494 0.255005Z"
+                      fill="#FFC633"
+                    />
+                  </svg>
+                </p>
+                <p>
+                  <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M9.24494 0.255005L11.8641 5.89491L18.0374 6.6431L13.4829 10.8769L14.679 16.9793L9.24494 13.956L3.8109 16.9793L5.00697 10.8769L0.452479 6.6431L6.62573 5.89491L9.24494 0.255005Z"
+                      fill="#FFC633"
+                    />
+                  </svg>
+                </p>
+
+                <p class="text-sm md:text-base ml-2 inline-block">5.0/<span class="opacity-[60%]">5</span></p>
+              </div>
+              <div class="flex gap-x-[10px] items-center">
+                <h2 class="md:text-2xl text-[20px] font-satoshiBold">$212</h2>
+                <h2 class="md:text-2xl text-[20px] font-satoshiBold line-through opacity-[40%]">$232</h2>
+                <button
+                  class="text-[10px] md:text-[12px] px-2 md:px-[13px] py-[3px] md:py-[6px] font-satoshiMedium text-[#FF3333] bg-[#FF3333] bg-opacity-[10%] rounded-full"
+                >
+                  -20%
+                </button>
+              </div>
+            </div>
           </div>
           <div>
-            <a href="#">
-              <div class="mb-3">
-                <img src="./assets/img/VERTICAL STRIPED SHIRT.png" alt="" />
-              </div>
+            <div class="mb-4">
+              <img src="./assets/img/COURAGE GRAPHIC T-SHIRT.png" alt="" />
+            </div>
 
+            <div>
               <div>
-                <div>
-                  <h4 class="md:text-xl text-base font-bold mb-2">Vertical Striped Shirt</h4>
-                </div>
-                <div class="flex gap-x-2 mb-3">
-                  <p class="text-[#FFC633] text-sm md:text-base"><i class="fa-solid fa-star"></i></p>
-                  <p class="text-[#FFC633] text-sm md:text-base"><i class="fa-solid fa-star"></i></p>
-                  <p class="text-[#FFC633] text-sm md:text-base"><i class="fa-solid fa-star"></i></p>
-                  <p class="text-[#FFC633] text-sm md:text-base"><i class="fa-solid fa-star"></i></p>
-                  <p class="text-[#FFC633] text-sm md:text-base"><i class="fa-solid fa-star"></i></p>
-
-                  <p class="text-sm md:text-base">5.0/<span class="opacity-[60%]">5</span></p>
-                </div>
-                <div class="flex gap-x-[10px] items-center">
-                  <h2 class="md:text-2xl text-[20px] font-bold">$212</h2>
-                  <h2 class="md:text-2xl text-[20px] font-bold line-through opacity-[40%]">$232</h2>
-                  <button
-                    class="text-[12px] md:w-[58px] md:h-[28px] w-[42px] h-5 font-medium text-[#FF3333] bg-[#FF3333] bg-opacity-[10%] rounded-full"
-                  >
-                    -20%
-                  </button>
-                </div>
+                <h4 class="md:text-xl text-base font-satoshiBold mb-2">Courage Graphic T-shirt</h4>
               </div>
-            </a>
+              <div class="flex gap-x-[5px] mb-2 items-center">
+                <p>
+                  <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M9.24494 0.255005L11.8641 5.89491L18.0374 6.6431L13.4829 10.8769L14.679 16.9793L9.24494 13.956L3.8109 16.9793L5.00697 10.8769L0.452479 6.6431L6.62573 5.89491L9.24494 0.255005Z"
+                      fill="#FFC633"
+                    />
+                  </svg>
+                </p>
+                <p>
+                  <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M9.24494 0.255005L11.8641 5.89491L18.0374 6.6431L13.4829 10.8769L14.679 16.9793L9.24494 13.956L3.8109 16.9793L5.00697 10.8769L0.452479 6.6431L6.62573 5.89491L9.24494 0.255005Z"
+                      fill="#FFC633"
+                    />
+                  </svg>
+                </p>
+                <p>
+                  <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M9.24494 0.255005L11.8641 5.89491L18.0374 6.6431L13.4829 10.8769L14.679 16.9793L9.24494 13.956L3.8109 16.9793L5.00697 10.8769L0.452479 6.6431L6.62573 5.89491L9.24494 0.255005Z"
+                      fill="#FFC633"
+                    />
+                  </svg>
+                </p>
+                <p>
+                  <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M9.24494 0.255005L11.8641 5.89491L18.0374 6.6431L13.4829 10.8769L14.679 16.9793L9.24494 13.956L3.8109 16.9793L5.00697 10.8769L0.452479 6.6431L6.62573 5.89491L9.24494 0.255005Z"
+                      fill="#FFC633"
+                    />
+                  </svg>
+                </p>
+
+                <p class="text-sm md:text-base ml-2 inline-block">4.0/<span class="opacity-[60%]">5</span></p>
+              </div>
+              <div>
+                <h2 class="md:text-2xl text-[20px] font-satoshiBold">$145</h2>
+              </div>
+            </div>
           </div>
           <div>
-            <a href="#">
-              <div class="mb-3">
-                <img src="./assets/img/COURAGE GRAPHIC T-SHIRT.png" alt="" />
-              </div>
+            <div class="mb-4">
+              <img src="./assets/img/LOOSE FIT BERMUDA SHORTS.png" alt="" />
+            </div>
 
+            <div>
               <div>
-                <div>
-                  <h4 class="md:text-xl text-base font-bold mb-2">Courage Graphic T-shirt</h4>
-                </div>
-                <div class="flex gap-x-2 mb-3 items-center">
-                  <p class="text-[#FFC633] text-sm md:text-base"><i class="fa-solid fa-star"></i></p>
-                  <p class="text-[#FFC633] text-sm md:text-base"><i class="fa-solid fa-star"></i></p>
-                  <p class="text-[#FFC633] text-sm md:text-base"><i class="fa-solid fa-star"></i></p>
-                  <p class="text-[#FFC633] text-sm md:text-base"><i class="fa-solid fa-star"></i></p>
-
-                  <p class="text-sm md:text-base">4.0/<span class="opacity-[60%]">5</span></p>
-                </div>
-                <div>
-                  <h2 class="md:text-2xl text-[20px] font-bold">$145</h2>
-                </div>
+                <h4 class="md:text-xl text-base font-bold mb-2">Loose Fit Bermuda Shorts</h4>
               </div>
-            </a>
+              <div class="flex gap-x-[5px] mb-2 items-center">
+                <p>
+                  <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M9.24494 0.255005L11.8641 5.89491L18.0374 6.6431L13.4829 10.8769L14.679 16.9793L9.24494 13.956L3.8109 16.9793L5.00697 10.8769L0.452479 6.6431L6.62573 5.89491L9.24494 0.255005Z"
+                      fill="#FFC633"
+                    />
+                  </svg>
+                </p>
+                <p>
+                  <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M9.24494 0.255005L11.8641 5.89491L18.0374 6.6431L13.4829 10.8769L14.679 16.9793L9.24494 13.956L3.8109 16.9793L5.00697 10.8769L0.452479 6.6431L6.62573 5.89491L9.24494 0.255005Z"
+                      fill="#FFC633"
+                    />
+                  </svg>
+                </p>
+                <p>
+                  <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M9.24494 0.255005L11.8641 5.89491L18.0374 6.6431L13.4829 10.8769L14.679 16.9793L9.24494 13.956L3.8109 16.9793L5.00697 10.8769L0.452479 6.6431L6.62573 5.89491L9.24494 0.255005Z"
+                      fill="#FFC633"
+                    />
+                  </svg>
+                </p>
+
+                <p class="text-sm md:text-base ml-2 inline-block">3.0/<span class="opacity-[60%]">5</span></p>
+              </div>
+              <div>
+                <h2 class="md:text-2xl text-[20px] font-satoshiBold">$80</h2>
+              </div>
+            </div>
           </div>
           <div>
-            <a href="#">
-              <div class="mb-3">
-                <img src="./assets/img/LOOSE FIT BERMUDA SHORTS.png" alt="" />
-              </div>
+            <div class="mb-4">
+              <img src="./assets/img/FADED SKINNY JEANS.png" alt="" />
+            </div>
 
+            <div>
               <div>
-                <div>
-                  <h4 class="md:text-xl text-base font-bold mb-2">Loose Fit Bermuda Shorts</h4>
-                </div>
-                <div class="flex gap-x-2 mb-3 items-center">
-                  <p class="text-[#FFC633] text-sm md:text-base"><i class="fa-solid fa-star"></i></p>
-                  <p class="text-[#FFC633] text-sm md:text-base"><i class="fa-solid fa-star"></i></p>
-                  <p class="text-[#FFC633] text-sm md:text-base"><i class="fa-solid fa-star"></i></p>
-                  <p class="text-sm md:text-base">3.0/<span class="opacity-[60%]">5</span></p>
-                </div>
-                <div>
-                  <h2 class="md:text-2xl text-[20px] font-bold">$80</h2>
-                </div>
+                <h4 class="md:text-xl text-base font-satoshiBold mb-2">Faded Skinny Jeans</h4>
               </div>
-            </a>
-          </div>
-          <div>
-            <a href="#">
-              <div class="mb-3">
-                <img src="./assets/img/FADED SKINNY JEANS.png" alt="" />
-              </div>
+              <div class="flex gap-x-[5px] mb-2 items-center">
+                <p>
+                  <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M9.24494 0.255005L11.8641 5.89491L18.0374 6.6431L13.4829 10.8769L14.679 16.9793L9.24494 13.956L3.8109 16.9793L5.00697 10.8769L0.452479 6.6431L6.62573 5.89491L9.24494 0.255005Z"
+                      fill="#FFC633"
+                    />
+                  </svg>
+                </p>
+                <p>
+                  <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M9.24494 0.255005L11.8641 5.89491L18.0374 6.6431L13.4829 10.8769L14.679 16.9793L9.24494 13.956L3.8109 16.9793L5.00697 10.8769L0.452479 6.6431L6.62573 5.89491L9.24494 0.255005Z"
+                      fill="#FFC633"
+                    />
+                  </svg>
+                </p>
+                <p>
+                  <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M9.24494 0.255005L11.8641 5.89491L18.0374 6.6431L13.4829 10.8769L14.679 16.9793L9.24494 13.956L3.8109 16.9793L5.00697 10.8769L0.452479 6.6431L6.62573 5.89491L9.24494 0.255005Z"
+                      fill="#FFC633"
+                    />
+                  </svg>
+                </p>
+                <p>
+                  <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M9.24494 0.255005L11.8641 5.89491L18.0374 6.6431L13.4829 10.8769L14.679 16.9793L9.24494 13.956L3.8109 16.9793L5.00697 10.8769L0.452479 6.6431L6.62573 5.89491L9.24494 0.255005Z"
+                      fill="#FFC633"
+                    />
+                  </svg>
+                </p>
+                <p>
+                  <svg width="9" height="17" viewBox="0 0 9 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M3.56595 16.9793L8.99999 13.956V0.255005L6.38079 5.89491L0.207535 6.6431L4.76203 10.8769L3.56595 16.9793Z"
+                      fill="#FFC633"
+                    />
+                  </svg>
+                </p>
 
-              <div>
-                <div>
-                  <h4 class="md:text-xl text-base font-bold mb-2">Faded Skinny Jeans</h4>
-                </div>
-                <div class="flex gap-x-2 mb-3 items-center">
-                  <p class="text-[#FFC633] text-sm md:text-base"><i class="fa-solid fa-star"></i></p>
-                  <p class="text-[#FFC633] text-sm md:text-base"><i class="fa-solid fa-star"></i></p>
-                  <p class="text-[#FFC633] text-sm md:text-base"><i class="fa-solid fa-star"></i></p>
-                  <p class="text-[#FFC633] text-sm md:text-base"><i class="fa-solid fa-star"></i></p>
-                  <p class="text-[#FFC633] text-sm md:text-base">
-                    <i class="fa-solid fa-star-half"></i>
-                  </p>
-                  <p class="text-sm md:text-base">4.5/<span class="opacity-[60%]">5</span></p>
-                </div>
-                <div>
-                  <h2 class="md:text-2xl text-[20px] font-bold">$210</h2>
-                </div>
+                <p class="text-sm md:text-base ml-2 inline-block">4.5/<span class="opacity-[60%]">5</span></p>
               </div>
-            </a>
+              <div>
+                <h2 class="md:text-2xl text-[20px] font-satoshiBold">$210</h2>
+              </div>
+            </div>
           </div>
         </div>
 
         <div class="text-center">
           <button
-            class="md:w-[218px] py-[15px] w-full md:text-base text-sm font-medium border rounded-full border-[#000] border-opacity-[10%] hover:bg-[#000] hover:text-[#FFF]"
+            class="md:w-[218px] py-[15px] w-full md:text-base text-sm font-medium border rounded-full border-[#000] border-opacity-[10%] hover:bg-[#000] hover:text-[#FFF] transition-all duration-500 ease-in-out"
           >
             View All
           </button>
@@ -1109,7 +1348,7 @@
         <div class="bg-[#F0F0F0] rounded-[20px] py-20">
           <div class="text-center mb-[28px] md:mb-[64px]">
             <p
-              class="font-extrabold lg:text-5xl md:text-4xl md:leading-none text-[32px] leading-9 w-[250px] mx-auto md:w-full font-integral"
+              class="lg:text-5xl md:text-4xl md:leading-none text-[32px] leading-9 w-[250px] mx-auto md:w-full font-integral"
             >
               BROWSE BY DRESS STYLE
             </p>
@@ -1125,7 +1364,7 @@
                   />
                 </a>
                 <div class="absolute top-8 left-9">
-                  <p class="font-bold md:text-4xl text-2xl">Casual</p>
+                  <p class="font-satoshiBold md:text-4xl text-2xl">Casual</p>
                 </div>
               </div>
             </div>
@@ -1140,7 +1379,7 @@
                   />
                 </a>
                 <div class="absolute top-8 left-9">
-                  <p class="font-bold md:text-4xl text-2xl">Formal</p>
+                  <p class="font-satoshiBold md:text-4xl text-2xl">Formal</p>
                 </div>
               </div>
             </div>
@@ -1155,7 +1394,7 @@
                   />
                 </a>
                 <div class="absolute top-8 left-9">
-                  <p class="font-bold md:text-4xl text-2xl">Party</p>
+                  <p class="font-satoshiBold md:text-4xl text-2xl">Party</p>
                 </div>
               </div>
             </div>
@@ -1169,7 +1408,7 @@
                   />
                 </a>
                 <div class="absolute top-8 left-9">
-                  <p class="font-bold md:text-4xl text-2xl">Gym</p>
+                  <p class="font-satoshiBold md:text-4xl text-2xl">Gym</p>
                 </div>
               </div>
             </div>
@@ -1181,10 +1420,10 @@
     <!-- BROWSE BY DRESSING STYLE SECTION END -->
 
     <!-- OUR CUSTOMER SLIDER START -->
-    <div class="pt-[90px] md:pb-[175px] pb-[195px] px-5 xl:px-0">
+    <div class="pt-[90px] px-5 xl:px-0">
       <div class="container mx-auto">
         <div class="mb-9">
-          <h1 class="md:text-5xl text-[32px] font-extrabold font-integral">OUR HAPPY CUSTOMERS</h1>
+          <h1 class="md:text-5xl text-[32px] font-integral">OUR HAPPY CUSTOMERS</h1>
         </div>
         <!-- <div id="controls">
           <button class="previous">
@@ -1375,268 +1614,238 @@
 
     <!-- --------------------FOOTER SECTION START------------------- -->
 
-    <div class="relative">
-      <div class="absolute inset-0 xl:-top-[23%] lg:-top-[12%] md:-top-[12%] -top-[16%]">
-        <div class="px-4 xl:px-0">
-          <div class="container mx-auto">
-            <div
-              class="bg-[#000] flex md:flex-row flex-col gap-y-[32px] items-center justify-between lg:px-[64px] lg:py-[34px] px-[24px] py-[32px] rounded-[20px]"
-            >
-              <div>
-                <h2
-                  class="xl:w-[560px] lg:w-[440px] md:w-[350px] w-full lg:text-[40px] text-[32px] leading-[35px] md:leading-[45px] font-extrabold text-white font-integral"
+    <footer>
+      <div class="container mx-auto relative z-50 xl:top-[90px] lg:top-[100px] md:top-[120px] top-[150px] px-5 xl:px-0">
+        <div class="grid grid-cols-12 gap-y-6 items-center bg-[#000] rounded-[20px] px-6 py-8 lg:px-16 lg:py-9">
+          <div class="col-start-1 col-end-13 lg:col-start-1 lg:col-end-8 xl:col-start-1 xl:col-end-7">
+            <div>
+              <h2 class="lg:text-[40px] text-[32px] leading-[35px] lg:leading-[45px] text-white font-integral">
+                STAY UPTO DATE ABOUT OUR LATEST OFFERS
+              </h2>
+            </div>
+          </div>
+          <div class="col-start-1 col-end-13 lg:col-start-9 lg:col-end-13">
+            <div>
+              <form action="#">
+                <div class="relative mb-[14px]">
+                  <input
+                    type="email"
+                    placeholder="Enter your email address"
+                    class="w-full outline-none text-sm md:text-base font-satoshi placeholder:text-opacity-[40%] h-12 px-[52px] rounded-[62px]"
+                  />
+                  <span class="cursor-pointer text-[#000] text-opacity-[40%] absolute top-1/2 -translate-y-1/2 left-4">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M21 4.125H3C2.70163 4.125 2.41548 4.24353 2.2045 4.4545C1.99353 4.66548 1.875 4.95163 1.875 5.25V18C1.875 18.4973 2.07254 18.9742 2.42417 19.3258C2.77581 19.6775 3.25272 19.875 3.75 19.875H20.25C20.7473 19.875 21.2242 19.6775 21.5758 19.3258C21.9275 18.9742 22.125 18.4973 22.125 18V5.25C22.125 4.95163 22.0065 4.66548 21.7955 4.4545C21.5845 4.24353 21.2984 4.125 21 4.125ZM12 11.9738L5.89219 6.375H18.1078L12 11.9738ZM8.69906 12L4.125 16.1925V7.8075L8.69906 12ZM10.3641 13.5262L11.2397 14.3297C11.4472 14.52 11.7185 14.6255 12 14.6255C12.2815 14.6255 12.5528 14.52 12.7603 14.3297L13.6359 13.5262L18.1078 17.625H5.89219L10.3641 13.5262ZM15.3009 12L19.875 7.8075V16.1925L15.3009 12Z"
+                        fill="black"
+                        fill-opacity="0.4"
+                      />
+                    </svg>
+                  </span>
+                </div>
+                <button
+                  type="submit"
+                  class="font-satoshiMedium bg-[#FFFFFF] text-[#000] border transition-all duration-500 ease-in-out hover:border-[#fff] hover:bg-[#000] hover:text-[#fff] w-full h-12 rounded-[62px]"
                 >
-                  STAY UPTO DATE ABOUT OUR LATEST OFFERS
-                </h2>
-              </div>
-              <div class="md:w-[350px] w-full">
-                <form action="#">
-                  <div class="relative mb-[14px]">
-                    <input
-                      type="email"
-                      placeholder="Enter your email address"
-                      class="w-full outline-none text-sm md:text-base font-medium placeholder:text-opacity-[40%] h-12 px-12 rounded-[62px]"
-                    />
-                    <span
-                      class="cursor-pointer text-[#000] text-opacity-[40%] absolute top-1/2 -translate-y-1/2 left-4 text-[18px] md:text-[21px] font-medium"
-                    >
-                      <i class="fa-solid fa-envelope"></i
-                    ></span>
-                  </div>
-                  <button type="submit" class="font-normal bg-[#FFFFFF] text-[#000] w-full h-12 rounded-[62px]">
-                    Subscribe to Newsletter
-                  </button>
-                </form>
-              </div>
+                  Subscribe to Newsletter
+                </button>
+              </form>
             </div>
           </div>
         </div>
       </div>
-      <div>
-        <div class="md:pt-[135px] pt-[190px] pb-[60px] bg-[#F0F0F0] px-4 xl:px-0">
-          <div class="container mx-auto">
-            <div class="grid grid-cols-12 gap-y-12 xl:gap-y-0">
-              <div class="col-start-1 col-end-13 xl:col-start-1 xl:col-end-4">
-                <div>
-                  <div class="md:mb-6 mb-1">
-                    <a href="#"> <h1 class="text-[32px] font-extrabold">SHOP.CO</h1></a>
-                  </div>
-                  <div class="xl:w-[255px] w-full mb-8">
-                    <p
-                      class="text-sm md:text-base xl:text-sm leading-5 md:leading-[22px] font-normal text-[#000] text-opacity-[60%]"
-                    >
-                      We have clothes that suits your style and which you’re proud to wear. From women to men.
-                    </p>
-                  </div>
-                  <div class="flex gap-x-3">
+
+      <div class="bg-[#F0F0F0] py-14 lg:pt-[140px] md:pt-[160px] pt-[180px] px-5 xl:px-0">
+        <div class="container mx-auto">
+          <div class="grid grid-cols-12 gap-y-6 lg:gap-y-0">
+            <div class="lg:col-span-4 md:col-span-6 col-span-12">
+              <div class="md:max-w-[250px] w-full">
+                <h1 class="text-[28px] md:text-[33px] font-integral md:mb-[25px] mb-[14px] leading-[1]">SHOP.CO</h1>
+
+                <p
+                  class="text-sm md:text-base xl:text-sm leading-5 md:leading-[22px] font-satoshi text-[#000] text-opacity-[60%] mb-5 md:mb-[35px]"
+                >
+                  We have clothes that suits your style and which you’re proud to wear. From women to men.
+                </p>
+                <ul class="flex items-center gap-x-3">
+                  <li>
                     <a
                       href="#"
-                      class="w-[30px] h-[30px] bg-[#FFF] border border-[#000] border-opacity-[20%] inline-flex justify-center items-center rounded-full hover:bg-[#000] hover:text-[#FFF]"
+                      class="w-[30px] h-[30px] bg-[#FFF] border border-[#000] border-opacity-[20%] inline-flex justify-center items-center rounded-full hover:bg-[#000] transition-colors duration-300 ease-in-out hover:text-[#FFF]"
                     >
                       <i class="fa-brands fa-twitter"></i>
                     </a>
+                  </li>
+                  <li>
                     <a
                       href="#"
-                      class="w-[30px] h-[30px] bg-[#FFF] border border-[#000] border-opacity-[20%] inline-flex justify-center items-center rounded-full hover:bg-[#000] hover:text-[#FFF]"
+                      class="w-[30px] h-[30px] bg-[#FFF] border border-[#000] border-opacity-[20%] inline-flex justify-center items-center rounded-full hover:bg-[#000] transition-colors duration-300 ease-in-out hover:text-[#FFF]"
                     >
                       <i class="fa-brands fa-facebook-f"></i>
                     </a>
+                  </li>
+                  <li>
                     <a
                       href="#"
-                      class="w-[30px] h-[30px] bg-[#FFF] border border-[#000] border-opacity-[20%] inline-flex justify-center items-center rounded-full hover:bg-[#000] hover:text-[#FFF]"
+                      class="w-[30px] h-[30px] bg-[#FFF] border border-[#000] border-opacity-[20%] inline-flex justify-center items-center rounded-full hover:bg-[#000] transition-colors duration-300 ease-in-out hover:text-[#FFF]"
                     >
                       <i class="fa-brands fa-instagram"></i>
                     </a>
+                  </li>
+                  <li>
                     <a
                       href="#"
-                      class="w-[30px] h-[30px] bg-[#FFF] border border-[#000] border-opacity-[20%] inline-flex justify-center items-center rounded-full hover:bg-[#000] hover:text-[#FFF]"
+                      class="w-[30px] h-[30px] bg-[#FFF] border border-[#000] border-opacity-[20%] inline-flex justify-center items-center rounded-full hover:bg-[#000] transition-colors duration-300 ease-in-out hover:text-[#FFF]"
                     >
                       <i class="fa-brands fa-github"></i>
                     </a>
-                  </div>
-                </div>
+                  </li>
+                </ul>
               </div>
-              <div class="col-start-1 col-end-7 xl:col-start-4 xl:col-end-6">
-                <div class="justify-items-start xl:justify-self-center">
-                  <h4 class="text-sm md:text-base leading-[18px] tracking-[3px] font-medium md:mb-12 mb-4">COMPANY</h4>
-                  <ul class="">
-                    <li class="mb-2">
-                      <a
-                        href="#"
-                        class="md:text-base text-sm leading-4 md:leading-[19px] text-[#000] text-opacity-[60%]"
-                        >About</a
-                      >
-                    </li>
-                    <li class="mb-2">
-                      <a
-                        href="#"
-                        class="md:text-base text-sm leading-4 md:leading-[19px] text-[#000] text-opacity-[60%]"
-                      >
-                        Features
-                      </a>
-                    </li>
-                    <li class="mb-2">
-                      <a
-                        href="#"
-                        class="md:text-base text-sm leading-4 md:leading-[19px] text-[#000] text-opacity-[60%]"
-                        >Works</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        href="#"
-                        class="md:text-base text-sm leading-4 md:leading-[19px] text-[#000] text-opacity-[60%]"
-                        >Carrer</a
-                      >
-                    </li>
-                  </ul>
-                </div>
+            </div>
+            <div class="lg:col-span-2 col-span-6">
+              <div>
+                <h4 class="text-sm md:text-base leading-[18px] tracking-[3px] font-satoshiMedium md:mb-[26px] mb-4">
+                  COMPANY
+                </h4>
+                <ul class="flex flex-col gap-y-4">
+                  <li>
+                    <a href="#" class="md:text-base text-sm leading-4 md:leading-[19px] text-[#000] text-opacity-[60%]"
+                      >About</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="md:text-base text-sm leading-4 md:leading-[19px] text-[#000] text-opacity-[60%]">
+                      Features
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="md:text-base text-sm leading-4 md:leading-[19px] text-[#000] text-opacity-[60%]"
+                      >Works</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="md:text-base text-sm leading-4 md:leading-[19px] text-[#000] text-opacity-[60%]"
+                      >Carrer</a
+                    >
+                  </li>
+                </ul>
               </div>
-              <div class="col-start-7 col-end-13 xl:col-start-6 xl:col-end-8">
-                <div class="justify-items-start xl:justify-self-end">
-                  <h4 class="text-sm md:text-base leading-[18px] tracking-[3px] font-medium md:mb-12 mb-4">HELP</h4>
-                  <ul>
-                    <li class="mb-2">
-                      <a
-                        href="#"
-                        class="md:text-base text-sm leading-4 md:leading-[19px] text-[#000] text-opacity-[60%]"
-                        >Customer Support</a
-                      >
-                    </li>
-                    <li class="mb-2">
-                      <a
-                        href="#"
-                        class="md:text-base text-sm leading-4 md:leading-[19px] text-[#000] text-opacity-[60%]"
-                        >Delivery Details</a
-                      >
-                    </li>
-                    <li class="mb-2">
-                      <a
-                        href="#"
-                        class="md:text-base text-sm leading-4 md:leading-[19px] text-[#000] text-opacity-[60%]"
-                        >Terms & Conditions</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        href="#"
-                        class="md:text-base text-sm leading-4 md:leading-[19px] text-[#000] text-opacity-[60%]"
-                        >Privacy Policy</a
-                      >
-                    </li>
-                  </ul>
-                </div>
+            </div>
+            <div class="lg:col-span-2 col-span-6">
+              <div>
+                <h4 class="text-sm md:text-base leading-[18px] tracking-[3px] font-satoshiMedium md:mb-[26px] mb-4">
+                  HELP
+                </h4>
+                <ul class="flex flex-col gap-y-4">
+                  <li>
+                    <a href="#" class="md:text-base text-sm leading-4 md:leading-[19px] text-[#000] text-opacity-[60%]"
+                      >Customer Support</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="md:text-base text-sm leading-4 md:leading-[19px] text-[#000] text-opacity-[60%]"
+                      >Delivery Details</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="md:text-base text-sm leading-4 md:leading-[19px] text-[#000] text-opacity-[60%]">
+                      Terms & Conditions
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="md:text-base text-sm leading-4 md:leading-[19px] text-[#000] text-opacity-[60%]"
+                      >Privacy Policy</a
+                    >
+                  </li>
+                </ul>
               </div>
-              <div class="col-start-1 col-end-7 xl:col-start-9 xl:col-end-11">
-                <div class="justify-self-start xl:justify-self-center">
-                  <h4 class="text-sm md:text-base leading-[18px] tracking-[3px] font-medium md:mb-12 mb-4">FAQ</h4>
-                  <ul class="">
-                    <li class="mb-2">
-                      <a
-                        href="#"
-                        class="md:text-base text-sm leading-4 md:leading-[19px] text-[#000] text-opacity-[60%]"
-                        >Account</a
-                      >
-                    </li>
-                    <li class="mb-2">
-                      <a
-                        href="#"
-                        class="md:text-base text-sm leading-4 md:leading-[19px] text-[#000] text-opacity-[60%]"
-                        >Manage Deliveries</a
-                      >
-                    </li>
-                    <li class="mb-2">
-                      <a
-                        href="#"
-                        class="md:text-base text-sm leading-4 md:leading-[19px] text-[#000] text-opacity-[60%]"
-                        >Orders</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        href="#"
-                        class="md:text-base text-sm leading-4 md:leading-[19px] text-[#000] text-opacity-[60%]"
-                        >Payments</a
-                      >
-                    </li>
-                  </ul>
-                </div>
+            </div>
+            <div class="lg:col-span-2 col-span-6">
+              <div>
+                <h4 class="text-sm md:text-base leading-[18px] tracking-[3px] font-satoshiMedium md:mb-[26px] mb-4">
+                  FAQ
+                </h4>
+                <ul class="flex flex-col gap-y-4">
+                  <li>
+                    <a href="#" class="md:text-base text-sm leading-4 md:leading-[19px] text-[#000] text-opacity-[60%]"
+                      >Account</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="md:text-base text-sm leading-4 md:leading-[19px] text-[#000] text-opacity-[60%]"
+                      >Manage Deliveries</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="md:text-base text-sm leading-4 md:leading-[19px] text-[#000] text-opacity-[60%]">
+                      Orders
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="md:text-base text-sm leading-4 md:leading-[19px] text-[#000] text-opacity-[60%]"
+                      >Payments</a
+                    >
+                  </li>
+                </ul>
               </div>
-              <div class="col-start-7 col-end-13 xl:col-start-11 xl:col-end-13">
-                <div class="justify-self-start xl:justify-self-end">
-                  <h4 class="text-sm md:text-base leading-[18px] tracking-[3px] font-medium md:mb-12 mb-4">
-                    RESOURCES
-                  </h4>
-                  <ul class="">
-                    <li class="mb-2">
-                      <a
-                        href="#"
-                        class="md:text-base text-sm leading-4 md:leading-[19px] text-[#000] text-opacity-[60%]"
-                        >Free eBooks</a
-                      >
-                    </li>
-                    <li class="mb-2">
-                      <a
-                        href="#"
-                        class="md:text-base text-sm leading-4 md:leading-[19px] text-[#000] text-opacity-[60%]"
-                        >Development Tutorial</a
-                      >
-                    </li>
-                    <li class="mb-2">
-                      <a
-                        href="#"
-                        class="md:text-base text-sm leading-4 md:leading-[19px] text-[#000] text-opacity-[60%]"
-                        >How to -Blog</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        href="#"
-                        class="md:text-base text-sm leading-4 md:leading-[19px] text-[#000] text-opacity-[60%]"
-                        >Youtube Playlist</a
-                      >
-                    </li>
-                  </ul>
-                </div>
+            </div>
+            <div class="lg:col-span-2 col-span-6">
+              <div class="lg:justify-self-end">
+                <h4 class="text-sm md:text-base leading-[18px] tracking-[3px] font-satoshiMedium md:mb-[26px] mb-4">
+                  RESOURCES
+                </h4>
+                <ul class="flex flex-col gap-y-4">
+                  <li>
+                    <a href="#" class="md:text-base text-sm leading-4 md:leading-[19px] text-[#000] text-opacity-[60%]"
+                      >Free eBooks</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="md:text-base text-sm leading-4 md:leading-[19px] text-[#000] text-opacity-[60%]"
+                      >Development Tutorial</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="md:text-base text-sm leading-4 md:leading-[19px] text-[#000] text-opacity-[60%]">
+                      How to -Blog
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="md:text-base text-sm leading-4 md:leading-[19px] text-[#000] text-opacity-[60%]"
+                      >Youtube Playlist</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- border start -->
+          <div class="pt-[50px] pb-[25px]">
+            <div class="border border-[#000] border-opacity-[10%]"></div>
+          </div>
+          <!-- border end -->
+
+          <div class="grid grid-cols-12 items-center gap-y-4 md:gap-y-0">
+            <div class="md:col-span-6 col-span-12">
+              <div class="md:text-start text-center">
+                <p class="text-sm text-[#000] text-opacity-[60%]">Shop.co &#169; 2000-2023, All Rights Reserved</p>
+              </div>
+            </div>
+            <div class="md:col-span-6 col-span-12">
+              <div class="flex gap-x-3 justify-center md:justify-end">
+                <img src="./assets/img/visa.svg" alt="payment-img" />
+                <img src="./assets/img/mastercard.svg" alt="payment-img" />
+                <img src="./assets/img/paypal.svg" alt="payment-img" />
+                <img src="./assets/img/apple-pay.svg" alt="payment-img" />
+                <img src="./assets/img/google-pay.svg" alt="payment-img" />
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-
-    <div class="bg-[#F0F0F0]">
-      <div class="container mx-auto">
-        <div class="border border-[#000] border-opacity-[10%]"></div>
-      </div>
-    </div>
-
-    <!-- FOOTER PAYMENT SECTION START -->
-    <div class="py-6 bg-[#F0F0F0] px-4 xl:px-0">
-      <div class="container mx-auto">
-        <div class="grid grid-cols-12 gap-y-4 lg:gap-y-0">
-          <div
-            class="xl:col-start-1 xl:col-end-4 lg:col-start-1 lg:col-end-5 md:col-start-1 md:col-end-13 col-start-1 col-end-13"
-          >
-            <div class="text-center lg:text-start">
-              <p class="text-sm text-[#000] text-opacity-[60%]">Shop.co &#169; 2000-2023, All Rights Reserved</p>
-            </div>
-          </div>
-          <div
-            class="xl:col-start-10 xl:col-end-13 lg:col-start-10 lg:col-end-13 md:col-start-1 md:col-end-13 col-start-1 col-end-13"
-          >
-            <div class="flex lg:justify-end justify-center gap-x-3">
-              <a href="#" class="drop-shadow-sm"><img src="./assets/img/visa.png" alt="" /></a>
-              <a href="#" class="drop-shadow-sm"><img src="./assets/img/paytm.png" alt="" /></a>
-              <a href="#" class="drop-shadow-sm"><img src="./assets/img/paypal.png" alt="" /></a>
-              <a href="#" class="drop-shadow-sm"><img src="./assets/img/apple-pay.png" alt="" /></a>
-              <a href="#" class="drop-shadow-sm"><img src="./assets/img/Gpay.png" alt="" /></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- FOOTER PAYMENT SECTION END -->
+    </footer>
 
     <!-- --------------------FOOTER SECTION END------------------- -->
 

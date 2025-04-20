@@ -670,10 +670,6 @@ h1,
   right: -3.5rem;
 }
 
-.-top-\[16\%\] {
-  top: -16%;
-}
-
 .left-0 {
   left: 0px;
 }
@@ -746,6 +742,10 @@ h1,
   z-index: 50;
 }
 
+.-z-50 {
+  z-index: -50;
+}
+
 .col-span-12 {
   grid-column: span 12 / span 12;
 }
@@ -781,10 +781,6 @@ h1,
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
-}
-
-.mb-1 {
-  margin-bottom: 0.25rem;
 }
 
 .mb-10 {
@@ -863,12 +859,20 @@ h1,
   margin-right: 32px;
 }
 
+.mt-10 {
+  margin-top: 2.5rem;
+}
+
 .mt-\[-90px\] {
   margin-top: -90px;
 }
 
 .mt-\[60px\] {
   margin-top: 60px;
+}
+
+.mt-6 {
+  margin-top: 1.5rem;
 }
 
 .line-clamp-4 {
@@ -1026,10 +1030,6 @@ h1,
   width: 40px;
 }
 
-.w-\[42px\] {
-  width: 42px;
-}
-
 .w-\[445px\] {
   width: 445px;
 }
@@ -1119,10 +1119,6 @@ h1,
 
 .items-center {
   align-items: center;
-}
-
-.items-baseline {
-  align-items: baseline;
 }
 
 .justify-center {
@@ -1252,10 +1248,6 @@ h1,
   row-gap: 2rem;
 }
 
-.gap-y-\[32px\] {
-  row-gap: 32px;
-}
-
 .gap-y-\[80px\] {
   row-gap: 80px;
 }
@@ -1292,12 +1284,23 @@ h1,
   border-radius: 0.5rem;
 }
 
-.border {
-  border-width: 1px;
+.rounded-t-\[62px\] {
+  border-top-left-radius: 62px;
+  border-top-right-radius: 62px;
 }
 
-.border-4 {
-  border-width: 4px;
+.rounded-t-\[30px\] {
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
+.rounded-t-\[20px\] {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.border {
+  border-width: 1px;
 }
 
 .border-b {
@@ -1580,11 +1583,6 @@ h1,
   padding-right: 1.75rem;
 }
 
-.px-\[24px\] {
-  padding-left: 24px;
-  padding-right: 24px;
-}
-
 .px-\[26px\] {
   padding-left: 26px;
   padding-right: 26px;
@@ -1695,24 +1693,19 @@ h1,
   padding-bottom: 32px;
 }
 
-.py-\[3px\] {
-  padding-top: 3px;
-  padding-bottom: 3px;
-}
-
 .py-\[45px\] {
   padding-top: 45px;
   padding-bottom: 45px;
 }
 
-.py-\[6px\] {
-  padding-top: 6px;
-  padding-bottom: 6px;
-}
-
 .py-\[5px\] {
   padding-top: 5px;
   padding-bottom: 5px;
+}
+
+.py-\[6px\] {
+  padding-top: 6px;
+  padding-bottom: 6px;
 }
 
 .pb-16 {
@@ -1721,14 +1714,6 @@ h1,
 
 .pb-5 {
   padding-bottom: 1.25rem;
-}
-
-.pb-\[138px\] {
-  padding-bottom: 138px;
-}
-
-.pb-\[180px\] {
-  padding-bottom: 180px;
 }
 
 .pb-\[25px\] {
@@ -1787,16 +1772,24 @@ h1,
   padding-top: 180px;
 }
 
-.pt-\[190px\] {
-  padding-top: 190px;
-}
-
 .pt-\[50px\] {
   padding-top: 50px;
 }
 
 .pt-\[90px\] {
   padding-top: 90px;
+}
+
+.pt-5 {
+  padding-top: 1.25rem;
+}
+
+.pb-6 {
+  padding-bottom: 1.5rem;
+}
+
+.pb-\[30px\] {
+  padding-bottom: 30px;
 }
 
 .text-center {
@@ -2215,21 +2208,8 @@ h1,
   border-color: rgb(255 255 255 / var(--tw-border-opacity, 1));
 }
 
-.hover\:border-\[\#af2929\]:hover {
-  --tw-border-opacity: 1;
-  border-color: rgb(175 41 41 / var(--tw-border-opacity, 1));
-}
-
-.hover\:border-opacity-100:hover {
-  --tw-border-opacity: 1;
-}
-
 .hover\:border-opacity-\[6\%\]:hover {
   --tw-border-opacity: 6%;
-}
-
-.hover\:border-opacity-0:hover {
-  --tw-border-opacity: 0;
 }
 
 .hover\:bg-\[\#000\]:hover {
@@ -2358,10 +2338,6 @@ h1,
 }
 
 @media (min-width: 768px) {
-  .md\:-top-\[12\%\] {
-    top: -12%;
-  }
-
   .md\:right-0 {
     right: 0px;
   }
@@ -2404,14 +2380,6 @@ h1,
 
   .md\:col-end-8 {
     grid-column-end: 8;
-  }
-
-  .md\:mb-12 {
-    margin-bottom: 3rem;
-  }
-
-  .md\:mb-6 {
-    margin-bottom: 1.5rem;
   }
 
   .md\:mb-8 {
@@ -2458,10 +2426,6 @@ h1,
     height: 3rem;
   }
 
-  .md\:h-\[28px\] {
-    height: 28px;
-  }
-
   .md\:h-\[37px\] {
     height: 37px;
   }
@@ -2482,10 +2446,6 @@ h1,
     width: 218px;
   }
 
-  .md\:w-\[350px\] {
-    width: 350px;
-  }
-
   .md\:w-\[37px\] {
     width: 37px;
   }
@@ -2496,10 +2456,6 @@ h1,
 
   .md\:w-\[500px\] {
     width: 500px;
-  }
-
-  .md\:w-\[58px\] {
-    width: 58px;
   }
 
   .md\:w-\[75\%\] {
@@ -2520,10 +2476,6 @@ h1,
 
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .md\:flex-row {
-    flex-direction: row;
   }
 
   .md\:flex-nowrap {
@@ -2566,6 +2518,10 @@ h1,
     row-gap: 0px;
   }
 
+  .md\:rounded-none {
+    border-radius: 0px;
+  }
+
   .md\:px-20 {
     padding-left: 5rem;
     padding-right: 5rem;
@@ -2606,9 +2562,19 @@ h1,
     padding-right: 38px;
   }
 
+  .md\:py-2 {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+
   .md\:py-3 {
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
+  }
+
+  .md\:py-6 {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
   }
 
   .md\:py-7 {
@@ -2621,41 +2587,8 @@ h1,
     padding-bottom: 30px;
   }
 
-  .md\:py-\[6px\] {
-    padding-top: 6px;
-    padding-bottom: 6px;
-  }
-
-  .md\:py-1 {
-    padding-top: 0.25rem;
-    padding-bottom: 0.25rem;
-  }
-
-  .md\:py-1\.5 {
-    padding-top: 0.375rem;
-    padding-bottom: 0.375rem;
-  }
-
-  .md\:py-2 {
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-  }
-
-  .md\:py-6 {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
-  }
-
-  .md\:pb-\[126px\] {
-    padding-bottom: 126px;
-  }
-
   .md\:pe-10 {
     padding-inline-end: 2.5rem;
-  }
-
-  .md\:pt-\[135px\] {
-    padding-top: 135px;
   }
 
   .md\:pt-\[160px\] {
@@ -2697,10 +2630,6 @@ h1,
     font-size: 20px;
   }
 
-  .md\:text-\[21px\] {
-    font-size: 21px;
-  }
-
   .md\:text-\[28px\] {
     font-size: 28px;
   }
@@ -2736,6 +2665,10 @@ h1,
     line-height: 19px;
   }
 
+  .md\:leading-\[1\] {
+    line-height: 1;
+  }
+
   .md\:leading-\[22px\] {
     line-height: 22px;
   }
@@ -2751,17 +2684,9 @@ h1,
   .md\:leading-none {
     line-height: 1;
   }
-
-  .md\:leading-\[1\] {
-    line-height: 1;
-  }
 }
 
 @media (min-width: 1024px) {
-  .lg\:-top-\[12\%\] {
-    top: -12%;
-  }
-
   .lg\:top-\[100px\] {
     top: 100px;
   }
@@ -2846,10 +2771,6 @@ h1,
     width: 20%;
   }
 
-  .lg\:w-\[440px\] {
-    width: 440px;
-  }
-
   .lg\:w-\[460px\] {
     width: 460px;
   }
@@ -2898,19 +2819,9 @@ h1,
     padding-right: 50px;
   }
 
-  .lg\:px-\[64px\] {
-    padding-left: 64px;
-    padding-right: 64px;
-  }
-
   .lg\:py-9 {
     padding-top: 2.25rem;
     padding-bottom: 2.25rem;
-  }
-
-  .lg\:py-\[34px\] {
-    padding-top: 34px;
-    padding-bottom: 34px;
   }
 
   .lg\:py-\[45px\] {
@@ -2970,10 +2881,6 @@ h1,
 }
 
 @media (min-width: 1240px) {
-  .xl\:-top-\[23\%\] {
-    top: -23%;
-  }
-
   .xl\:top-\[90px\] {
     top: 90px;
   }

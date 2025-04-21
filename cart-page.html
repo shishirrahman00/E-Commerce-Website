@@ -3,198 +3,247 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home Page</title>
+    <title>Cart Page</title>
     <link rel="stylesheet" href="assets/css/output.css" />
     <!-- FONT-AWESOME-CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" />
   </head>
   <body>
-    <!-- SIGN-UP-NOW-POP-UP-START-->
-    <div class="bg-black py-2 px-4 offer-sign-up">
-      <div class="container mx-auto">
-        <div class="text-center relative">
-          <p class="text-white text-sm ">
-            Sign up and get 20% off to your first order.
-            <a href="#" class="border-b font-medium">Sign Up Now</a>
-          </p>
+   <!-- SIGN-UP-NOW-POP-UP-START-->
+   <div class="bg-black py-2 px-4 offer-sign-up">
+    <div class="container mx-auto">
+      <div class="text-center relative">
+        <p class="text-white text-sm">
+          Sign up and get 20% off to your first order.
+          <a href="#" class="border-b font-medium">Sign Up Now</a>
+        </p>
 
-          <button class="text-white text-[20px] offer-close-btn absolute top-1/2 -translate-y-1/2 right-0">
-            <i class="fa-solid fa-xmark"></i>
+        <button class="text-white text-[20px] offer-close-btn absolute top-1/2 -translate-y-1/2 right-0">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+  <!-- SIGN-UP-NOW-POP-UP-END-->
+
+  <!--------------------- NAV BAR START ---------------->
+
+  <!-- hamburger button section start -->
+
+  <div
+  data-state="close"
+  id="nav-menu-slider"
+  class="fixed inset-0 w-full h-full bg-[#222] bg-opacity-85 z-50 data-[state=close]:opacity-0 data-[state=close]:invisible transition-all ease-in-out -translate-x-full data-[state=open]:translate-x-0 duration-500"
+    >
+  <div class="w-[315px] bg-[#3F4F44] h-full z-50 p-10 flex flex-col gap-y-[80px]">
+    <div class="flex items-center justify-between">
+      <div>
+        <h1 class="xl:text-[32px] text-[26px] font-integral leading-[1] text-[#fff]">SHOP.CO</h1>
+      </div>
+      <div>
+        <button
+          class="inline-flex items-center justify-center w-8 h-8 border border-transparent text-sm rounded-full bg-[#F8F6F4] text-[#000] gap-x-2.5"
+          id="nav-menu-slider-close-btn"
+        >
+          <span><i class="fa-solid fa-x"></i></span>
+        </button>
+      </div>
+    </div>
+    <ul class="flex flex-col gap-y-8">
+      <li>
+        <a href="#" class="text-[20px] text-[#fff] font-normal hover:text-opacity-[40%]"
+          >Shop <span><i class="fa-solid fa-angle-down"></i></span
+        ></a>
+      </li>
+      <li>
+        <a href="#" class="text-[20px] text-[#fff] font-normal hover:text-opacity-[40%]">On Sale</a>
+      </li>
+      <li>
+        <a href="#" class="text-[20px] text-[#fff] font-normal hover:text-opacity-[40%]">Case Study</a>
+      </li>
+      <li>
+        <a href="#" class="text-[20px] text-[#fff] font-normal hover:text-opacity-[40%]">Blog</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<!-- hamburger button section end -->
+
+  <!-- nav-menu-start -->
+
+  <nav class="py-6 px-5 xl:px-0">
+    <div class="container mx-auto">
+      <div class="flex items-center gap-x-[40px] justify-between">
+        <div class="flex items-center justify-center gap-x-4">
+          <div class="nav-menu-btn lg:hidden" data-state="close">
+            <button>
+              <svg width="24" height="24" viewBox="0 0 24 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M21.375 12C21.375 12.2984 21.2565 12.5845 21.0455 12.7955C20.8345 13.0065 20.5484 13.125 20.25 13.125H3.75C3.45163 13.125 3.16548 13.0065 2.9545 12.7955C2.74353 12.5845 2.625 12.2984 2.625 12C2.625 11.7016 2.74353 11.4155 2.9545 11.2045C3.16548 10.9935 3.45163 10.875 3.75 10.875H20.25C20.5484 10.875 20.8345 10.9935 21.0455 11.2045C21.2565 11.4155 21.375 11.7016 21.375 12ZM3.75 7.125H20.25C20.5484 7.125 20.8345 7.00647 21.0455 6.7955C21.2565 6.58452 21.375 6.29837 21.375 6C21.375 5.70163 21.2565 5.41548 21.0455 5.2045C20.8345 4.99353 20.5484 4.875 20.25 4.875H3.75C3.45163 4.875 3.16548 4.99353 2.9545 5.2045C2.74353 5.41548 2.625 5.70163 2.625 6C2.625 6.29837 2.74353 6.58452 2.9545 6.7955C3.16548 7.00647 3.45163 7.125 3.75 7.125ZM20.25 16.875H3.75C3.45163 16.875 3.16548 16.9935 2.9545 17.2045C2.74353 17.4155 2.625 17.7016 2.625 18C2.625 18.2984 2.74353 18.5845 2.9545 18.7955C3.16548 19.0065 3.45163 19.125 3.75 19.125H20.25C20.5484 19.125 20.8345 19.0065 21.0455 18.7955C21.2565 18.5845 21.375 18.2984 21.375 18C21.375 17.7016 21.2565 17.4155 21.0455 17.2045C20.8345 16.9935 20.5484 16.875 20.25 16.875Z"
+                  fill="black"
+                />
+              </svg>
+            </button>
+          </div>
+          <h1 class="xl:text-[32px] text-[25px] leading-[1]"><a href="#">SHOP.CO</a></h1>
+        </div>
+
+        <div class="lg:flex hidden">
+          <ul class="flex items-center gap-x-6">
+            <li class="relative group">
+              <a href="#"
+                >Shop <span class="text-sm"><i class="fa-solid fa-angle-down"></i></span
+              ></a>
+              <!-- dropdown-menu-start -->
+              <div
+                class="absolute top-full left-0 bg-[#ffff] z-50 w-[250px] transition-all duration-1000 ease-in-out hidden group-hover:block"
+              >
+                <ul>
+                  <li>
+                    <a href="#" class="font-normal text-base block px-4 py-3 hover:bg-[#000] hover:text-white"
+                      >On Sale</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="font-normal text-base block px-4 py-3 hover:bg-[#000] hover:text-white"
+                      >On Sale</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="font-normal text-base block px-4 py-3 hover:bg-[#000] hover:text-white"
+                      >On Sale</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="font-normal text-base block px-4 py-3 hover:bg-[#000] hover:text-white"
+                      >On Sale</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <!-- dropdown-menu-end -->
+            </li>
+            <li>
+              <a href="#" class="font-normal text-base">On Sale</a>
+            </li>
+            <li>
+              <a href="#"> New Arrivals</a>
+            </li>
+            <li>
+              <a href="#"> Brands</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="w-full flex-1 relative hidden lg:block">
+          <form action="#">
+            <button
+              class="absolute inline-block top-1/2 left-4 transform -translate-y-1/2 text-[18px] text-[#000000] opacity-[40%]"
+            >
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+            <input
+              type="text"
+              placeholder="Search for products..."
+              class="w-full placeholder:text-base placeholder:text-[#000000] placeholder:opacity-[40%] outline-none bg-[#F0F0F0] py-3 rounded-full pl-11 pr-10"
+            />
+          </form>
+        </div>
+
+        <div class="flex items-center gap-x-[14px]">
+          <div class="lg:hidden flex relative items-center">
+            <button class="nav-search-btn" data-click="close">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M21.7959 20.2041L17.3437 15.75C18.6787 14.0104 19.3019 11.8282 19.087 9.64607C18.8722 7.4639 17.8353 5.44516 16.1867 3.99937C14.5382 2.55357 12.4014 1.78899 10.2098 1.86071C8.01829 1.93244 5.93607 2.8351 4.38558 4.38559C2.83509 5.93608 1.93243 8.0183 1.8607 10.2098C1.78898 12.4014 2.55356 14.5382 3.99936 16.1867C5.44515 17.8353 7.46389 18.8722 9.64606 19.087C11.8282 19.3019 14.0104 18.6787 15.75 17.3438L20.2059 21.8006C20.3106 21.9053 20.4348 21.9883 20.5715 22.0449C20.7083 22.1016 20.8548 22.1307 21.0028 22.1307C21.1508 22.1307 21.2973 22.1016 21.4341 22.0449C21.5708 21.9883 21.695 21.9053 21.7997 21.8006C21.9043 21.696 21.9873 21.5717 22.044 21.435C22.1006 21.2983 22.1298 21.1517 22.1298 21.0037C22.1298 20.8558 22.1006 20.7092 22.044 20.5725C21.9873 20.4358 21.9043 20.3115 21.7997 20.2069L21.7959 20.2041ZM4.12499 10.5C4.12499 9.23915 4.49888 8.0066 5.19938 6.95824C5.89987 5.90988 6.89551 5.09278 8.06039 4.61027C9.22527 4.12776 10.5071 4.00151 11.7437 4.2475C12.9803 4.49348 14.1162 5.10064 15.0078 5.9922C15.8994 6.88376 16.5065 8.01967 16.7525 9.2563C16.9985 10.4929 16.8722 11.7747 16.3897 12.9396C15.9072 14.1045 15.0901 15.1001 14.0418 15.8006C12.9934 16.5011 11.7608 16.875 10.5 16.875C8.80977 16.8733 7.18927 16.2011 5.99411 15.0059C4.79894 13.8107 4.12673 12.1902 4.12499 10.5Z"
+                  fill="black"
+                />
+              </svg>
+            </button>
+
+            <div
+              class="search-hover absolute w-[350px] top-full -right-14 md:right-0 bg-[#FbFbFb] border rounded shadow-lg z-50 transition-all ease-in-out duration-1000 hidden"
+            >
+              <div
+                class="relative after:absolute after:content-[''] after:top-0 after:right-0 after:w-full after:h-[3px] after:bg-[#4db2ec]"
+              >
+                <form class="relative py-4 px-2">
+                  <input
+                    type="text"
+                    placeholder="Search Here"
+                    class="px-3 w-[75%] py-2 border border-r bg-[#eeee] focus:outline-none"
+                  />
+                  <button
+                    class="absolute top-1/2 -translate-y-1/2 bg-black text-white px-4 py-2 border border-[#000]"
+                  >
+                    Search
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <button>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M9.375 20.25C9.375 20.6208 9.26503 20.9834 9.059 21.2917C8.85298 21.6 8.56014 21.8404 8.21753 21.9823C7.87492 22.1242 7.49792 22.1613 7.1342 22.089C6.77049 22.0166 6.4364 21.838 6.17417 21.5758C5.91195 21.3136 5.73337 20.9795 5.66103 20.6158C5.58868 20.2521 5.62581 19.8751 5.76773 19.5325C5.90964 19.1899 6.14996 18.897 6.45831 18.691C6.76665 18.485 7.12916 18.375 7.5 18.375C7.99728 18.375 8.47419 18.5725 8.82582 18.9242C9.17745 19.2758 9.375 19.7527 9.375 20.25ZM17.25 18.375C16.8792 18.375 16.5166 18.485 16.2083 18.691C15.9 18.897 15.6596 19.1899 15.5177 19.5325C15.3758 19.8751 15.3387 20.2521 15.411 20.6158C15.4834 20.9795 15.662 21.3136 15.9242 21.5758C16.1864 21.838 16.5205 22.0166 16.8842 22.089C17.2479 22.1613 17.6249 22.1242 17.9675 21.9823C18.3101 21.8404 18.603 21.6 18.809 21.2917C19.015 20.9834 19.125 20.6208 19.125 20.25C19.125 19.7527 18.9275 19.2758 18.5758 18.9242C18.2242 18.5725 17.7473 18.375 17.25 18.375ZM22.0753 7.08094L19.5169 15.3966C19.3535 15.9343 19.0211 16.4051 18.569 16.739C18.1169 17.0729 17.5692 17.2521 17.0072 17.25H7.77469C7.2046 17.2482 6.65046 17.0616 6.1953 16.7183C5.74015 16.3751 5.40848 15.8936 5.25 15.3459L2.04469 4.125H1.125C0.826631 4.125 0.540483 4.00647 0.329505 3.7955C0.118526 3.58452 0 3.29837 0 3C0 2.70163 0.118526 2.41548 0.329505 2.2045C0.540483 1.99353 0.826631 1.875 1.125 1.875H2.32687C2.73407 1.87626 3.12988 2.00951 3.45493 2.25478C3.77998 2.50004 4.01674 2.84409 4.12969 3.23531L4.81312 5.625H21C21.1761 5.62499 21.3497 5.6663 21.5069 5.74561C21.664 5.82492 21.8004 5.94001 21.905 6.08164C22.0096 6.22326 22.0795 6.38746 22.1091 6.56102C22.1387 6.73458 22.1271 6.91266 22.0753 7.08094ZM19.4766 7.875H5.45531L7.41375 14.7281C7.43617 14.8065 7.48354 14.8755 7.54867 14.9245C7.6138 14.9736 7.69315 15.0001 7.77469 15H17.0072C17.0875 15.0002 17.1656 14.9746 17.2303 14.927C17.2949 14.8794 17.3426 14.8123 17.3662 14.7356L19.4766 7.875Z"
+                fill="black"
+              />
+            </svg>
+          </button>
+          <button>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M12 1.875C9.99747 1.875 8.0399 2.46882 6.37486 3.58137C4.70981 4.69392 3.41206 6.27523 2.64572 8.12533C1.87939 9.97543 1.67888 12.0112 2.06955 13.9753C2.46023 15.9393 3.42454 17.7435 4.84055 19.1595C6.25656 20.5755 8.06066 21.5398 10.0247 21.9305C11.9888 22.3211 14.0246 22.1206 15.8747 21.3543C17.7248 20.5879 19.3061 19.2902 20.4186 17.6251C21.5312 15.9601 22.125 14.0025 22.125 12C22.122 9.3156 21.0543 6.74199 19.1562 4.84383C17.258 2.94567 14.6844 1.87798 12 1.875ZM7.45969 18.4284C7.98195 17.7143 8.66528 17.1335 9.45418 16.7331C10.2431 16.3327 11.1153 16.124 12 16.124C12.8847 16.124 13.7569 16.3327 14.5458 16.7331C15.3347 17.1335 16.0181 17.7143 16.5403 18.4284C15.2134 19.3695 13.6268 19.875 12 19.875C10.3732 19.875 8.78665 19.3695 7.45969 18.4284ZM9.375 11.25C9.375 10.7308 9.52896 10.2233 9.8174 9.79163C10.1058 9.35995 10.5158 9.0235 10.9955 8.82482C11.4751 8.62614 12.0029 8.57415 12.5121 8.67544C13.0213 8.77672 13.489 9.02673 13.8562 9.39384C14.2233 9.76096 14.4733 10.2287 14.5746 10.7379C14.6759 11.2471 14.6239 11.7749 14.4252 12.2545C14.2265 12.7342 13.8901 13.1442 13.4584 13.4326C13.0267 13.721 12.5192 13.875 12 13.875C11.3038 13.875 10.6361 13.5984 10.1438 13.1062C9.65157 12.6139 9.375 11.9462 9.375 11.25ZM18.1875 16.8694C17.4583 15.9419 16.5289 15.1914 15.4688 14.6737C16.1444 13.9896 16.6026 13.1208 16.7858 12.1769C16.9689 11.2329 16.8688 10.2558 16.498 9.36861C16.1273 8.4814 15.5024 7.72364 14.702 7.19068C13.9017 6.65771 12.9616 6.37334 12 6.37334C11.0384 6.37334 10.0983 6.65771 9.29797 7.19068C8.49762 7.72364 7.87275 8.4814 7.50198 9.36861C7.13121 10.2558 7.0311 11.2329 7.21424 12.1769C7.39739 13.1208 7.85561 13.9896 8.53125 14.6737C7.4711 15.1914 6.54168 15.9419 5.8125 16.8694C4.89661 15.7083 4.32614 14.3129 4.1664 12.8427C4.00665 11.3725 4.2641 9.88711 4.90925 8.55644C5.55441 7.22578 6.5612 6.10366 7.81439 5.31855C9.06757 4.53343 10.5165 4.11703 11.9953 4.11703C13.4741 4.11703 14.9231 4.53343 16.1762 5.31855C17.4294 6.10366 18.4362 7.22578 19.0814 8.55644C19.7265 9.88711 19.984 11.3725 19.8242 12.8427C19.6645 14.3129 19.094 15.7083 18.1781 16.8694H18.1875Z"
+                fill="black"
+              />
+            </svg>
           </button>
         </div>
       </div>
     </div>
-    <!-- SIGN-UP-NOW-POP-UP-END-->
-    <!--------------------- NAV BAR START ---------------->
 
-    <!-- hamburger button section start -->
+    <!-- search button hover section start -->
 
-    <div
-      data-state="close"
-      id="nav-menu-slider"
-      class="fixed inset-0 w-full h-full bg-[#222] bg-opacity-85 z-50 data-[state=close]:opacity-0 data-[state=close]:invisible transition-transform translate-y-full data-[state=open]:translate-y-0 duration-500"
+    <!-- <div
+      data-click="false"
+      id="nav-search-btn-hover"
+      class="relative w-full h-full z-50 top-0 left-0 data-[click=false]:invisible transition-transform translate-x-full data-[click=open]:translate-x-0 data-[click=close]:translate-x-full duration-1000"
     >
-      <div class="w-[315px] bg-[#3F4F44] h-full z-50 p-10 flex flex-col gap-y-[80px]">
-        <div class="flex items-center justify-between">
-          <div>
-            <a href="#">
-              <h1 class="xl:text-[32px] text-[26px] font-integral font-extrabold text-[#fff]">SHOP.CO</h1></a
-            >
-          </div>
-          <div>
+      <div class="w-full max-w-[1240px] h-full z-50 absolute top-[65px] mx-auto">
+        <div class="flex items-center justify-center">
+          <button
+            id="nav-search-btn-hover-close"
+            class="md:w-14 md:h-12 h-[44px] w-10 inline-flex items-center justify-center rounded bg-[#000] text-[#fff]"
+          >
+            <i class="fa-solid fa-arrow-left"></i>
+          </button>
+
+          <form action="#" class="relative grow md:h-12 h-[44px]">
+            <input
+              type="text"
+              placeholder="Search for products..."
+              class="w-full font-integral placeholder:text-base placeholder:text-[#000000] placeholder:opacity-[40%] outline-none bg-[#F0F0F0] md:py-3 py-2.5 pr-[70px] pl-6"
+            />
+
             <button
-              class="inline-flex items-center justify-center w-8 h-8 border border-transparent text-sm rounded-full bg-[#F8F6F4] text-[#000] gap-x-2.5"
-              id="nav-menu-slider-close-btn"
+              type="submit"
+              class="absolute top-1/2 right-8 transform -translate-y-1/2 md:text-[18px] text-base text-[#000000]"
             >
-              <span><i class="fa-solid fa-x"></i></span>
+              <i class="fa-solid fa-magnifying-glass"></i>
             </button>
-          </div>
-        </div>
-        <ul class="flex flex-col gap-y-8">
-          <li>
-            <a href="#" class="text-[20px] text-[#fff] font-normal hover:text-opacity-[40%]"
-              >Shop <span><i class="fa-solid fa-angle-down"></i></span
-            ></a>
-          </li>
-          <li>
-            <a href="#" class="text-[20px] text-[#fff] font-normal hover:text-opacity-[40%]">On Sale</a>
-          </li>
-          <li>
-            <a href="#" class="text-[20px] text-[#fff] font-normal hover:text-opacity-[40%]">Case Study</a>
-          </li>
-          <li>
-            <a href="#" class="text-[20px] text-[#fff] font-normal hover:text-opacity-[40%]">Blog</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-
-    <!-- hamburger button section end -->
-
-    <!-- nav-menu-start -->
-
-    <nav class="py-6 px-5 xl:px-0">
-      <div class="container mx-auto">
-        <div class="flex items-center gap-x-[40px] justify-between">
-          <div class="flex items-center justify-center gap-x-4">
-            <div class="nav-menu-btn xl:hidden" data-state="close">
-              <button class="text-[20px]"><i class="fa-solid fa-bars"></i></button>
-            </div>
-            <a href="#"> <h1 class="xl:text-[32px] text-[26px] font-integral font-extrabold">SHOP.CO</h1></a>
-          </div>
-
-          <div class="xl:flex hidden">
-            <ul class="flex gap-x-6">
-              <li>
-                <a href="#" class=""
-                  >Shop <span class="text-sm"><i class="fa-solid fa-angle-down"></i></span
-                ></a>
-              </li>
-              <li>
-                <a href="#" class=" font-normal text-base">On Sale</a>
-              </li>
-              <li>
-                <a href="#" class=""> New Arrivals</a>
-              </li>
-              <li>
-                <a href="#" class=""> Brands</a>
-              </li>
-            </ul>
-          </div>
-
-          <div>
-            <div class="w-[570px] relative hidden xl:block">
-              <form action="#">
-                <button
-                  class="absolute inline-block top-1/2 left-4 transform -translate-y-1/2 text-[18px] text-[#000000] opacity-[40%]"
-                >
-                  <i class="fa-solid fa-magnifying-glass"></i>
-                </button>
-                <input
-                  type="text"
-                  placeholder="Search for products..."
-                  class="w-full font-integral placeholder:text-base placeholder:text-[#000000] placeholder:opacity-[40%] outline-none bg-[#F0F0F0] py-3 rounded-full pl-11 pr-10"
-                />
-              </form>
-            </div>
-          </div>
-
-          <div class="flex xl:gap-x-3 md:gap-x-6 gap-x-5">
-            <div class="xl:hidden flex items-center">
-              <button class="nav-search-btn text-lg" data-click="close">
-                <i class="fa-solid fa-magnifying-glass"></i>
-              </button>
-            </div>
-
-            <button class="text-lg">
-              <i class="fa-solid fa-cart-shopping"></i>
-            </button>
-            <button class="text-lg">
-              <i class="fa-solid fa-user"></i>
-            </button>
-          </div>
-        </div>
-
-        <div data-click="close" id="search-hover" class="data-[click=close]:hidden z-50">
-          <div class="flex items-center gap-x-5">
-            <div class="relative w-full">
-              <input
-                type="text"
-                placeholder="Search for products..."
-                class="w-full  text-[#FFF] placeholder:text-base placeholder:text-[#FFF] placeholder:opacity-[80%] outline-none bg-[#2b83d6] py-3.5 pr-[70px] pl-6"
-              />
-
-              <button class="absolute top-1/2 right-8 transform -translate-y-1/2 md:text-[18px] text-base text-[#FFF]">
-                <i class="fa-solid fa-magnifying-glass"></i>
-              </button>
-            </div>
-            <button id="nav-search-btn-hover-close" class="text-red-600 md:text-[28px] text-[18px]">
-              <i class="fa-solid fa-x"></i>
-            </button>
-          </div>
+          </form>
         </div>
       </div>
+    </div> -->
 
-      <!-- search button hover section start -->
+    <!-- search button hover section end -->
+  </nav>
 
-      <!-- <div
-        data-click="false"
-        id="nav-search-btn-hover"
-        class="relative w-full h-full z-50 top-0 left-0 data-[click=false]:invisible transition-transform translate-x-full data-[click=open]:translate-x-0 data-[click=close]:translate-x-full duration-1000"
-      >
-        <div class="w-full max-w-[1240px] h-full z-50 absolute top-[65px] mx-auto">
-          <div class="flex items-center justify-center">
-            <button
-              id="nav-search-btn-hover-close"
-              class="md:w-14 md:h-12 h-[44px] w-10 inline-flex items-center justify-center rounded bg-[#000] text-[#fff]"
-            >
-              <i class="fa-solid fa-arrow-left"></i>
-            </button>
+  <!-- nav-menu-end -->
 
-            <form action="#" class="relative grow md:h-12 h-[44px]">
-              <input
-                type="text"
-                placeholder="Search for products..."
-                class="w-full font-integral placeholder:text-base placeholder:text-[#000000] placeholder:opacity-[40%] outline-none bg-[#F0F0F0] md:py-3 py-2.5 pr-[70px] pl-6"
-              />
-
-              <button
-                type="submit"
-                class="absolute top-1/2 right-8 transform -translate-y-1/2 md:text-[18px] text-base text-[#000000]"
-              >
-                <i class="fa-solid fa-magnifying-glass"></i>
-              </button>
-            </form>
-          </div>
-        </div>
-      </div> -->
-
-      <!-- search button hover section end -->
-    </nav>
-
-    <!-- nav-menu-end -->
-
-    <!--------------------- NAV BAR END ------------------>
+  <!--------------------- NAV BAR END ------------------>
 
     <div>
       <div class="container mx-auto">
@@ -212,7 +261,7 @@
                 <li class="inline-flex items-center gap-x-2 text-[#000] text-opacity-[60%]">
                   <a
                     href="#"
-                    class="flex items-center font-normal text-sm  md:text-base text-[#000] text-opacity-[60%] hover:text-opacity-100"
+                    class="flex items-center font-satoshi text-sm  md:text-base text-[#000] text-opacity-[60%] hover:text-opacity-100"
                   >
                     Home
                   </a>
@@ -221,7 +270,7 @@
                 <li class="inline-flex items-center gap-x-2 text-[#000] text-opacity-[60%]">
                   <a
                     href="#"
-                    class="flex items-center font-normal text-sm  md:text-base text-[#000] text-opacity-[60%] hover:text-opacity-100"
+                    class="flex items-center font-satoshi text-sm  md:text-base text-[#000] text-opacity-[60%] hover:text-opacity-100"
                   >
                     Cart
                   </a>
@@ -239,45 +288,59 @@
     <div class="px-4 xl:px-0">
       <div class="container mx-auto">
         <div>
-          <h1 class="text-[32px] md:text-[40px] font-bold font-integral">YOUR CART</h1>
+          <h1 class="text-[32px] md:text-[40px] leading-[1] font-integral mb-6">YOUR CART</h1>
         </div>
 
-        <div class="grid grid-cols-12 gap-x-5 gap-y-6 py-6">
+        <div class="grid grid-cols-12 gap-x-5 gap-y-6">
           <div class="lg:col-start-1 lg:col-end-8 col-start-1 col-end-13">
-            <div class="border rounded-[20px] py-6 px-6">
+            <div class="border rounded-[20px] py-5 px-6">
               <div class="flex items-center gap-x-4">
                 <div>
                   <img src="./assets/img/Gradient Graphic T-shirt.png" alt="" class="w-[124px] h-[124px] rounded-lg" />
                 </div>
-                <div class="grow">
-                  <div class="flex grow justify-between mb-2">
-                    <h4 class=" text-base md:text-[20px] font-bold">Gradient Graphic T-shirt</h4>
+                <div class="flex-1">
+                  <div class="flex items-center justify-between ">
+                    <h4 class=" text-base md:text-[20px] font-satoshiBold">Gradient Graphic T-shirt</h4>
                     <button class="text-[#FF3333]">
                       <span><i class="fa-solid fa-trash"></i></span>
                     </button>
                   </div>
 
                   <div>
-                    <p class="text-[12px] md:text-sm  text-[#000]">
+                    <p class="text-[12px]  md:text-sm  text-[#000]">
                       Size:<a href="#" class="text-[#000] text-opacity-60 ml-1.5">Large</a>
                     </p>
-                    <p class="text-[12px] md:text-sm  text-[#000]">
+                    <p class="text-[12px] md:text-sm  text-[#000] mt-1">
                       Color:<a href="#" class="text-[#000] text-opacity-60 ml-1.5">White</a>
                     </p>
                   </div>
 
                   <div class="flex items-center justify-between">
-                    <h4 class=" text-[20px] md:text-2xl font-bold">$145</h4>
-                    <div>
-                      <form action="#" class="flex items-center bg-[#F0F0F0] rounded-[62px] px-1.5 py-2">
-                        <button class="text-base px-3 text-[#000]"><i class="fa-solid fa-minus"></i></button>
-                        <input
-                          type="text"
-                          value="0"
-                          class="w-8 text-center bg-transparent border-none focus:outline-none text-lg"
-                        />
-                        <button class="text-base px-3 text-[#000]"><i class="fa-solid fa-plus"></i></button>
-                      </form>
+                    <h4 class=" text-[20px] md:text-2xl font-satoshiBold leading-[1]">$145</h4>
+                    <div class="flex items-center  bg-gray-100 rounded-[62px] border border-transparent">
+                      <button data-value="minus" class="bg-red-600  text-[#000] text-opacity-[80%]">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M21.375 12C21.375 12.2984 21.2565 12.5845 21.0455 12.7955C20.8345 13.0065 20.5484 13.125 20.25 13.125H3.75C3.45163 13.125 3.16548 13.0065 2.9545 12.7955C2.74353 12.5845 2.625 12.2984 2.625 12C2.625 11.7016 2.74353 11.4155 2.9545 11.2045C3.16548 10.9935 3.45163 10.875 3.75 10.875H20.25C20.5484 10.875 20.8345 10.9935 21.0455 11.2045C21.2565 11.4155 21.375 11.7016 21.375 12Z"
+                            fill="black"
+                          />
+                        </svg>
+                      </button>
+                      <input
+                      data-value="input"
+                        type="number"
+                        step="1"
+                        min="0"
+                        class=" text-center text-[#000] block bg-transparent border-none focus:outline-none text-lg appearance-none [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:appearance-none"
+                      />
+                      <button data-value="plus" class="bg-red-600  text-[#000] text-opacity-[80%]">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M21.375 12C21.375 12.2984 21.2565 12.5845 21.0455 12.7955C20.8345 13.0065 20.5484 13.125 20.25 13.125H13.125V20.25C13.125 20.5484 13.0065 20.8345 12.7955 21.0455C12.5845 21.2565 12.2984 21.375 12 21.375C11.7016 21.375 11.4155 21.2565 11.2045 21.0455C10.9935 20.8345 10.875 20.5484 10.875 20.25V13.125H3.75C3.45163 13.125 3.16548 13.0065 2.9545 12.7955C2.74353 12.5845 2.625 12.2984 2.625 12C2.625 11.7016 2.74353 11.4155 2.9545 11.2045C3.16548 10.9935 3.45163 10.875 3.75 10.875H10.875V3.75C10.875 3.45163 10.9935 3.16548 11.2045 2.9545C11.4155 2.74353 11.7016 2.625 12 2.625C12.2984 2.625 12.5845 2.74353 12.7955 2.9545C13.0065 3.16548 13.125 3.45163 13.125 3.75V10.875H20.25C20.5484 10.875 20.8345 10.9935 21.0455 11.2045C21.2565 11.4155 21.375 11.7016 21.375 12Z"
+                            fill="black"
+                          />
+                        </svg>
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -292,7 +355,7 @@
                 <div>
                   <img src="./assets/img/CHECKERED SHIRT.png" alt="" class="w-[124px] h-[124px] rounded-lg" />
                 </div>
-                <div class="grow">
+                <div class="flex-1">
                   <div class="flex grow justify-between mb-2">
                     <h4 class=" text-base md:text-[20px] font-bold">Checkered Shirt</h4>
                     <button class="text-[#FF3333]">
@@ -310,7 +373,7 @@
                   </div>
 
                   <div class="flex items-center justify-between">
-                    <h4 class=" text-[20px] md:text-2xl font-bold">$180</h4>
+                    <h4 class=" text-[20px] md:text-2xl font-satoshiBold">$180</h4>
                     <div>
                       <form action="#" class="flex items-center bg-[#F0F0F0] rounded-[62px] px-1.5 py-2">
                         <button class="text-base px-3 text-[#000]"><i class="fa-solid fa-minus"></i></button>
@@ -335,8 +398,8 @@
                 <div>
                   <img src="./assets/img/SKINNY FIT JEANS.png" alt="" class="w-[124px] h-[124px] rounded-lg" />
                 </div>
-                <div class="grow">
-                  <div class="flex grow justify-between mb-2">
+                <div class="flex-1">
+                  <div class="flex items-center justify-between mb-2">
                     <h4 class=" text-base md:text-[20px] font-bold">Skinny Fit Jeans</h4>
                     <button class="text-[#FF3333]">
                       <span><i class="fa-solid fa-trash"></i></span>
@@ -371,23 +434,23 @@
             </div>
           </div>
           <div class="lg:col-start-8 lg:col-end-13 col-start-1 col-end-13">
-            <div class="border flex flex-col gap-y-6 rounded-[20px] py-6 px-6">
-              <div >
-                <h2 class="text-[20px] md:text-2xl font-bold ">Order Summary</h2>
+            <div class="border flex flex-col gap-y-6 rounded-[20px] py-5 px-6">
+              <div>
+                <h2 class="text-[20px] md:text-2xl font-satoshiBold leading-[1] ">Order Summary</h2>
               </div>
 
               <div class="flex flex-col gap-y-5">
                 <div class="relative">
-                  <p class="text-base md:text-[20px] font-normal  text-[#000] text-opacity-[60%]">Subtotal</p>
-                  <span class="absolute top-1/2 -translate-y-1/2 right-0 text-base md:text-[20px] font-bold  text-[#000]">$525</span>
+                  <p class="text-base md:text-[20px] font-satoshi  text-[#000] text-opacity-[60%]">Subtotal</p>
+                  <span class="absolute top-1/2 -translate-y-1/2 right-0 text-base md:text-[20px] font-satoshiBold  text-[#000]">$525</span>
                 </div>
                 <div class="relative">
-                  <p class="text-base md:text-[20px] font-normal  text-[#000] text-opacity-[60%] inline-flex  items-center justify-center gap-x-[6px]">Discount<span>(20%)</span></p>
-                  <span class="absolute top-1/2 -translate-y-1/2 right-0 text-base md:text-[20px] font-bold  text-[#FF3333]">-$113</span>
+                  <p class="text-base md:text-[20px] font-satoshi  text-[#000] text-opacity-[60%] inline-flex  items-center justify-center gap-x-[6px]">Discount<span>(20%)</span></p>
+                  <span class="absolute top-1/2 -translate-y-1/2 right-0 text-base md:text-[20px] font-satoshiBold  text-[#FF3333]">-$113</span>
                 </div>
                 <div class="relative">
-                  <p class="text-base md:text-[20px] font-normal  text-[#000] text-opacity-[60%]">Delivery Fee</p>
-                  <span class="absolute top-1/2 -translate-y-1/2 right-0 text-base md:text-[20px] font-bold  text-[#000]">$15</span>
+                  <p class="text-base md:text-[20px] font-satoshi  text-[#000] text-opacity-[60%]">Delivery Fee</p>
+                  <span class="absolute top-1/2 -translate-y-1/2 right-0 text-base md:text-[20px] font-satoshiBold  text-[#000]">$15</span>
                 </div>
 
                 <div >
@@ -395,36 +458,37 @@
                 </div>
 
                 <div class="relative">
-                  <p class="text-[20px] md:text-2xl font-normal  text-[#000] text-opacity-[60%]">Total</p>
-                  <span class="absolute top-1/2 -translate-y-1/2 right-0 text-base md:text-[20px] font-bold  text-[#000]">$15</span>
+                  <p class="text-[20px] md:text-2xl font-satoshi  text-[#000] text-opacity-[60%]">Total</p>
+                  <span class="absolute top-1/2 -translate-y-1/2 right-0 text-base md:text-[20px] font-satoshiBold  text-[#000]">$15</span>
                 </div>
               </div>
                 <div>
                   <form action="#" class="flex gap-x-3  relative">
-                    <div class="w-full">
-                      <span class="absolute left-5 top-1/2 -translate-y-1/2 text-[18px] text-[#000000] opacity-[40%]">
-                        <i class="fa-solid fa-tag"></i>
+                    <div class="w-full ">
+                      <span class="absolute left-5 top-1/2 -translate-y-1/2 t text-[#000000] opacity-[40%]">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M23.0766 12.4857L13.7653 3.17444C13.5917 2.9997 13.3851 2.86115 13.1576 2.76685C12.93 2.67254 12.686 2.62435 12.4397 2.62507H3.75001C3.45164 2.62507 3.16549 2.7436 2.95451 2.95457C2.74353 3.16555 2.62501 3.4517 2.62501 3.75007V12.4398C2.62429 12.6861 2.67248 12.9301 2.76679 13.1576C2.86109 13.3852 2.99963 13.5918 3.17438 13.7654L12.4856 23.0766C12.8372 23.4281 13.3141 23.6256 13.8113 23.6256C14.3084 23.6256 14.7853 23.4281 15.1369 23.0766L23.0766 15.1369C23.4281 14.7853 23.6255 14.3085 23.6255 13.8113C23.6255 13.3141 23.4281 12.8373 23.0766 12.4857ZM13.8113 21.2204L4.87501 12.2813V4.87507H12.2813L21.2175 13.8113L13.8113 21.2204ZM9.37501 7.87507C9.37501 8.17174 9.28703 8.46175 9.12221 8.70842C8.95739 8.9551 8.72312 9.14736 8.44903 9.26089C8.17494 9.37442 7.87334 9.40412 7.58237 9.34625C7.2914 9.28837 7.02413 9.14551 6.81435 8.93573C6.60457 8.72595 6.46171 8.45868 6.40383 8.1677C6.34595 7.87673 6.37566 7.57513 6.48919 7.30104C6.60272 7.02695 6.79498 6.79269 7.04165 6.62786C7.28833 6.46304 7.57834 6.37507 7.87501 6.37507C8.27283 6.37507 8.65436 6.5331 8.93567 6.81441C9.21697 7.09571 9.37501 7.47724 9.37501 7.87507Z" fill="black" fill-opacity="0.4"/>
+                        </svg>
                       </span>
                       <input
                         type="text"
                         placeholder="Add promo code"
-                        class="bg-[#F0F0F0] md:px-[38px] px-[26px] w-full py-[13px] rounded-[62px] focus:outline-none "
+                        class="bg-[#F0F0F0] ps-[52px] pe-[40px]  w-full py-[13px] rounded-[62px] border border-transparent focus:outline-none "
                       />
                     </div>
-                    <button>
-                      <a
-                        href="#"
-                        class="text-sm md:text-base font-light py-[15px] px-10 border border-[#333] border-opacity-40   rounded-[62px] text-[#000] hover:bg-[#000] hover:text-[#FFF]"
-                        >Apply</a
-                      >
+                    <button  class="text-sm md:text-base leading-[1] font-satoshiMedium py-[13px] lg:px-10 px-[25px] border border-[#333] border-opacity-40   rounded-[62px] text-[#000] hover:bg-[#000] hover:text-[#FFF]">
+                        Apply
                     </button>
                   </form>
                 </div>
   
                 <button
-                  class="bg-[#000] text-[#fff] w-full py-[18px] text-sm md:text-base font-medium  inline-flex items-center justify-center rounded-[62px]"
+                  class="bg-[#000] text-[#fff] w-full py-4 leading-[1] text-sm md:text-base font-satoshiMedium  inline-flex items-center justify-center gap-x-3 rounded-[62px] hover:bg-opacity-75 transition-colors duration-300 ease-in-out"
                 >
-                  Go to Checkout<span class="ml-3 text-base"><i class="fa-solid fa-arrow-right"></i></span>
+                  Go to Checkout<span><svg width="24" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14.7959 4.4541L21.5459 11.2041C21.6508 11.3086 21.734 11.4328 21.7908 11.5696C21.8476 11.7063 21.8768 11.8529 21.8768 12.001C21.8768 12.149 21.8476 12.2957 21.7908 12.4324C21.734 12.5691 21.6508 12.6933 21.5459 12.7979L14.7959 19.5479C14.5846 19.7592 14.2979 19.8779 13.9991 19.8779C13.7002 19.8779 13.4135 19.7592 13.2022 19.5479C12.9908 19.3365 12.8721 19.0499 12.8721 18.751C12.8721 18.4521 12.9908 18.1654 13.2022 17.9541L18.0313 13.125L4.25 13.125C3.95163 13.125 3.66548 13.0065 3.4545 12.7955C3.24353 12.5846 3.125 12.2984 3.125 12C3.125 11.7017 3.24353 11.4155 3.45451 11.2045C3.66548 10.9936 3.95163 10.875 4.25 10.875L18.0313 10.875L13.2013 6.04598C12.9899 5.83463 12.8712 5.54799 12.8712 5.2491C12.8712 4.95022 12.9899 4.66357 13.2013 4.45223C13.4126 4.24088 13.6992 4.12215 13.9981 4.12215C14.297 4.12215 14.5837 4.24088 14.795 4.45223L14.7959 4.4541Z" fill="white"/>
+                    </svg>
+                    </span>
                 </button>
               </div>
              
@@ -435,282 +499,247 @@
     </div>
     <!-- TABLE PRICING SECTION END   -->
 
-    <!-- OFFER SECTION START -->
-    <div>
-      <div class="container mx-auto bg-[#000] rounded-[20px]">
-        <div
-          class="grid grid-cols-12 items-center px-[54px] py-[45px] xl:px-[64px] lg:px-[50px] lg:py-[45px] md:py-[30px] md:px-[30px] rounded-[20px] gap-y-6"
-        >
-          <div
-            class="xl:col-start-1 xl:col-end-7 lg:col-start-1 lg:col-end-8 md:col-start-1 md:col-end-8 col-start-1 col-end-13"
-          >
+
+
+    <!-- --------------------FOOTER SECTION START------------------- -->
+
+    <footer>
+      <div class="container mx-auto relative z-50 xl:top-[90px] lg:top-[100px] md:top-[120px] top-[60px] px-5 xl:px-0">
+        <div class="grid grid-cols-12 gap-y-6 items-center bg-[#000] rounded-[20px] px-6 py-8 lg:px-16 lg:py-9">
+          <div class="col-start-1 col-end-13 lg:col-start-1 lg:col-end-8 xl:col-start-1 xl:col-end-7">
             <div>
-              <h2
-                class="lg:text-[40px] text-[32px] leading-[35px] md:leading-[45px] font-bold text-white font-integral"
-              >
+              <h2 class="lg:text-[40px] text-[32px] leading-[35px] lg:leading-[45px] text-white font-integral">
                 STAY UPTO DATE ABOUT OUR LATEST OFFERS
               </h2>
             </div>
           </div>
-          <div
-            class="xl:col-start-9 xl:col-end-13 lg:col-start-8 lg:col-end-13 md:col-start-8 md:col-end-13 col-start-1 col-end-13"
-          >
-            <form action="#">
-              <div class="relative mb-5">
-                <input
-                  type="email"
-                  placeholder="Enter your email address"
-                  class="w-full outline-none placeholder:font-integral font-integral placeholder:text-opacity-[40%] py-3.5 px-10 rounded-[62px]"
-                />
-                <span class="cursor-pointer text-[#000] text-opacity-[40%] absolute top-1/2 -translate-y-1/2 left-4">
-                  <i class="fa-solid fa-envelope"></i
-                ></span>
-              </div>
-              <button
-                type="submit"
-                class="font-normal bg-[#FFFFFF] text-[#000] w-full py-3.5 rounded-[62px] font-integral"
-              >
-                Subscribe to Newsletter
-              </button>
-            </form>
+          <div class="col-start-1 col-end-13 lg:col-start-9 lg:col-end-13">
+            <div>
+              <form action="#">
+                <div class="relative mb-[14px]">
+                  <input
+                    type="email"
+                    placeholder="Enter your email address"
+                    class="w-full outline-none text-sm md:text-base font-satoshi placeholder:text-opacity-[40%] h-12 px-[52px] rounded-[62px]"
+                  />
+                  <span class="cursor-pointer text-[#000] text-opacity-[40%] absolute top-1/2 -translate-y-1/2 left-4">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M21 4.125H3C2.70163 4.125 2.41548 4.24353 2.2045 4.4545C1.99353 4.66548 1.875 4.95163 1.875 5.25V18C1.875 18.4973 2.07254 18.9742 2.42417 19.3258C2.77581 19.6775 3.25272 19.875 3.75 19.875H20.25C20.7473 19.875 21.2242 19.6775 21.5758 19.3258C21.9275 18.9742 22.125 18.4973 22.125 18V5.25C22.125 4.95163 22.0065 4.66548 21.7955 4.4545C21.5845 4.24353 21.2984 4.125 21 4.125ZM12 11.9738L5.89219 6.375H18.1078L12 11.9738ZM8.69906 12L4.125 16.1925V7.8075L8.69906 12ZM10.3641 13.5262L11.2397 14.3297C11.4472 14.52 11.7185 14.6255 12 14.6255C12.2815 14.6255 12.5528 14.52 12.7603 14.3297L13.6359 13.5262L18.1078 17.625H5.89219L10.3641 13.5262ZM15.3009 12L19.875 7.8075V16.1925L15.3009 12Z"
+                        fill="black"
+                        fill-opacity="0.4"
+                      />
+                    </svg>
+                  </span>
+                </div>
+                <button
+                  type="submit"
+                  class="font-satoshiMedium bg-[#FFFFFF] text-[#000] border transition-all duration-500 ease-in-out hover:border-[#fff] hover:bg-[#000] hover:text-[#fff] w-full h-12 rounded-[62px]"
+                >
+                  Subscribe to Newsletter
+                </button>
+              </form>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <!-- OFFER SECTION END -->
 
-    <!-- FOOTER BANNER START -->
-    <div class="py-20 bg-[#F0F0F0] px-4 xl:px-0">
-      <div class="container mx-auto">
-        <div class="grid grid-cols-12 gap-y-12 xl:gap-y-0">
-          <div class="col-start-1 col-end-13 xl:col-start-1 xl:col-end-4">
-            <div>
-              <div class="mb-6">
-                <a href="#"> <h1 class="text-[32px] font-bold">SHOP.CO</h1></a>
-              </div>
-              <div class="xl:w-[255px] w-full mb-8">
+      <div class="bg-[#F0F0F0] py-14 lg:pt-[140px] md:pt-[160px] pt-[180px] px-5 xl:px-0 mt-[-90px] md:mt-0">
+        <div class="container mx-auto">
+          <div class="grid grid-cols-12 gap-y-6 lg:gap-y-0">
+            <div class="lg:col-span-4 md:col-span-6 col-span-12">
+              <div class="md:max-w-[250px] w-full">
+                <h1 class="text-[28px] md:text-[33px] font-integral md:mb-[25px] mb-[14px] leading-[1]">SHOP.CO</h1>
+
                 <p
-                  class="text-sm md:text-base xl:text-sm leading-5 md:leading-[22px] font-normal text-[#000] text-opacity-[60%] "
+                  class="text-sm md:text-base xl:text-sm leading-5 md:leading-[22px] font-satoshi text-[#000] text-opacity-[60%] mb-5 md:mb-[35px]"
                 >
                   We have clothes that suits your style and which you’re proud to wear. From women to men.
                 </p>
+                <ul class="flex items-center gap-x-3">
+                  <li>
+                    <a
+                      href="#"
+                      class="w-[30px] h-[30px] bg-[#FFF] border border-[#000] border-opacity-[20%] inline-flex justify-center items-center rounded-full hover:bg-[#000] transition-colors duration-300 ease-in-out hover:text-[#FFF]"
+                    >
+                      <i class="fa-brands fa-twitter"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="w-[30px] h-[30px] bg-[#FFF] border border-[#000] border-opacity-[20%] inline-flex justify-center items-center rounded-full hover:bg-[#000] transition-colors duration-300 ease-in-out hover:text-[#FFF]"
+                    >
+                      <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="w-[30px] h-[30px] bg-[#FFF] border border-[#000] border-opacity-[20%] inline-flex justify-center items-center rounded-full hover:bg-[#000] transition-colors duration-300 ease-in-out hover:text-[#FFF]"
+                    >
+                      <i class="fa-brands fa-instagram"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="w-[30px] h-[30px] bg-[#FFF] border border-[#000] border-opacity-[20%] inline-flex justify-center items-center rounded-full hover:bg-[#000] transition-colors duration-300 ease-in-out hover:text-[#FFF]"
+                    >
+                      <i class="fa-brands fa-github"></i>
+                    </a>
+                  </li>
+                </ul>
               </div>
-              <div class="flex gap-x-3">
-                <a
-                  href="#"
-                  class="w-[30px] h-[30px] bg-[#FFF] border border-[#000] border-opacity-[20%] inline-flex justify-center items-center rounded-full hover:bg-[#000] hover:text-[#FFF]"
-                >
-                  <i class="fa-brands fa-twitter"></i>
-                </a>
-                <a
-                  href="#"
-                  class="w-[30px] h-[30px] bg-[#FFF] border border-[#000] border-opacity-[20%] inline-flex justify-center items-center rounded-full hover:bg-[#000] hover:text-[#FFF]"
-                >
-                  <i class="fa-brands fa-facebook-f"></i>
-                </a>
-                <a
-                  href="#"
-                  class="w-[30px] h-[30px] bg-[#FFF] border border-[#000] border-opacity-[20%] inline-flex justify-center items-center rounded-full hover:bg-[#000] hover:text-[#FFF]"
-                >
-                  <i class="fa-brands fa-instagram"></i>
-                </a>
-                <a
-                  href="#"
-                  class="w-[30px] h-[30px] bg-[#FFF] border border-[#000] border-opacity-[20%] inline-flex justify-center items-center rounded-full hover:bg-[#000] hover:text-[#FFF]"
-                >
-                  <i class="fa-brands fa-github"></i>
-                </a>
+            </div>
+            <div class="lg:col-span-2 col-span-6">
+              <div>
+                <h4 class="text-sm md:text-base leading-[18px] tracking-[3px] font-satoshiMedium md:mb-[26px] mb-4">
+                  COMPANY
+                </h4>
+                <ul class="flex flex-col gap-y-4">
+                  <li>
+                    <a href="#" class="md:text-base text-sm leading-4 md:leading-[19px] text-[#000] text-opacity-[60%]"
+                      >About</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="md:text-base text-sm leading-4 md:leading-[19px] text-[#000] text-opacity-[60%]">
+                      Features
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="md:text-base text-sm leading-4 md:leading-[19px] text-[#000] text-opacity-[60%]"
+                      >Works</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="md:text-base text-sm leading-4 md:leading-[19px] text-[#000] text-opacity-[60%]"
+                      >Carrer</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="lg:col-span-2 col-span-6">
+              <div>
+                <h4 class="text-sm md:text-base leading-[18px] tracking-[3px] font-satoshiMedium md:mb-[26px] mb-4">
+                  HELP
+                </h4>
+                <ul class="flex flex-col gap-y-4">
+                  <li>
+                    <a href="#" class="md:text-base text-sm leading-4 md:leading-[19px] text-[#000] text-opacity-[60%]"
+                      >Customer Support</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="md:text-base text-sm leading-4 md:leading-[19px] text-[#000] text-opacity-[60%]"
+                      >Delivery Details</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="md:text-base text-sm leading-4 md:leading-[19px] text-[#000] text-opacity-[60%]">
+                      Terms & Conditions
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="md:text-base text-sm leading-4 md:leading-[19px] text-[#000] text-opacity-[60%]"
+                      >Privacy Policy</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="lg:col-span-2 col-span-6">
+              <div>
+                <h4 class="text-sm md:text-base leading-[18px] tracking-[3px] font-satoshiMedium md:mb-[26px] mb-4">
+                  FAQ
+                </h4>
+                <ul class="flex flex-col gap-y-4">
+                  <li>
+                    <a href="#" class="md:text-base text-sm leading-4 md:leading-[19px] text-[#000] text-opacity-[60%]"
+                      >Account</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="md:text-base text-sm leading-4 md:leading-[19px] text-[#000] text-opacity-[60%]"
+                      >Manage Deliveries</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="md:text-base text-sm leading-4 md:leading-[19px] text-[#000] text-opacity-[60%]">
+                      Orders
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="md:text-base text-sm leading-4 md:leading-[19px] text-[#000] text-opacity-[60%]"
+                      >Payments</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="lg:col-span-2 col-span-6">
+              <div class="lg:justify-self-end">
+                <h4 class="text-sm md:text-base leading-[18px] tracking-[3px] font-satoshiMedium md:mb-[26px] mb-4">
+                  RESOURCES
+                </h4>
+                <ul class="flex flex-col gap-y-4">
+                  <li>
+                    <a href="#" class="md:text-base text-sm leading-4 md:leading-[19px] text-[#000] text-opacity-[60%]"
+                      >Free eBooks</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="md:text-base text-sm leading-4 md:leading-[19px] text-[#000] text-opacity-[60%]"
+                      >Development Tutorial</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="md:text-base text-sm leading-4 md:leading-[19px] text-[#000] text-opacity-[60%]">
+                      How to -Blog
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="md:text-base text-sm leading-4 md:leading-[19px] text-[#000] text-opacity-[60%]"
+                      >Youtube Playlist</a
+                    >
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
-          <div class="col-start-1 col-end-7 xl:col-start-4 xl:col-end-6">
-            <div class="justify-items-start xl:justify-self-center">
-              <h4 class="text-sm md:text-base leading-[18px] tracking-[3px] font-medium mb-12 font-integral">
-                COMPANY
-              </h4>
-              <ul class="">
-                <li class="mb-2">
-                  <a
-                    href="#"
-                    class="md:text-base  text-sm leading-4 md:leading-[19px] text-[#000] text-opacity-[60%]"
-                    >About</a
-                  >
-                </li>
-                <li class="mb-2">
-                  <a
-                    href="#"
-                    class="md:text-base  text-sm leading-4 md:leading-[19px] text-[#000] text-opacity-[60%]"
-                  >
-                    Features
-                  </a>
-                </li>
-                <li class="mb-2">
-                  <a
-                    href="#"
-                    class="md:text-base  text-sm leading-4 md:leading-[19px] text-[#000] text-opacity-[60%]"
-                    >Works</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="md:text-base  text-sm leading-4 md:leading-[19px] text-[#000] text-opacity-[60%]"
-                    >Carrer</a
-                  >
-                </li>
-              </ul>
-            </div>
+
+          <!-- border start -->
+          <div class="pt-[50px] pb-[25px]">
+            <div class="border border-[#000] border-opacity-[10%]"></div>
           </div>
-          <div class="col-start-7 col-end-13 xl:col-start-6 xl:col-end-8">
-            <div class="justify-items-start xl:justify-self-end">
-              <h4 class="text-sm md:text-base leading-[18px] tracking-[3px] font-medium mb-11 font-integral">HELP</h4>
-              <ul>
-                <li class="mb-2">
-                  <a
-                    href="#"
-                    class="md:text-base  text-sm leading-4 md:leading-[19px] text-[#000] text-opacity-[60%]"
-                    >Customer Support</a
-                  >
-                </li>
-                <li class="mb-2">
-                  <a
-                    href="#"
-                    class="md:text-base  text-sm leading-4 md:leading-[19px] text-[#000] text-opacity-[60%]"
-                    >Delivery Details</a
-                  >
-                </li>
-                <li class="mb-2">
-                  <a
-                    href="#"
-                    class="md:text-base  text-sm leading-4 md:leading-[19px] text-[#000] text-opacity-[60%]"
-                    >Terms & Conditions</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="md:text-base  text-sm leading-4 md:leading-[19px] text-[#000] text-opacity-[60%]"
-                    >Privacy Policy</a
-                  >
-                </li>
-              </ul>
+          <!-- border end -->
+
+          <div class="grid grid-cols-12 items-center gap-y-4 md:gap-y-0">
+            <div class="md:col-span-6 col-span-12">
+              <div class="md:text-start text-center">
+                <p class="text-sm text-[#000] text-opacity-[60%]">Shop.co &#169; 2000-2023, All Rights Reserved</p>
+              </div>
             </div>
-          </div>
-          <div class="col-start-1 col-end-7 xl:col-start-9 xl:col-end-11">
-            <div class="justify-self-start xl:justify-self-center">
-              <h4 class="text-sm md:text-base leading-[18px] tracking-[3px] font-medium mb-12 font-integral">FAQ</h4>
-              <ul class="">
-                <li class="mb-2">
-                  <a
-                    href="#"
-                    class="md:text-base  text-sm leading-4 md:leading-[19px] text-[#000] text-opacity-[60%]"
-                    >Account</a
-                  >
-                </li>
-                <li class="mb-2">
-                  <a
-                    href="#"
-                    class="md:text-base  text-sm leading-4 md:leading-[19px] text-[#000] text-opacity-[60%]"
-                    >Manage Deliveries</a
-                  >
-                </li>
-                <li class="mb-2">
-                  <a
-                    href="#"
-                    class="md:text-base  text-sm leading-4 md:leading-[19px] text-[#000] text-opacity-[60%]"
-                    >Orders</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="md:text-base  text-sm leading-4 md:leading-[19px] text-[#000] text-opacity-[60%]"
-                    >Payments</a
-                  >
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-start-7 col-end-13 xl:col-start-11 xl:col-end-13">
-            <div class="justify-self-start xl:justify-self-end">
-              <h4 class="text-sm md:text-base leading-[18px] tracking-[3px] font-medium mb-12 font-integral">
-                RESOURCES
-              </h4>
-              <ul class="">
-                <li class="mb-2">
-                  <a
-                    href="#"
-                    class="md:text-base  text-sm leading-4 md:leading-[19px] text-[#000] text-opacity-[60%]"
-                    >Free eBooks</a
-                  >
-                </li>
-                <li class="mb-2">
-                  <a
-                    href="#"
-                    class="md:text-base  text-sm leading-4 md:leading-[19px] text-[#000] text-opacity-[60%]"
-                    >Development Tutorial</a
-                  >
-                </li>
-                <li class="mb-2">
-                  <a
-                    href="#"
-                    class="md:text-base  text-sm leading-4 md:leading-[19px] text-[#000] text-opacity-[60%]"
-                    >How to -Blog</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="md:text-base  text-sm leading-4 md:leading-[19px] text-[#000] text-opacity-[60%]"
-                    >Youtube Playlist</a
-                  >
-                </li>
-              </ul>
+            <div class="md:col-span-6 col-span-12">
+              <div class="flex gap-x-3 justify-center md:justify-end">
+                <img src="./assets/img/visa.svg" alt="payment-img" />
+                <img src="./assets/img/mastercard.svg" alt="payment-img" />
+                <img src="./assets/img/paypal.svg" alt="payment-img" />
+                <img src="./assets/img/apple-pay.svg" alt="payment-img" />
+                <img src="./assets/img/google-pay.svg" alt="payment-img" />
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </footer>
 
-    <div class="bg-[#F0F0F0]">
-      <div class="container mx-auto">
-        <div class="border border-[#000] border-opacity-[10%]"></div>
-      </div>
-    </div>
-
-    <!-- FOOTER PAYMENT SECTION START -->
-    <div class="py-6 bg-[#F0F0F0] px-4 xl:px-0">
-      <div class="container mx-auto">
-        <div class="grid grid-cols-12 gap-y-6 lg:gap-y-0">
-          <div
-            class="xl:col-start-1 xl:col-end-4 lg:col-start-1 lg:col-end-5 md:col-start-1 md:col-end-13 col-start-1 col-end-13"
-          >
-            <div class="text-center lg:text-start">
-              <p class="text-sm text-[#000] text-opacity-[60%] ">
-                Shop.co &#169; 2000-2023, All Rights Reserved
-              </p>
-            </div>
-          </div>
-          <div
-            class="xl:col-start-10 xl:col-end-13 lg:col-start-10 lg:col-end-13 md:col-start-1 md:col-end-13 col-start-1 col-end-13"
-          >
-            <div class="flex lg:justify-end justify-center gap-x-3">
-              <a href="#" class="drop-shadow-sm"><img src="./assets/img/visa.png" alt="" /></a>
-              <a href="#" class="drop-shadow-sm"><img src="./assets/img/paytm.png" alt="" /></a>
-              <a href="#" class="drop-shadow-sm"><img src="./assets/img/paypal.png" alt="" /></a>
-              <a href="#" class="drop-shadow-sm"><img src="./assets/img/apple-pay.png" alt="" /></a>
-              <a href="#" class="drop-shadow-sm"><img src="./assets/img/Gpay.png" alt="" /></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- FOOTER PAYMENT SECTION END -->
-
-    <!-- FOOTER BANNER END -->
+    <!-- --------------------FOOTER SECTION END------------------- -->
 
     <!-- SCRIPT -->
 
-    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/cart-page.js"></script>
   </body>
 </html>

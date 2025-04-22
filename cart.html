@@ -28,6 +28,7 @@
 
   <!--------------------- NAV BAR START ---------------->
 
+
   <!-- hamburger button section start -->
 
   <div
@@ -69,6 +70,19 @@
 </div>
 
 <!-- hamburger button section end -->
+
+
+  <!-- SEARCH HOVER START -->
+  <div
+  data-click="close"
+  class="search-hover fixed inset-0 w-full h-full bg-[#050505E3] z-50 data-[click=close]:invisible data-[click=open]:visible transition-all  scale-0 data-[click=open]:scale-100 duration-500">
+  <div class="w-full fixed  top-1/2 -translate-y-1/2 ">
+    <div class=" mx-10 search-box ">
+      <input type="text" placeholder="Search Here..." class=" w-full rounded-sm  py-4 px-7 text-4xl leading-none  text-[#fff] bg-transparent focus:outline-none border-b border-[#fff]  placeholder:text-center ">
+    </div>
+  </div>
+</div>
+  <!-- SEARCH HOVER END -->
 
   <!-- nav-menu-start -->
 
@@ -161,27 +175,6 @@
                 />
               </svg>
             </button>
-
-            <div
-              class="search-hover absolute w-[350px] top-full -right-14 md:right-0 bg-[#FbFbFb] border rounded shadow-lg z-50 transition-all ease-in-out duration-1000 hidden"
-            >
-              <div
-                class="relative after:absolute after:content-[''] after:top-0 after:right-0 after:w-full after:h-[3px] after:bg-[#4db2ec]"
-              >
-                <form class="relative py-4 px-2">
-                  <input
-                    type="text"
-                    placeholder="Search Here"
-                    class="px-3 w-[75%] py-2 border border-r bg-[#eeee] focus:outline-none"
-                  />
-                  <button
-                    class="absolute top-1/2 -translate-y-1/2 bg-black text-white px-4 py-2 border border-[#000]"
-                  >
-                    Search
-                  </button>
-                </form>
-              </div>
-            </div>
           </div>
 
           <button>
@@ -510,8 +503,8 @@
     <!-- --------------------FOOTER SECTION START------------------- -->
 
     <footer>
-      <div class="container mx-auto relative z-50 xl:top-[90px] lg:top-[100px] md:top-[120px] top-[60px] px-5 xl:px-0">
-        <div class="grid grid-cols-12 gap-y-6 items-center bg-[#000] rounded-[20px] px-6 py-8 lg:px-16 lg:py-9">
+      <div class="container mx-auto relative z-20 xl:top-[90px] lg:top-[100px] md:top-[120px] top-[60px] px-5 xl:px-0">
+        <div class="grid grid-cols-12 gap-y-6 items-center bg-[#000] rounded-[20px] px-6 py-8 lg:px-16 lg:py-9 ">
           <div class="col-start-1 col-end-13 lg:col-start-1 lg:col-end-8 xl:col-start-1 xl:col-end-7">
             <div>
               <h2 class="lg:text-[40px] text-[32px] leading-[35px] lg:leading-[45px] text-white font-integral">

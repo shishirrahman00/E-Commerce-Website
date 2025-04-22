@@ -119,14 +119,16 @@ navMenuSliderCloseBtn.addEventListener('click', () => {
 
 const navSearchBtn = document.querySelector('.nav-search-btn');
 const navSearchover = document.querySelector('.search-hover');
+const navSearchoverSearchBox = document.querySelector('.search-box');
 
 navSearchBtn.addEventListener('click', (event) => {
-  navSearchover.classList.toggle('hidden');
+  const value = event.currentTarget.getAttribute('data-click');
+  navSearchover.setAttribute('data-click', 'open');
 });
 
 document.addEventListener('click', (event) => {
-  if (!navSearchover.contains(event.target) && !navSearchBtn.contains(event.target)) {
-    navSearchover.classList.add('hidden');
+  if (!navSearchoverSearchBox.contains(event.target) && !navSearchBtn.contains(event.target)) {
+    navSearchover.setAttribute('data-click', 'close');
   }
 });
 

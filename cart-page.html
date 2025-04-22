@@ -13,9 +13,9 @@
    <div class="bg-black py-2 px-4 offer-sign-up">
     <div class="container mx-auto">
       <div class="text-center relative">
-        <p class="text-white text-sm">
+        <p class="text-white md:text-sm text-[12px]">
           Sign up and get 20% off to your first order.
-          <a href="#" class="border-b font-medium">Sign Up Now</a>
+          <a href="#" class="border-b font-satoshiMedium">Sign Up Now</a>
         </p>
 
         <button class="text-white text-[20px] offer-close-btn absolute top-1/2 -translate-y-1/2 right-0">
@@ -51,18 +51,18 @@
     </div>
     <ul class="flex flex-col gap-y-8">
       <li>
-        <a href="#" class="text-[20px] text-[#fff] font-normal hover:text-opacity-[40%]"
+        <a href="#" class="text-[20px] text-[#fff] font-satoshi hover:text-opacity-[40%]"
           >Shop <span><i class="fa-solid fa-angle-down"></i></span
         ></a>
       </li>
       <li>
-        <a href="#" class="text-[20px] text-[#fff] font-normal hover:text-opacity-[40%]">On Sale</a>
+        <a href="#" class="text-[20px] text-[#fff] font-satoshi hover:text-opacity-[40%]">On Sale</a>
       </li>
       <li>
-        <a href="#" class="text-[20px] text-[#fff] font-normal hover:text-opacity-[40%]">Case Study</a>
+        <a href="#" class="text-[20px] text-[#fff] font-satoshi hover:text-opacity-[40%]">Case Study</a>
       </li>
       <li>
-        <a href="#" class="text-[20px] text-[#fff] font-normal hover:text-opacity-[40%]">Blog</a>
+        <a href="#" class="text-[20px] text-[#fff] font-satoshi hover:text-opacity-[40%]">Blog</a>
       </li>
     </ul>
   </div>
@@ -204,41 +204,7 @@
       </div>
     </div>
 
-    <!-- search button hover section start -->
-
-    <!-- <div
-      data-click="false"
-      id="nav-search-btn-hover"
-      class="relative w-full h-full z-50 top-0 left-0 data-[click=false]:invisible transition-transform translate-x-full data-[click=open]:translate-x-0 data-[click=close]:translate-x-full duration-1000"
-    >
-      <div class="w-full max-w-[1240px] h-full z-50 absolute top-[65px] mx-auto">
-        <div class="flex items-center justify-center">
-          <button
-            id="nav-search-btn-hover-close"
-            class="md:w-14 md:h-12 h-[44px] w-10 inline-flex items-center justify-center rounded bg-[#000] text-[#fff]"
-          >
-            <i class="fa-solid fa-arrow-left"></i>
-          </button>
-
-          <form action="#" class="relative grow md:h-12 h-[44px]">
-            <input
-              type="text"
-              placeholder="Search for products..."
-              class="w-full font-integral placeholder:text-base placeholder:text-[#000000] placeholder:opacity-[40%] outline-none bg-[#F0F0F0] md:py-3 py-2.5 pr-[70px] pl-6"
-            />
-
-            <button
-              type="submit"
-              class="absolute top-1/2 right-8 transform -translate-y-1/2 md:text-[18px] text-base text-[#000000]"
-            >
-              <i class="fa-solid fa-magnifying-glass"></i>
-            </button>
-          </form>
-        </div>
-      </div>
-    </div> -->
-
-    <!-- search button hover section end -->
+ 
   </nav>
 
   <!-- nav-menu-end -->
@@ -296,29 +262,32 @@
             <div class="border rounded-[20px] py-5 px-6">
               <div class="flex items-center gap-x-4">
                 <div>
-                  <img src="./assets/img/Gradient Graphic T-shirt.png" alt="" class="w-[124px] h-[124px] rounded-lg" />
+                  <img src="./assets/img/Gradient Graphic T-shirt.png" alt="" class="md:w-[124px] md:h-[124px] w-[98px] h-[98px] rounded-lg" />
                 </div>
                 <div class="flex-1">
                   <div class="flex items-center justify-between ">
-                    <h4 class=" text-base md:text-[20px] font-satoshiBold">Gradient Graphic T-shirt</h4>
-                    <button class="text-[#FF3333]">
-                      <span><i class="fa-solid fa-trash"></i></span>
+                    <h4 class=" text-base md:text-[20px] font-satoshiBold mb-[2px]">Gradient Graphic T-shirt</h4>
+                    <button>
+                      <span><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20.25 4.5H16.5V3.75C16.5 3.15326 16.2629 2.58097 15.841 2.15901C15.419 1.73705 14.8467 1.5 14.25 1.5H9.75C9.15326 1.5 8.58097 1.73705 8.15901 2.15901C7.73705 2.58097 7.5 3.15326 7.5 3.75V4.5H3.75C3.55109 4.5 3.36032 4.57902 3.21967 4.71967C3.07902 4.86032 3 5.05109 3 5.25C3 5.44891 3.07902 5.63968 3.21967 5.78033C3.36032 5.92098 3.55109 6 3.75 6H4.5V19.5C4.5 19.8978 4.65804 20.2794 4.93934 20.5607C5.22064 20.842 5.60218 21 6 21H18C18.3978 21 18.7794 20.842 19.0607 20.5607C19.342 20.2794 19.5 19.8978 19.5 19.5V6H20.25C20.4489 6 20.6397 5.92098 20.7803 5.78033C20.921 5.63968 21 5.44891 21 5.25C21 5.05109 20.921 4.86032 20.7803 4.71967C20.6397 4.57902 20.4489 4.5 20.25 4.5ZM10.5 15.75C10.5 15.9489 10.421 16.1397 10.2803 16.2803C10.1397 16.421 9.94891 16.5 9.75 16.5C9.55109 16.5 9.36032 16.421 9.21967 16.2803C9.07902 16.1397 9 15.9489 9 15.75V9.75C9 9.55109 9.07902 9.36032 9.21967 9.21967C9.36032 9.07902 9.55109 9 9.75 9C9.94891 9 10.1397 9.07902 10.2803 9.21967C10.421 9.36032 10.5 9.55109 10.5 9.75V15.75ZM15 15.75C15 15.9489 14.921 16.1397 14.7803 16.2803C14.6397 16.421 14.4489 16.5 14.25 16.5C14.0511 16.5 13.8603 16.421 13.7197 16.2803C13.579 16.1397 13.5 15.9489 13.5 15.75V9.75C13.5 9.55109 13.579 9.36032 13.7197 9.21967C13.8603 9.07902 14.0511 9 14.25 9C14.4489 9 14.6397 9.07902 14.7803 9.21967C14.921 9.36032 15 9.55109 15 9.75V15.75ZM15 4.5H9V3.75C9 3.55109 9.07902 3.36032 9.21967 3.21967C9.36032 3.07902 9.55109 3 9.75 3H14.25C14.4489 3 14.6397 3.07902 14.7803 3.21967C14.921 3.36032 15 3.55109 15 3.75V4.5Z" fill="#FF3333"/>
+                        </svg>
+                        </span>
                     </button>
                   </div>
 
-                  <div>
+                  <div class="mb-2">
                     <p class="text-[12px]  md:text-sm  text-[#000]">
                       Size:<a href="#" class="text-[#000] text-opacity-60 ml-1.5">Large</a>
                     </p>
-                    <p class="text-[12px] md:text-sm  text-[#000] mt-1">
+                    <p class="text-[12px] md:text-sm  text-[#000] md:mt-1 mt-[2px]">
                       Color:<a href="#" class="text-[#000] text-opacity-60 ml-1.5">White</a>
                     </p>
                   </div>
 
                   <div class="flex items-center justify-between">
                     <h4 class=" text-[20px] md:text-2xl font-satoshiBold leading-[1]">$145</h4>
-                    <div class="flex items-center  bg-gray-100 rounded-[62px] border border-transparent">
-                      <button data-value="minus" class="bg-red-600  text-[#000] text-opacity-[80%]">
+                    <div class="flex items-center  bg-[#F0F0F0] rounded-full md:px-5 px-[13px] w-auto  quantity-wrapper">
+                      <button data-value="minus" class=" text-[#000] text-opacity-[80%]">
                         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path
                             d="M21.375 12C21.375 12.2984 21.2565 12.5845 21.0455 12.7955C20.8345 13.0065 20.5484 13.125 20.25 13.125H3.75C3.45163 13.125 3.16548 13.0065 2.9545 12.7955C2.74353 12.5845 2.625 12.2984 2.625 12C2.625 11.7016 2.74353 11.4155 2.9545 11.2045C3.16548 10.9935 3.45163 10.875 3.75 10.875H20.25C20.5484 10.875 20.8345 10.9935 21.0455 11.2045C21.2565 11.4155 21.375 11.7016 21.375 12Z"
@@ -327,13 +296,13 @@
                         </svg>
                       </button>
                       <input
-                      data-value="input"
+                        value="0"
                         type="number"
                         step="1"
                         min="0"
-                        class=" text-center text-[#000] block bg-transparent border-none focus:outline-none text-lg appearance-none [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:appearance-none"
+                        class="quantity text-center text-[#000] w-10 md:py-2 py-[2px] px-1  bg-transparent border-none focus:outline-none text-lg appearance-none [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:appearance-none"
                       />
-                      <button data-value="plus" class="bg-red-600  text-[#000] text-opacity-[80%]">
+                      <button data-value="plus" class="text-[#000] text-opacity-[80%]">
                         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path
                             d="M21.375 12C21.375 12.2984 21.2565 12.5845 21.0455 12.7955C20.8345 13.0065 20.5484 13.125 20.25 13.125H13.125V20.25C13.125 20.5484 13.0065 20.8345 12.7955 21.0455C12.5845 21.2565 12.2984 21.375 12 21.375C11.7016 21.375 11.4155 21.2565 11.2045 21.0455C10.9935 20.8345 10.875 20.5484 10.875 20.25V13.125H3.75C3.45163 13.125 3.16548 13.0065 2.9545 12.7955C2.74353 12.5845 2.625 12.2984 2.625 12C2.625 11.7016 2.74353 11.4155 2.9545 11.2045C3.16548 10.9935 3.45163 10.875 3.75 10.875H10.875V3.75C10.875 3.45163 10.9935 3.16548 11.2045 2.9545C11.4155 2.74353 11.7016 2.625 12 2.625C12.2984 2.625 12.5845 2.74353 12.7955 2.9545C13.0065 3.16548 13.125 3.45163 13.125 3.75V10.875H20.25C20.5484 10.875 20.8345 10.9935 21.0455 11.2045C21.2565 11.4155 21.375 11.7016 21.375 12Z"
@@ -351,39 +320,57 @@
                 <div class="border border-[#000] border-opacity-[10%]"></div>
               </div>
               <!-- BORDER END -->
+
               <div class="flex items-center gap-x-4">
                 <div>
-                  <img src="./assets/img/CHECKERED SHIRT.png" alt="" class="w-[124px] h-[124px] rounded-lg" />
+                  <img src="./assets/img/CHECKERED SHIRT.png" alt="" class="md:w-[124px] md:h-[124px] w-[98px] h-[98px] rounded-lg" />
                 </div>
                 <div class="flex-1">
-                  <div class="flex grow justify-between mb-2">
-                    <h4 class=" text-base md:text-[20px] font-bold">Checkered Shirt</h4>
-                    <button class="text-[#FF3333]">
-                      <span><i class="fa-solid fa-trash"></i></span>
+                  <div class="flex items-center justify-between ">
+                    <h4 class=" text-base md:text-[20px] font-satoshiBold mb-[2px]">CHECKERED SHIRT</h4>
+                    <button>
+                      <span><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20.25 4.5H16.5V3.75C16.5 3.15326 16.2629 2.58097 15.841 2.15901C15.419 1.73705 14.8467 1.5 14.25 1.5H9.75C9.15326 1.5 8.58097 1.73705 8.15901 2.15901C7.73705 2.58097 7.5 3.15326 7.5 3.75V4.5H3.75C3.55109 4.5 3.36032 4.57902 3.21967 4.71967C3.07902 4.86032 3 5.05109 3 5.25C3 5.44891 3.07902 5.63968 3.21967 5.78033C3.36032 5.92098 3.55109 6 3.75 6H4.5V19.5C4.5 19.8978 4.65804 20.2794 4.93934 20.5607C5.22064 20.842 5.60218 21 6 21H18C18.3978 21 18.7794 20.842 19.0607 20.5607C19.342 20.2794 19.5 19.8978 19.5 19.5V6H20.25C20.4489 6 20.6397 5.92098 20.7803 5.78033C20.921 5.63968 21 5.44891 21 5.25C21 5.05109 20.921 4.86032 20.7803 4.71967C20.6397 4.57902 20.4489 4.5 20.25 4.5ZM10.5 15.75C10.5 15.9489 10.421 16.1397 10.2803 16.2803C10.1397 16.421 9.94891 16.5 9.75 16.5C9.55109 16.5 9.36032 16.421 9.21967 16.2803C9.07902 16.1397 9 15.9489 9 15.75V9.75C9 9.55109 9.07902 9.36032 9.21967 9.21967C9.36032 9.07902 9.55109 9 9.75 9C9.94891 9 10.1397 9.07902 10.2803 9.21967C10.421 9.36032 10.5 9.55109 10.5 9.75V15.75ZM15 15.75C15 15.9489 14.921 16.1397 14.7803 16.2803C14.6397 16.421 14.4489 16.5 14.25 16.5C14.0511 16.5 13.8603 16.421 13.7197 16.2803C13.579 16.1397 13.5 15.9489 13.5 15.75V9.75C13.5 9.55109 13.579 9.36032 13.7197 9.21967C13.8603 9.07902 14.0511 9 14.25 9C14.4489 9 14.6397 9.07902 14.7803 9.21967C14.921 9.36032 15 9.55109 15 9.75V15.75ZM15 4.5H9V3.75C9 3.55109 9.07902 3.36032 9.21967 3.21967C9.36032 3.07902 9.55109 3 9.75 3H14.25C14.4489 3 14.6397 3.07902 14.7803 3.21967C14.921 3.36032 15 3.55109 15 3.75V4.5Z" fill="#FF3333"/>
+                        </svg>
+                        </span>
                     </button>
                   </div>
 
-                  <div>
-                    <p class="text-[12px] md:text-sm  text-[#000]">
+                  <div class="mb-2">
+                    <p class="text-[12px]  md:text-sm  text-[#000]">
                       Size:<a href="#" class="text-[#000] text-opacity-60 ml-1.5">Medium</a>
                     </p>
-                    <p class="text-[12px] md:text-sm  text-[#000]">
+                    <p class="text-[12px] md:text-sm  text-[#000] md:mt-1 mt-[2px]">
                       Color:<a href="#" class="text-[#000] text-opacity-60 ml-1.5">Red</a>
                     </p>
                   </div>
 
                   <div class="flex items-center justify-between">
-                    <h4 class=" text-[20px] md:text-2xl font-satoshiBold">$180</h4>
-                    <div>
-                      <form action="#" class="flex items-center bg-[#F0F0F0] rounded-[62px] px-1.5 py-2">
-                        <button class="text-base px-3 text-[#000]"><i class="fa-solid fa-minus"></i></button>
-                        <input
-                          type="text"
-                          value="0"
-                          class="w-8 text-center bg-transparent border-none focus:outline-none text-lg"
-                        />
-                        <button class="text-base px-3 text-[#000]"><i class="fa-solid fa-plus"></i></button>
-                      </form>
+                    <h4 class=" text-[20px] md:text-2xl font-satoshiBold leading-[1]">$180</h4>
+                    <div class="flex items-center  bg-[#F0F0F0] rounded-full md:px-5 px-[13px] w-auto  quantity-wrapper">
+                      <button data-value="minus" class=" text-[#000] text-opacity-[80%]">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M21.375 12C21.375 12.2984 21.2565 12.5845 21.0455 12.7955C20.8345 13.0065 20.5484 13.125 20.25 13.125H3.75C3.45163 13.125 3.16548 13.0065 2.9545 12.7955C2.74353 12.5845 2.625 12.2984 2.625 12C2.625 11.7016 2.74353 11.4155 2.9545 11.2045C3.16548 10.9935 3.45163 10.875 3.75 10.875H20.25C20.5484 10.875 20.8345 10.9935 21.0455 11.2045C21.2565 11.4155 21.375 11.7016 21.375 12Z"
+                            fill="black"
+                          />
+                        </svg>
+                      </button>
+                      <input
+                        value="0"
+                        type="number"
+                        step="1"
+                        min="0"
+                        class="quantity text-center text-[#000] w-10 md:py-2 py-[2px] px-1  bg-transparent border-none focus:outline-none text-lg appearance-none [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:appearance-none"
+                      />
+                      <button data-value="plus" class="text-[#000] text-opacity-[80%]">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M21.375 12C21.375 12.2984 21.2565 12.5845 21.0455 12.7955C20.8345 13.0065 20.5484 13.125 20.25 13.125H13.125V20.25C13.125 20.5484 13.0065 20.8345 12.7955 21.0455C12.5845 21.2565 12.2984 21.375 12 21.375C11.7016 21.375 11.4155 21.2565 11.2045 21.0455C10.9935 20.8345 10.875 20.5484 10.875 20.25V13.125H3.75C3.45163 13.125 3.16548 13.0065 2.9545 12.7955C2.74353 12.5845 2.625 12.2984 2.625 12C2.625 11.7016 2.74353 11.4155 2.9545 11.2045C3.16548 10.9935 3.45163 10.875 3.75 10.875H10.875V3.75C10.875 3.45163 10.9935 3.16548 11.2045 2.9545C11.4155 2.74353 11.7016 2.625 12 2.625C12.2984 2.625 12.5845 2.74353 12.7955 2.9545C13.0065 3.16548 13.125 3.45163 13.125 3.75V10.875H20.25C20.5484 10.875 20.8345 10.9935 21.0455 11.2045C21.2565 11.4155 21.375 11.7016 21.375 12Z"
+                            fill="black"
+                          />
+                        </svg>
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -394,43 +381,62 @@
                 <div class="border border-[#000] border-opacity-[10%]"></div>
               </div>
               <!-- BORDER END -->
+
               <div class="flex items-center gap-x-4">
                 <div>
-                  <img src="./assets/img/SKINNY FIT JEANS.png" alt="" class="w-[124px] h-[124px] rounded-lg" />
+                  <img src="./assets/img/SKINNY FIT JEANS.png" alt="" class="md:w-[124px] md:h-[124px] w-[98px] h-[98px] rounded-lg" />
                 </div>
                 <div class="flex-1">
-                  <div class="flex items-center justify-between mb-2">
-                    <h4 class=" text-base md:text-[20px] font-bold">Skinny Fit Jeans</h4>
-                    <button class="text-[#FF3333]">
-                      <span><i class="fa-solid fa-trash"></i></span>
+                  <div class="flex items-center justify-between ">
+                    <h4 class=" text-base md:text-[20px] font-satoshiBold mb-[2px]">SKINNY FIT JEANS</h4>
+                    <button>
+                      <span><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20.25 4.5H16.5V3.75C16.5 3.15326 16.2629 2.58097 15.841 2.15901C15.419 1.73705 14.8467 1.5 14.25 1.5H9.75C9.15326 1.5 8.58097 1.73705 8.15901 2.15901C7.73705 2.58097 7.5 3.15326 7.5 3.75V4.5H3.75C3.55109 4.5 3.36032 4.57902 3.21967 4.71967C3.07902 4.86032 3 5.05109 3 5.25C3 5.44891 3.07902 5.63968 3.21967 5.78033C3.36032 5.92098 3.55109 6 3.75 6H4.5V19.5C4.5 19.8978 4.65804 20.2794 4.93934 20.5607C5.22064 20.842 5.60218 21 6 21H18C18.3978 21 18.7794 20.842 19.0607 20.5607C19.342 20.2794 19.5 19.8978 19.5 19.5V6H20.25C20.4489 6 20.6397 5.92098 20.7803 5.78033C20.921 5.63968 21 5.44891 21 5.25C21 5.05109 20.921 4.86032 20.7803 4.71967C20.6397 4.57902 20.4489 4.5 20.25 4.5ZM10.5 15.75C10.5 15.9489 10.421 16.1397 10.2803 16.2803C10.1397 16.421 9.94891 16.5 9.75 16.5C9.55109 16.5 9.36032 16.421 9.21967 16.2803C9.07902 16.1397 9 15.9489 9 15.75V9.75C9 9.55109 9.07902 9.36032 9.21967 9.21967C9.36032 9.07902 9.55109 9 9.75 9C9.94891 9 10.1397 9.07902 10.2803 9.21967C10.421 9.36032 10.5 9.55109 10.5 9.75V15.75ZM15 15.75C15 15.9489 14.921 16.1397 14.7803 16.2803C14.6397 16.421 14.4489 16.5 14.25 16.5C14.0511 16.5 13.8603 16.421 13.7197 16.2803C13.579 16.1397 13.5 15.9489 13.5 15.75V9.75C13.5 9.55109 13.579 9.36032 13.7197 9.21967C13.8603 9.07902 14.0511 9 14.25 9C14.4489 9 14.6397 9.07902 14.7803 9.21967C14.921 9.36032 15 9.55109 15 9.75V15.75ZM15 4.5H9V3.75C9 3.55109 9.07902 3.36032 9.21967 3.21967C9.36032 3.07902 9.55109 3 9.75 3H14.25C14.4489 3 14.6397 3.07902 14.7803 3.21967C14.921 3.36032 15 3.55109 15 3.75V4.5Z" fill="#FF3333"/>
+                        </svg>
+                        </span>
                     </button>
                   </div>
 
-                  <div>
-                    <p class="text-[12px] md:text-sm  text-[#000]">
+                  <div class="mb-2">
+                    <p class="text-[12px]  md:text-sm  text-[#000]">
                       Size:<a href="#" class="text-[#000] text-opacity-60 ml-1.5">Large</a>
                     </p>
-                    <p class="text-[12px] md:text-sm  text-[#000]">
+                    <p class="text-[12px] md:text-sm  text-[#000] md:mt-1 mt-[2px]">
                       Color:<a href="#" class="text-[#000] text-opacity-60 ml-1.5">Blue</a>
                     </p>
                   </div>
 
                   <div class="flex items-center justify-between">
-                    <h4 class=" text-[20px] md:text-2xl font-bold">$240</h4>
-                    <div>
-                      <form action="#" class="flex items-center bg-[#F0F0F0] rounded-[62px] px-1.5 py-2">
-                        <button class="text-base px-3 text-[#000]"><i class="fa-solid fa-minus"></i></button>
-                        <input
-                          type="text"
-                          value="0"
-                          class="w-8 text-center bg-transparent border-none focus:outline-none text-lg"
-                        />
-                        <button class="text-base px-3 text-[#000]"><i class="fa-solid fa-plus"></i></button>
-                      </form>
+                    <h4 class=" text-[20px] md:text-2xl font-satoshiBold leading-[1]">$240</h4>
+                    <div class="flex items-center  bg-[#F0F0F0] rounded-full md:px-5 px-[13px] w-auto  quantity-wrapper">
+                      <button data-value="minus" class=" text-[#000] text-opacity-[80%]">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M21.375 12C21.375 12.2984 21.2565 12.5845 21.0455 12.7955C20.8345 13.0065 20.5484 13.125 20.25 13.125H3.75C3.45163 13.125 3.16548 13.0065 2.9545 12.7955C2.74353 12.5845 2.625 12.2984 2.625 12C2.625 11.7016 2.74353 11.4155 2.9545 11.2045C3.16548 10.9935 3.45163 10.875 3.75 10.875H20.25C20.5484 10.875 20.8345 10.9935 21.0455 11.2045C21.2565 11.4155 21.375 11.7016 21.375 12Z"
+                            fill="black"
+                          />
+                        </svg>
+                      </button>
+                      <input
+                        value="0"
+                        type="number"
+                        step="1"
+                        min="0"
+                        class="quantity text-center text-[#000] w-10 md:py-2 py-[2px] px-1  bg-transparent border-none focus:outline-none text-lg appearance-none [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:appearance-none"
+                      />
+                      <button data-value="plus" class="text-[#000] text-opacity-[80%]">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M21.375 12C21.375 12.2984 21.2565 12.5845 21.0455 12.7955C20.8345 13.0065 20.5484 13.125 20.25 13.125H13.125V20.25C13.125 20.5484 13.0065 20.8345 12.7955 21.0455C12.5845 21.2565 12.2984 21.375 12 21.375C11.7016 21.375 11.4155 21.2565 11.2045 21.0455C10.9935 20.8345 10.875 20.5484 10.875 20.25V13.125H3.75C3.45163 13.125 3.16548 13.0065 2.9545 12.7955C2.74353 12.5845 2.625 12.2984 2.625 12C2.625 11.7016 2.74353 11.4155 2.9545 11.2045C3.16548 10.9935 3.45163 10.875 3.75 10.875H10.875V3.75C10.875 3.45163 10.9935 3.16548 11.2045 2.9545C11.4155 2.74353 11.7016 2.625 12 2.625C12.2984 2.625 12.5845 2.74353 12.7955 2.9545C13.0065 3.16548 13.125 3.45163 13.125 3.75V10.875H20.25C20.5484 10.875 20.8345 10.9935 21.0455 11.2045C21.2565 11.4155 21.375 11.7016 21.375 12Z"
+                            fill="black"
+                          />
+                        </svg>
+                      </button>
                     </div>
                   </div>
                 </div>
               </div>
+
             </div>
           </div>
           <div class="lg:col-start-8 lg:col-end-13 col-start-1 col-end-13">
@@ -463,7 +469,7 @@
                 </div>
               </div>
                 <div>
-                  <form action="#" class="flex gap-x-3  relative">
+                  <form action="#" class="flex gap-x-3 relative">
                     <div class="w-full ">
                       <span class="absolute left-5 top-1/2 -translate-y-1/2 t text-[#000000] opacity-[40%]">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -473,10 +479,10 @@
                       <input
                         type="text"
                         placeholder="Add promo code"
-                        class="bg-[#F0F0F0] ps-[52px] pe-[40px]  w-full py-[13px] rounded-[62px] border border-transparent focus:outline-none "
+                        class="bg-[#F0F0F0] ps-[52px] pe-7  w-full py-3 rounded-full focus:outline-none"
                       />
                     </div>
-                    <button  class="text-sm md:text-base leading-[1] font-satoshiMedium py-[13px] lg:px-10 px-[25px] border border-[#333] border-opacity-40   rounded-[62px] text-[#000] hover:bg-[#000] hover:text-[#FFF]">
+                    <button  class="text-sm md:text-base leading-[1] font-satoshiMedium py-3 lg:px-10 px-[25px] rounded-full bg-[#000] text-[#FFF]">
                         Apply
                     </button>
                   </form>

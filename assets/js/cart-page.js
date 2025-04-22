@@ -65,26 +65,26 @@ document.addEventListener('click', (event) => {
 //------------------------- NAV MENU END
 
 //----------------------INCREASE DECREASE COUNTING START
+const quantityWrapper = document.querySelectorAll('.quantity-wrapper');
 
-const minusValue = document.querySelector('[data-value=minus]');
-const plusValue = document.querySelector('[data-value=plus]');
-const inputValue = document.querySelector('[data-value=input]');
-console.log(inputValue);
+quantityWrapper.forEach((item) => {
+  const minusValue = item.querySelector('[data-value=minus]');
+  const plusValue = item.querySelector('[data-value=plus]');
+  const inputValue = item.querySelector('.quantity');
 
-let initialValue = 0;
+  plusValue.addEventListener('click', () => {
+    let value = Number(inputValue.value);
+    value++;
+    inputValue.value = value;
+  });
 
-plusValue.addEventListener('click', () => {
-  initialValue++;
-  initialValue = initialValue < 10 ? '0' + initialValue : initialValue;
-  inputValue.value = initialValue;
-});
-
-minusValue.addEventListener('click', () => {
-  if (initialValue > 0) {
-    initialValue--;
-    initialValue = initialValue < 10 ? '0' + initialValue : initialValue;
-    inputValue.value = initialValue;
-  }
+  minusValue.addEventListener('click', () => {
+    let value = Number(inputValue.value);
+    if (value > 0) {
+      value--;
+      inputValue.value = value;
+    }
+  });
 });
 
 //----------------------INCREASE DECREASE COUNTING END

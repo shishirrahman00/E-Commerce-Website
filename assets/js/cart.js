@@ -73,6 +73,4 @@ quantityWrapper.forEach((item) => {
   });
 });
 
-// data-[click=close]:opacity-0 data-[click=close]:invisible transition-all ease-in-out -translate-x-full data-[click=open]:translate-x-0 duration-500
-
 //----------------------INCREASE DECREASE COUNTING END

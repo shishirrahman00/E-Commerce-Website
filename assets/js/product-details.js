@@ -53,23 +53,23 @@ document.addEventListener('click', (event) => {
 // ----------------SLICK SLIDER SYNCING SECTION START----------------
 
 // $('.slider-for').slick({
-//     slidesToShow: 1,
-//     slidesToScroll: 1,
-//     arrows: false,
-//     fade: true,
-//     asNavFor: '.slider-nav',
-//   });
+//   slidesToShow: 1,
+//   slidesToScroll: 1,
+//   arrows: false,
 
-//   $('.slider-nav').slick({
-//     slidesToShow: 3,
-//     slidesToScroll: 1,
-//     vertical: true,
-//     asNavFor: '.slider-for',
-//     dots: false,
-//     centerMode: true,
-//     focusOnSelect: true,
+//   fade: true,
+//   asNavFor: '.slider-nav',
+// });
 
-//   });
+// $('.slider-nav').slick({
+//   slidesToShow: 3,
+//   slidesToScroll: 1,
+//   vertical: true,
+//   asNavFor: '.slider-for',
+//   dots: false,
+//   centerMode: true,
+//   focusOnSelect: true,
+// });
 
 // ----------------SLICK SLIDER SYNCING SECTION END------------------
 
@@ -95,6 +95,27 @@ colors.forEach((item) => {
 });
 
 // SELECT COLOR SECTION END
+
+//----------------------INCREASE DECREASE COUNTING START
+
+const minusValue = document.querySelector('[data-value=minus]');
+const plusValue = document.querySelector('[data-value=plus]');
+const inputValue = document.querySelector('.quantity');
+
+plusValue.addEventListener('click', () => {
+  let value = Number(inputValue.value);
+  value++;
+  inputValue.value = value;
+});
+
+minusValue.addEventListener('click', () => {
+  let value = Number(inputValue.value);
+  if (value > 0) {
+    value--;
+    inputValue.value = value;
+  }
+});
+//----------------------INCREASE DECREASE COUNTING END
 
 // TABS SECTION START
 

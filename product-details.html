@@ -182,27 +182,6 @@
                   />
                 </svg>
               </button>
-
-              <div
-                class="search-hover absolute w-[350px] top-full -right-14 md:right-0 bg-[#FbFbFb] border rounded shadow-lg z-50 transition-all ease-in-out duration-1000 hidden"
-              >
-                <div
-                  class="relative after:absolute after:content-[''] after:top-0 after:right-0 after:w-full after:h-[3px] after:bg-[#4db2ec]"
-                >
-                  <form class="relative py-4 px-2">
-                    <input
-                      type="text"
-                      placeholder="Search Here"
-                      class="px-3 w-[75%] py-2 border border-r bg-[#eeee] focus:outline-none"
-                    />
-                    <button
-                      class="absolute top-1/2 -translate-y-1/2 bg-black text-white px-4 py-2 border border-[#000]"
-                    >
-                      Search
-                    </button>
-                  </form>
-                </div>
-              </div>
             </div>
 
             <button>
@@ -224,42 +203,6 @@
           </div>
         </div>
       </div>
-
-      <!-- search button hover section start -->
-
-      <!-- <div
-      data-click="false"
-      id="nav-search-btn-hover"
-      class="relative w-full h-full z-50 top-0 left-0 data-[click=false]:invisible transition-transform translate-x-full data-[click=open]:translate-x-0 data-[click=close]:translate-x-full duration-1000"
-    >
-      <div class="w-full max-w-[1240px] h-full z-50 absolute top-[65px] mx-auto">
-        <div class="flex items-center justify-center">
-          <button
-            id="nav-search-btn-hover-close"
-            class="md:w-14 md:h-12 h-[44px] w-10 inline-flex items-center justify-center rounded bg-[#000] text-[#fff]"
-          >
-            <i class="fa-solid fa-arrow-left"></i>
-          </button>
-
-          <form action="#" class="relative grow md:h-12 h-[44px]">
-            <input
-              type="text"
-              placeholder="Search for products..."
-              class="w-full font-integral placeholder:text-base placeholder:text-[#000000] placeholder:opacity-[40%] outline-none bg-[#F0F0F0] md:py-3 py-2.5 pr-[70px] pl-6"
-            />
-
-            <button
-              type="submit"
-              class="absolute top-1/2 right-8 transform -translate-y-1/2 md:text-[18px] text-base text-[#000000]"
-            >
-              <i class="fa-solid fa-magnifying-glass"></i>
-            </button>
-          </form>
-        </div>
-      </div>
-    </div> -->
-
-      <!-- search button hover section end -->
     </nav>
 
     <!-- nav-menu-end -->
@@ -327,39 +270,7 @@
       <div class="container mx-auto">
         <div class="grid grid-cols-12 gap-x-[30px]">
           <div class="xl:col-start-1 xl:col-end-7 col-start-1 col-end-13">
-            <!-- <div class="flex overflow-hidden">
-          
-          <div class="slider-nav ">
-
-            <div  class="w-[155px] h-[167px]">
-              <a href="#" ><img src="./assets/img/image 1.png" alt="photo" class="w-[155px] h-[167px] object-cover"></a>
-            </div>
-            <div>
-              <a href="#"><img src="./assets/img/image 2.png" alt="photo" class="w-[155px] h-[167px] object-cover"></a>
-            </div>
-            <div>
-              <a href="#"><img src="./assets/img/image 6.png" alt="photo" class="w-[155px] h-[167px] object-cover"></a>
-            </div>
-          </div>
-          
-          <div class="slider-for ">
-            <div class=""> 
-             <a href="#"><img src="./assets/img/image 1.png" alt="photo" class=" h-[530px] w-[445px] object-cover rounded-[20px]"></a>
-            </div>
-            <div > 
-              <a href="#"><img src="./assets/img/image 2.png" alt="photo" class="h-[530px] w-[445px] object-cover rounded-[20px]"></a>
-             </div>
-             <div > 
-              <a href="#"><img src="./assets/img/image 6.png" alt="photo" class="h-[530px] w-[445px] object-cover rounded-[20px]"></a>
-             </div>
-
-            
-            
-          </div>
-         
-          
-          
-        </div> -->
+            <div></div>
           </div>
           <div class="xl:col-start-7 xl:col-end-13 col-start-1 col-end-13">
             <div>
@@ -507,17 +418,9 @@
               <!-- COUNTER INPUT SECTION -->
 
               <div class="flex items-center gap-x-3 md:gap-x-5">
-                <!-- <div class="flex">
-              <div class="flex items-center bg-gray-100 rounded-full px-4 py-2 ">
-                <button class="text-xl px-3 text-gray-700 hover:text-black">−</button>
-                <input type="text" value="100" class="w-8 text-center bg-transparent border-none focus:outline-none text-lg">
-                <button class="text-xl px-3 text-gray-700 hover:text-black">+</button>
-              </div>
-            </div> -->
-
-                <div class="flex items-center bg-gray-100 rounded-[62px] border border-transparent">
-                  <button class="md:px-4 px-3 md:py-3 py-2 text-[#000] text-opacity-[80%]">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <div class="flex items-center bg-[#F0F0F0] rounded-full md:px-5 px-2 w-auto">
+                  <button data-value="minus" class="text-[#000] text-opacity-[80%] md:px-3 px-1">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path
                         d="M21.375 12C21.375 12.2984 21.2565 12.5845 21.0455 12.7955C20.8345 13.0065 20.5484 13.125 20.25 13.125H3.75C3.45163 13.125 3.16548 13.0065 2.9545 12.7955C2.74353 12.5845 2.625 12.2984 2.625 12C2.625 11.7016 2.74353 11.4155 2.9545 11.2045C3.16548 10.9935 3.45163 10.875 3.75 10.875H20.25C20.5484 10.875 20.8345 10.9935 21.0455 11.2045C21.2565 11.4155 21.375 11.7016 21.375 12Z"
                         fill="black"
@@ -525,13 +428,14 @@
                     </svg>
                   </button>
                   <input
+                    value="0"
                     type="number"
                     step="1"
                     min="0"
-                    class="md:w-14 w-8 text-center bg-transparent border-none focus:outline-none text-lg appearance-none [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:appearance-none"
+                    class="quantity text-center text-[#000] w-10 md:py-3 py-[7px] px-1 bg-transparent border-none focus:outline-none text-lg appearance-none [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:appearance-none"
                   />
-                  <button class="md:px-4 px-3 md:py-3 py-2 text-[#000] text-opacity-[80%]">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <button data-value="plus" class="text-[#000] text-opacity-[80%] md:px-3 px-1">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path
                         d="M21.375 12C21.375 12.2984 21.2565 12.5845 21.0455 12.7955C20.8345 13.0065 20.5484 13.125 20.25 13.125H13.125V20.25C13.125 20.5484 13.0065 20.8345 12.7955 21.0455C12.5845 21.2565 12.2984 21.375 12 21.375C11.7016 21.375 11.4155 21.2565 11.2045 21.0455C10.9935 20.8345 10.875 20.5484 10.875 20.25V13.125H3.75C3.45163 13.125 3.16548 13.0065 2.9545 12.7955C2.74353 12.5845 2.625 12.2984 2.625 12C2.625 11.7016 2.74353 11.4155 2.9545 11.2045C3.16548 10.9935 3.45163 10.875 3.75 10.875H10.875V3.75C10.875 3.45163 10.9935 3.16548 11.2045 2.9545C11.4155 2.74353 11.7016 2.625 12 2.625C12.2984 2.625 12.5845 2.74353 12.7955 2.9545C13.0065 3.16548 13.125 3.45163 13.125 3.75V10.875H20.25C20.5484 10.875 20.8345 10.9935 21.0455 11.2045C21.2565 11.4155 21.375 11.7016 21.375 12Z"
                         fill="black"
